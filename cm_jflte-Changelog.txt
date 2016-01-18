@@ -1,20 +1,30 @@
 ====================
-     01-17-2016
+     01-18-2016
 ====================
 
 
-   * device/samsung/jflte/
-39a9aaa Merge https://github.com/AOSP-JF-MM/platform_device_samsung_jflte into HEAD
+   * external/ffmpeg/
+a86ba66 Merge branch 'release/2.8' of https://github.com/FFmpeg/FFmpeg into cm-13.0
 
-   * external/uicommon/
-3e92fbe Don't intercept onTap event
-5ca66e4 Add a simple SnackBar that doesn't rely on AppCompat
+   * external/gello_build/
+d911c8f gello-build: remove dead code
+4167864 gello-build: unbreak --push
+0e7f317 gello_build: update PATH for depot tools before clean/sync
+58d16c1 gello-build: streamline flag parsing
 
-   * frameworks/opt/telephony/
-e57b9f3 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
+   * frameworks/base/
+8f2df3d FWB: QS shade transparency (1/2)
+bb64dd5 Revert "Notifications: Custom colors, (1/2):"
+c8a3eca base: correctly save app notification config
+2426237 SystemUI: Add battery saver tile (1/2)
+15b0ebf SystemUI: Add heads up tile (1/2)
+e767bd0 Themes: Call recreateTheme when theme changed
+8aa54e4 SysUI: Fix keyguard wallpaper not updating
+02fd8b0 SysUI: Pass themed resources on to NavBarEditor
+3a77bd4 Themes: Fix applying theme for notifications
 
    * kernel/samsung/Ramdisk/
-f42fbe2 Updated battery and extreme battery profiles!
+3e3a2f9 20160117
 
    * kernel/samsung/alucard24/
 c62ac20 BACKPORT: arm: don't open-code ptrace_report_syscall() (part deux)
@@ -166,9 +176,18 @@ f7292cd net: socket: Added notifier chains for socket administrative functions
 aba4b79 Revert "net: socket: make sure refs are not released on fd before calling sockev"
 8b44781 Revert "net/socket: "fixed net: socket: make sure refs are not released on fd before calling sockev" commit!"
 
+   * packages/apps/Dialer/
+bd62aa8 Lookup: make people lookups work without location
+
    * packages/apps/Settings/
-b6a8fb7 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-0c1ce9c Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
+bb0c14c Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
+6629bd7 Merge pull request #388 from beroid/cm-13.0
+94fa642 Settings: Update RU translations
+ac16dc2 Build V3.0
+d9ba16e Settings: QS shade transparency (2/2)
+cf8ade6 Notification drawer: Custom clear all icon color, (2/2):
+5f5f02e Revert "Notifications: Custom colors, (2/2):"
+e87ab5b Allow launching notification manager settings externally
 
    * packages/providers/ThemesProvider/
 5756a99 Fix blank WiFi and signal icon previews
@@ -181,6 +200,35 @@ ead1e25 vold ext4/f2fs: do not use dirsync if we're mounting adopted storage
 2d75c38 Revert "vold ext4/f2fs: do not use dirsync if we're mounting adopted storage"
 f2e6a29 Revert "Revert "vold ext4/f2fs: do not use dirsync if we're mounting adopted storage""
 66bf860 Revert "vold ext4/f2fs: do not use dirsync if we're mounting adopted storage" Doubled This reverts commit 4c867ad2d89a187e20c587f968bd575388f5280a.
+
+   * vendor/cmsdk/
+0295218 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+5400b2f cmsdk: Add battery saver tile (2/2)
+55cb123 cmsdk: Add heads up tile (2/2)
+
+====================
+     01-17-2016
+====================
+
+
+   * device/samsung/jflte/
+39a9aaa Merge https://github.com/AOSP-JF-MM/platform_device_samsung_jflte into HEAD
+
+   * external/uicommon/
+3e92fbe Don't intercept onTap event
+5ca66e4 Add a simple SnackBar that doesn't rely on AppCompat
+
+   * frameworks/opt/telephony/
+e57b9f3 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
+
+   * kernel/samsung/Ramdisk/
+f42fbe2 Updated battery and extreme battery profiles!
+
+   * packages/apps/Settings/
+b6a8fb7 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+0c1ce9c Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
+
+   * system/vold/
 c0b1085 Merge https://github.com/temasek/android_system_vold into HEAD
 
    * vendor/cm/
@@ -191,11 +239,61 @@ c0b1085 Merge https://github.com/temasek/android_system_vold into HEAD
 ====================
 
 
+   * external/ffmpeg/
+b8fa3ff avcodec/wavpackenc: print channel count in av_log call
+0639289 configure: bump copyright year to 2016
+e303ca3 Update for 2.8.5
+28f89bc avformat/hls: Even stricter URL checks
+23b903a avformat/hls: More strict url checks
+4676e20 avcodec/pngenc: Fix mixed up linesizes
+0c5a71f avcodec/pngenc: Replace memcpy by av_image_copy()
+07da255 swscale/vscale: Check that 2 tap filters are bilinear before using bilinear code
+be9b893 swscale: Move VScalerContext into vscale.c
+cdac68f swscale/utils: Detect and skip unneeded sws_setColorspaceDetails() calls
+1fd9556 swscale/yuv2rgb: Increase YUV2RGB table headroom
+c781a1e swscale/yuv2rgb: Factor YUVRGB_TABLE_LUMA_HEADROOM out
+b7d54d6 avformat/hls: forbid all protocols except http(s) & file
+90c2256 avformat/aviobuf: Fix end check in put_str16()
+f459afd avformat/asfenc: Check pts
+d408261 avcodec/mpeg4video: Check time_incr
+d7f7586 avcodec/wavpackenc: Check the number of channels
+f05e0e7 avcodec/wavpackenc: Headers are per channel
+e5567f2 avcodec/aacdec_template: Check id_map
+b8382a1 avcodec/dvdec: Fix "left shift of negative value -254"
+9cad208 avcodec/g2meet: Check for ff_els_decode_bit() failure in epic_decode_run_length()
+34e06ce avcodec/mjpegdec: Fix negative shift
+df4ee16 avcodec/mss2: Check for repeat overflow
+cb4ba74 avformat: Add integer fps from 31 to 60 to get_std_framerate()
+d79b6dd avformat/ivfenc: fix division by zero
+3686155 avcodec/mpegvideo_enc: Clip bits_per_raw_sample within valid range
+3fb97a0 avfilter/vf_scale: set proper out frame color range
+6457cd1 avcodec/motion_est: Fix mv_penalty table size
+aee9aa9 avcodec/h264_slice: Fix integer overflow in implicit weight computation
+14c63dc swscale/utils: Use normal bilinear scaler if fast cannot be used due to tiny dimensions
+709abc7 avcodec/put_bits: Always check buffer end before writing
+83c0df9 mjpegdec: extend check for incompatible values of s->rgb and s->ls
+0a6324f swscale/utils: Fix intermediate format for cascaded alpha downscaling
+2f65366 avformat/mov: Update handbrake_version threshold for full mp3 parsing
+
+   * external/gello_build/
+5550f56 gello-build: add clean build
+67205fc gello-build: we don't support all those flags anymore
+fb02913 gello-build: ignore .gclient_entries
+332b650 gello-build: unbreak first-time usage
+
    * external/uicommon/
 b0a0872 Revert "Add a simple SnackBar that doesn't rely on AppCompat"
 
    * frameworks/base/
 1bb785d Keyguard: Clarify error message on bad input length.
+630eb4b SystemUI: Update recents memorybar on recents clear all
+f7495c4 Include color picker, (1/2)
+786f738 SysUI: Clean up objects when recreating statusbar
+2fe4549 SettingsProvider: Force aosp upgrade path from 12.1.
+e793581 SysUI: Use Objects.equals() for comparing components
+dc975fe SysUI: Fix notification panel alignment after theme change
+bc7da55 policy: disable EdgeGestureService
+a4c194e allow GET_ACCOUNTS_PRIVELEGED to be whitelisted
 
    * kernel/samsung/alucard24/
 c5a59d7 net/socket: "fixed net: socket: make sure refs are not released on fd before calling sockev" commit!
@@ -256,13 +354,28 @@ b88149f Add required permission to read vcf from gmail
    * packages/apps/LockClock/
 ff1cf25 LockClock : Update to v23 + runtime permissions
 
+   * packages/apps/OmniSwitch/
+bb1d62c Merge pull request #6 from Mai19930513/cm-13.0
+14997d4 add zh-rCN translation
+
    * packages/apps/Settings/
 79097e0 Merge pull request #387 from beroid/cm-13.0
+996bdf1 Settings: Update RU translations
+2303408 Merge pull request #386 from Mai19930513/cm-13.0
+c0beb7b update zh-rCN translation
+39deb82 Color picker: Enable alpha slider as default
+9344a34 Include color picker, (2/2):
+c4291fa Revert "Add marginov color picker"
+4f8f5c4 Revert "Settings: show warning in lock screen settings when disabled by qs"
+bc60346 Support multiple SAR values, separate args list with ','
+faa6be8 Notifications: Custom colors, (2/2):
 
    * packages/apps/Snap/
+a676e15 Revert "Camera: Propagate power mode selection from UI to lower layers."
 44cfc31 Don't needlessly make menu button larger than the other toggle buttons.
 3b96d32 Snap: Set some qcom features as untranslatable
 d8420e3 Drop new focus indicator into Camera2.
+db27186 Snap: Actually select the highest quality video by default
 
    * packages/apps/Trebuchet/
 ab66f21 Trebuchet: Fix NPE when app search controller is off
@@ -289,12 +402,7 @@ cf3f38c cmsdk: Add CYANOGENMOD_VERSION constant.
 10ff8f7 Delay SIM status message until after radio is on
 62c6f14 Update RIL_UNSOL_RESPONSE_IMS_NETWORK_STATE_CHANGED + small changes
 fc91018 RIL: remove unused UNSOLs
-
-   * external/gello_build/
-5550f56 gello-build: add clean build
-67205fc gello-build: we don't support all those flags anymore
-fb02913 gello-build: ignore .gclient_entries
-332b650 gello-build: unbreak first-time usage
+e15d446 Merge branch 'aosp-6.0-test-new-ril' of https://github.com/AOSP-JF-MM/platform_device_samsung_jflte into HEAD
 
    * external/uicommon/
 fcf1798 Add a simple SnackBar that doesn't rely on AppCompat
@@ -304,14 +412,6 @@ b87d655 Add GalleryNext fixes to SlideUpPanelLayout
 bb73be0 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_av into HEAD
 
    * frameworks/base/
-630eb4b SystemUI: Update recents memorybar on recents clear all
-f7495c4 Include color picker, (1/2)
-786f738 SysUI: Clean up objects when recreating statusbar
-2fe4549 SettingsProvider: Force aosp upgrade path from 12.1.
-e793581 SysUI: Use Objects.equals() for comparing components
-dc975fe SysUI: Fix notification panel alignment after theme change
-bc7da55 policy: disable EdgeGestureService
-a4c194e allow GET_ACCOUNTS_PRIVELEGED to be whitelisted
 49a8305 Notification drawer: Custom clear all icon color, (1/2):
 cacc418 Notifications: Custom colors, (1/2):
 2764704 Make G notification font colors more compatible with dark and light themes
@@ -319,6 +419,7 @@ e7bc5dc AdbOverNetworkTile: only de/reregister the observer when setListening ch
 e40ada2 SysUI: Reuse controllers and managers
 e4de9a9 Disable Quick Settings on secure lockscreen (1/2)
 ffb4904 Merge pull request #103 from Mai19930513/cm-13.0
+2e5a8c9 add zh-rCN translation
 
    * frameworks/opt/telephony/
 6d6213a telephony: Fix persistence of automatic network selection
@@ -326,69 +427,6 @@ ffb4904 Merge pull request #103 from Mai19930513/cm-13.0
    * kernel/samsung/Ramdisk/
 57db3dd Fix
 e0eae88 20160114
-
-   * packages/apps/ContactsCommon/
-f1501f5 Ensure non-null encoded uri before attempting to parse
-
-   * packages/apps/OmniSwitch/
-bb1d62c Merge pull request #6 from Mai19930513/cm-13.0
-14997d4 add zh-rCN translation
-
-   * packages/apps/Settings/
-996bdf1 Settings: Update RU translations
-2303408 Merge pull request #386 from Mai19930513/cm-13.0
-c0beb7b update zh-rCN translation
-39deb82 Color picker: Enable alpha slider as default
-9344a34 Include color picker, (2/2):
-c4291fa Revert "Add marginov color picker"
-4f8f5c4 Revert "Settings: show warning in lock screen settings when disabled by qs"
-bc60346 Support multiple SAR values, separate args list with ','
-faa6be8 Notifications: Custom colors, (2/2):
-c2ac6e0 Support multiple SAR values, separate args list with ','
-8c2598c Disable Quick Settings on secure lockscreen (2/2)
-e474bfb Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-
-   * packages/apps/SetupWizard/
-23b1347 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
-
-   * packages/apps/Snap/
-db27186 Snap: Actually select the highest quality video by default
-2233950 CameraActivity: Don't hide navigation bar
-
-   * packages/providers/ThemesProvider/
-59bff5c No default lock wallpaper and live lock screen for system theme
-
-   * packages/wallpapers/PhotoPhase/
-6a4f804 PhotoPhase: ask for runtime permissions
-
-   * system/vold/
-dddf1aa Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
-6ab045a vold: hw_fde: Fix merge damage
-e04bbb8 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_vold into HEAD
-
-   * vendor/cm/
-5441c61 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
-
-====================
-     01-14-2016
-====================
-
-
-   * device/samsung/jflte/
-e15d446 Merge branch 'aosp-6.0-test-new-ril' of https://github.com/AOSP-JF-MM/platform_device_samsung_jflte into HEAD
-
-   * external/libpng/
-7ca7cb2 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_external_libpng into cm-13.0
-75a4e74 libpng: fix hang during read when inflate fails
-
-   * frameworks/base/
-2e5a8c9 add zh-rCN translation
-6f821a4 Have Battery bar controller obey Hide value
-3cb2e99 Fix WallpaperCropper crash when setting wallpaper over 8MB
-a52eea2 Update Lockscreen clock font option [1/2]
-1a32fd9 SystemUI: write keyguard enabled setting to CMSettings
-4368542 SystemUI: Make lockscreen visualizer battery friendly
-72e300b SysUI: Re-add status icons in recreateStatusBar()
 
    * kernel/samsung/alucard24/
 40c6a3c f_mtp: syncing with dorimanx branch!
@@ -436,15 +474,21 @@ a879af2 f_fs: ffs_func_free: cleanup requests allocated by autoconfig
 f8180bd USB: f_fs: Fix epfile crash during composition switch
 25ff23b usb: gadget: f_fs: HACK: Round reads up to 512 bytes to work with dwc3
 
+   * packages/apps/ContactsCommon/
+f1501f5 Ensure non-null encoded uri before attempting to parse
+
    * packages/apps/Settings/
+c2ac6e0 Support multiple SAR values, separate args list with ','
+8c2598c Disable Quick Settings on secure lockscreen (2/2)
+e474bfb Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
 35b8592 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
 663eb41 Merge pull request #385 from Mai19930513/cm-13.0
-a301ebe update zh-rCN translation
-03ad24b Update Lockscreen clock font option [2/2]
-19b4d14 Settings: show warning in lock screen settings when disabled by qs
-c971ae3 Settings: show warning in lock screen settings when disabled by qs
+
+   * packages/apps/SetupWizard/
+23b1347 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
 
    * packages/apps/Snap/
+2233950 CameraActivity: Don't hide navigation bar
 607a2f0 SnapdragonCamera: limit video file size on SD card
 f0e709d SnapdragonCamera: Hide all camera setting when countdown timer starts
 24081ba SnapdragonCamera: Set color effect as none when turn HDR on
@@ -454,99 +498,61 @@ ff10b54 SnapdragonCamera: fix crash taking Macro+ from MMS
 8eeafc1 SnapdragonCamera: fix NumberFormatException when input value invalide
 cd14209 Snap: Remove touch AF/AEC option
 4b6ac95 Snap: Support 1:1 aspect ratio
-0ad4095 Snap: Support for HTC's HDR mode
 
-   * packages/apps/Trebuchet/
-fb312de Trebuchet: Remove app search controller if turned off
-5b04456 Trebuchet: Fix some monkey test race condition bugs
+   * packages/providers/ThemesProvider/
+59bff5c No default lock wallpaper and live lock screen for system theme
+
+   * packages/wallpapers/PhotoPhase/
+6a4f804 PhotoPhase: ask for runtime permissions
 
    * system/vold/
-a9746cb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
-ba3b7bd cryptfs: Set HW FDE flags when building libvold
+dddf1aa Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
+6ab045a vold: hw_fde: Fix merge damage
+e04bbb8 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_vold into HEAD
 
    * vendor/cm/
-6b6b6f8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-356bb56 APN: Remove wrong T-Mobile CZ and Vodafone CZ APNs
-
-   * vendor/cmsdk/
-cda6566 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-b9f80b6 cmsdk: Load notification led customization defaults
-bf9cc6d cmsdk: add lockscreen internal enabled setting
+5441c61 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
 
 ====================
-     01-13-2016
+     01-14-2016
 ====================
 
 
-   * bionic/
-0da3f68 Fix <sys/sysmacros.h>.
-
-   * device/samsung/jflte/
-020d9be ril: Use correct preferredNetworkType instead of networkModes
-
-   * frameworks/av/
-8ad6568 av: Add support for loading audio_effects_vendor.conf
-8e3418f Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_av into HEAD
+   * external/libpng/
+7ca7cb2 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_external_libpng into cm-13.0
+75a4e74 libpng: fix hang during read when inflate fails
 
    * frameworks/base/
-39317a3 base: fix num cpu check for CPU overlay
-86ec0dc Revert "Core: Fix setupwizard FC"
-0e14362 FWB: Make all 18 font variants available to Statusbar weather temp (1/2)
-0c7d06e FWB: Make all 18 font variants available to Statusbar Clock (1/2)
-76ae24e Animate backlight quickly when display state request to change or power mode changed
-5ec067b SystemUI: Fix CallbackHandler and NetworkControllerBase tests.
-8273fcb SysUI: Disable window animation when using KeyguardExternalView
-b5a9a03 SysUI: Handle KgdExtView callbacks on UI thread
-47fb8ac SystemUI: Removing padding on mobile signal group.
-875d72c Ringtone: Add support for selection of phone ringtone for SIM-2.
-f701681 SettingsProvider: Disable data roaming by default
-27d8637 SystemUi: Reintroduce always_show_roaming config.
-9ef11fa ThemeService: ManagedProvisioning is a setup package too.
-
-   * frameworks/support/
-6f0a2cb Make sure that AppBarLayout is laid out correctly
-2ae0ed1 AppBarLayout layout/measure fixes
+6f821a4 Have Battery bar controller obey Hide value
+3cb2e99 Fix WallpaperCropper crash when setting wallpaper over 8MB
+a52eea2 Update Lockscreen clock font option [1/2]
+1a32fd9 SystemUI: write keyguard enabled setting to CMSettings
+4368542 SystemUI: Make lockscreen visualizer battery friendly
+72e300b SysUI: Re-add status icons in recreateStatusBar()
 
    * packages/apps/CMFileManager/
 26fd0d7 Bump target SDK version to 23
-
-   * packages/apps/Contacts/
-a08be42 Add contact blocking and unblocking
-
-   * packages/apps/ContactsCommon/
-cf86693 Add block contact dialog and supporting helper classes
-bbf7e82 Refactor contact info lookup
 
    * packages/apps/Email/
 34fb128 email: junk icon
 c929853 email: return default folder name for subfolders
 
    * packages/apps/Messaging/
-7fc9cfe Adhere to the revised lookup provider api
+2e34d86 Messaging: Bring back Unicode Stripping
 
    * packages/apps/Settings/
+a301ebe update zh-rCN translation
+03ad24b Update Lockscreen clock font option [2/2]
+19b4d14 Settings: show warning in lock screen settings when disabled by qs
+c971ae3 Settings: show warning in lock screen settings when disabled by qs
 729af14 Merge pull request #383 from beroid/cm-13.0
-989f186 Settings: Update RU translations
-62fd47d Build V2.9
-79ef915 Settings: Make all 18 font variants available to Statusbar weather temp (2/2)
-9ca093e Settings: Make all 18 font variants available to Statusbar Clock (2/2)
-8712d29 Settings: Set regulatory information dialog to non-translatable.
-a41fef2 Settings: Show ringtone per sim for multi sim device
-745d897 Squash commit of SAR and IC Code.
-19aa1dc Settings: Set regulatory information dialog to non-translatable.
-8605334 Settings: Show ringtone per sim for multi sim device
-2c3e40d Squash commit of SAR and IC Code.
-
-   * packages/apps/SetupWizard/
-f5ec6ac SetupWizard: Upgrade sdk to 23
-1141611 SetupWizard: Don't disable packages on main thread
-3f6c91c Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
 
    * packages/apps/Snap/
-7f73524 Snap: support more resolutions
+0ad4095 Snap: Support for HTC's HDR mode
 
    * packages/apps/Trebuchet/
-4eaa0a5 Trebuchet: Fix resource not found exception when picking a wallpaper
+fb312de Trebuchet: Remove app search controller if turned off
+5b04456 Trebuchet: Fix some monkey test race condition bugs
 
    * packages/apps/UnifiedEmail/
 032f3a2 Remove mail signatures from notification text.
@@ -556,18 +562,17 @@ b50cac5 email: allow move/copy operations to more system folders
    * packages/providers/TelephonyProvider/
 37604de TelephonyProvider: Handle database migration from cm-11.0.
 
-   * packages/providers/ThemesProvider/
-3b82b9c Queries live lock screen preview path
-
-   * packages/services/Telephony/
-9c86f81 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_services_Telephony into HEAD
-
-   * system/media/
-c969dad effects: Add AUDIO_EFFECT_VENDOR_CONFIG_FILE2
+   * system/vold/
+a9746cb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
+ba3b7bd cryptfs: Set HW FDE flags when building libvold
 
    * vendor/cm/
+6b6b6f8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+356bb56 APN: Remove wrong T-Mobile CZ and Vodafone CZ APNs
 6f6e11f fix cricket APN
-6e0c3e5 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-e8df21c sepolicy: Add perfprofd with set_prop macro
-f5205fa Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
+
+   * vendor/cmsdk/
+cda6566 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+b9f80b6 cmsdk: Load notification led customization defaults
+bf9cc6d cmsdk: add lockscreen internal enabled setting
 
