@@ -1,7 +1,688 @@
 ====================
+     01-22-2016
+====================
+
+   * .repo/local_manifests/
+9b7e438 Update
+
+   * device/samsung/jf-common/
+2593a1d audio_policy.conf: remove voip_rx
+3030e4e Audio: explicity disable LPA Tunnel
+
+   * device/samsung/jflte/
+a75ff8e Remove old V4A libs
+
+   * external/exfat/
+4a8592e exfat-fuse: Don't export UTF conversion functions
+
+   * external/f2fs-tools/
+c876665 f2fs-utils: Fix Android host utils
+
+   * frameworks/base/
+f27cee9 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
+be92095 Merge https://github.com/temasek/android_frameworks_base into HEAD
+26adb79 Fix merge 6
+3db56e6 SystemUi: Nuke DONT_TRACK label, and introduce CMMetricsLogger constants.
+ef806b8 Fix merge 5
+dc3e9d4 Fix merge 5
+fa9bef5 Fix merge 4
+c2cd9a8 SysUI: Check that backgrounds are RippleDrawables
+a7aaa04 SysUI: Guard against NPE in SignalClusterView
+9e2a830 SysUI: Check that backgrounds are RippleDrawables
+7bda589 SysUI: Guard against NPE in SignalClusterView
+91e17a5 [1/4] Breathing missedcall/voicemail
+461a834 FWB: QS header transparency (1/2)
+c49854d libhwui: fix texture memory leak
+bb2d499 fix race condition between HWUI cache and renderThread
+1782e9e Fix merge 3
+02d20e8 Fix merge 2
+9ac91bd Fix merge
+0b58ab6 Merge branch 'cm-13.0' of https://github.com/temasek/android_frameworks_base into HEAD
+
+   * kernel/samsung/Ramdisk/
+ab626ad Fix 2
+647747e Fix
+c3a1367 20160122
+62af736 Updated all profiles!
+
+   * packages/apps/Settings/
+272abf8 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
+c319845 Merge pull request #395 from Mai19930513/cm-13.0
+5d0889e update zh-rCN translations
+ac3e322 Merge pull request #394 from beroid/cm-13.0
+34a16f1 Settings: Update RU translations
+40b7681 Build V3.2
+275b208 Settings: Breathing missedcall/voicemail
+4a093be Settings: QS header transparency (2/2)
+8350fec Break out status bar icon from extdesk icon.
+ecd12dd Settings Hooks launch wrong activity
+b595a4c Fix QS shade transparancy
+e6756b2 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+fd3eb78 Break out status bar icon from extdesk icon.
+2155d8b Fix
+f99d690 Merge branch 'opt-cm-13.0' of https://github.com/JDCTeam/android_packages_apps_Settings into HEAD
+
+   * packages/apps/Trebuchet/
+f15a377 fix CTS failure on Trebuchet - manually picked from a269d518db02c8383e3621dff9d6054e3e9e48d6
+
+   * packages/services/Telecomm/
+e1bf470 [3/4] Breathing missedcall/voicemail
+
+   * packages/services/Telephony/
+f8c2d77 Merge https://github.com/temasek/android_packages_services_Telephony into HEAD
+02390d3 [2/4] Breathing missedcall/voicemail
+
+   * system/bt/
+7677a34 Merge https://github.com/temasek/android_system_bt into HEAD
+
+   * system/core/
+a8a52cd Merge https://github.com/temasek/android_system_core into HEAD
+856e979 logging: avoid unnecessary printfs
+
+   * system/extras/
+c671736 fix bug in mkf2fs tool calculation of f2fs filesystem length
+
+   * system/vold/
+88f786f cryptfs: Skip to encrtypt unused blocks into a block group which uninitialize block bitmap .
+2491de9 Handle non-format partition in Vold
+bbc396b vold: fix 64 bit ioctl error
+bcf1026 Make sure path is not NULL to avoid fatal exception.
+3a78f96 Use volume label for mount path, if available.
+3f82486 Make public volumes publicly writable based on WRITE_EXTERNAL_STORAGE
+
+   * vendor/cm/
+fc5eaf0 Uptate to ViPERAtmos 4.4 Beats Edition
+ee493e1 Delete old V4A libs
+f3ccd23 Merge https://github.com/temasek/android_vendor_cm into HEAD
+9d3ac68 Viper4Android: Don't use it on 64 bit devices
+
+====================
+     01-21-2016
+====================
+
+
+   * device/samsung/jf-common/
+cbcffa7 Ril: fix network search
+3f71e60 ril: fix emergency call
+eefdfda RIL: fix
+cf75287 Delay SIM status message until after radio is on
+9312687 ril: Use correct preferredNetworkType instead of networkModes
+237557b audio policy: fix the mess!
+54081bc audio: Enable usb audio feature too
+1ce4c40 audio: explicity enable proxy audio feature
+6892416 include: Add custom AudioSystemLegacy.h
+fa89388 ril: Fix data after reboot
+7d9ceeb init: force /system to mount as R/W
+
+   * external/mksh/
+db58d5b add ll and la aliases to shell
+
+   * frameworks/av/
+4fee7e8 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_av into HEAD
+7c1e4d7 av: "ACodec: update native window crop rectangle" depends on QCOM
+
+   * frameworks/base/
+a9ed517 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_base into HEAD
+a6e1f08 fix race condition between HWUI cache and renderThread
+646b03d SystemUI: handle when brightness slider is hidden
+bc0a272 Paella: Enable Spanish single shift table
+1102643 SystemUI: fix tiles per page when changing top tile type
+7d92b7e SystemUI: fix disappearing tiles
+9a6786c SystemUI: fix viewpager page recycling
+6591824 SystemUI: fix qs tile page regressions
+717023a Themes: Expose volume slider and thumb colors and make them work with custom images.
+45a8dc8 SystemUI: add some tile removal hints
+097e4b6 SystemUI: fix lock screen tile state refresh
+f572a30 SystemUI: handle custom tile long press PendingIntents
+f2f2e6f SystemUI: improve qs tile layout mechanism
+794b9dd SystemUI: add a disabled state for Quick Tiles
+c3e5e20 Paella: Enable Spanish single shift table
+aadb036 SystemUI: fix tiles per page when changing top tile type
+1834eb0 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_base into HEAD
+cd25461 SystemUI: fix disappearing tiles
+9048b48 SystemUI: fix viewpager page recycling
+
+   * frameworks/opt/telephony/
+4da6556 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
+8942ed5 Do not disable permanently enabled carrier apps
+7f4386f Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
+
+   * hardware/samsung/
+de5e3c6 Initial unified Samsung power HAL
+
+   * kernel/samsung/alucard24/
+d6b104c UPSTREAM: memcg: Only free spare array when readers are done
+
+   * packages/apps/Contacts/
+5595731 Move to new BlockContactHelper.BlockOperation
+
+   * packages/apps/ContactsCommon/
+60502a8 Refactor BlockContactHelper
+
+   * packages/apps/Dialer/
+a1739cf Add back call stats feature.
+
+   * packages/apps/Email/
+a29e6b2 Improve notification coalescence algorithm.
+
+   * packages/apps/Settings/
+3b75a6f Notification color: add missing string
+b9a80ce Merge pull request #393 from Mai19930513/cm-13.0
+f61f80e update zh-rCN translations
+
+   * packages/apps/Snap/
+bb800ac Fix up layout of auto HDR notice and histogram view.
+42f6d5c Remove unused menu indicators code.
+4faa77d Avoid static member variable.
+96b38fd Improve CameraControls layout code.
+e1abba9 Fix transparent background color.
+788ae64 SnapdragonCamera: Fix UI alignment glitches when nav-bar is enabled
+5d94a49 Snap: Don't enable ZSL when disabling HDR
+
+   * packages/services/Telephony/
+31cb262 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_services_Telephony into HEAD
+8142130 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+
+   * system/bt/
+8205b33 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
+b2f946e btm: Fix compile with BLE disabled (again)
+
+   * vendor/cm/
+c17228f Merge pull request #25 from StarkDroid/cm-13.0
+a1605a1 fix derp
+90144e9 Add Viper4Android
+
+====================
+     01-20-2016
+====================
+
+   * .repo/local_manifests/
+68679d2 Track own    *s
+
+   * build/
+d0b68d1 Merge branch 'opt-cm-13.0' of https://github.com/JDCTeam/android_build into HEAD
+af78067 fix
+
+   * device/qcom/sepolicy/
+017145b sepolicy: fix mm-qcamerad permission for persist.camera* properties
+
+   * device/samsung/jf-common/
+4a387b3 (1/2)Fix for bt not turning on bug
+
+   * device/samsung/jflte/
+3897d7c Merge pull request #1 from JDCTeam/opt-cm-13.0
+
+   * external/f2fs-tools/
+8b00f01 Slight ifndef change
+35570b5 Fix readonly for android
+ad0f267 fsck.f2fs: return 0 for no error was reported
+bf2ada1 fsck.f2fs: assign checkpoint pointer correctly
+964adc0 fsck.f2fs: swap checkpoint crc to CPU endian
+bf12354 f2fs-tools: avoid failure and warnings for android build
+54dabbe mkfs.f2fs: introduce zone align for main area
+b5476e1 fsck.f2fs: fix double free invalid checkpoint
+75ecd2f man: modify mkfs.f2fs man page
+a896342 man: add missing man pages
+611f285 Update android version
+a901a43 f2fs-tools: release 1.6.0
+9a521a8 mkfs.f2fs: fix check error when calloc sum_compact failure
+32dd5f4 fsck.f2fs: fix losing journal entries
+0516d2b defrag.f2fs: fix missing SSA updates
+f00f43e defrag.f2fs: enhance allocation speed
+030ee52 libf2fs: fix incorrect type define of declaration
+09dfa9f defrag.f2fs: return error if there is no space
+8c04142 defrag.f2fs: eliminate unexpected journal entries
+9b8535c defrag.f2fs: fix not to allocate current segment
+837208e lib: use u8/u32/u64 for bit operations
+b54e4b5 lib: fix test_bit_le functions
+7d95d38 mkfs.f2fs: remove extent_cache entry for parent directory
+cd610cd mkfs.f2fs: fix storing volume label correctly in utf16
+d174269 fsck.f2fs: deal with realloc size and realloc failure
+a144fc1 Revert "fsck.f2fs: deal with realloc failure"
+729ecdf mkfs.f2fs: fix to calculate left space of checkpoint page correctly
+fd4f8d3 Android add f2fs defrag
+c18df71 defrag.f2fs: introduce defragmentation tool
+d19dbfc fsck.f2fs: LFS alloc_type must have free segment after blkoff
+4358121 f2fs-tools: export print_raw_sb_info
+2267b80 mkfs.f2fs: export get_best_overprovision
+17e0cb6 fsck.f2fs: sanity_check for extent_cache entry
+3de0318 libf2fs: enhance the bit operations
+4cf9c57 f2fs-tools: add library version info
+7e76ee5 mkfs/Makefile.am: add a section to build libf2fs_fmt
+8c1bb17 mkfs.f2fs: show correct partition size
+f78e245 fsck.f2fs: use get_{sb|cp} and set_{sb|cp} macros
+ea1e148 mkfs.f2fs: export get_{sb|cp} and set_{sb|cp}
+3b01e52 mkfs.f2fs: discard obsolete blocks to avoid roll-forward recovery
+ee06528 mkfs.f2fs: skip extension name that is too long
+5da4595 mkfs.f2fs: avoid dumplicate extensions
+e89637e fsck.f2fs: deal with realloc failure
+04d6106 fsck.f2fs: support a readonly filesystem
+f9c29e7 fsck.f2fs: declare static function
+
+   * external/stagefright-plugins/
+24988a8 stagefright-plugins: Update pixfmt
+
+   * frameworks/av/
+e23fd3c Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_av into HEAD
+
+   * frameworks/base/
+26c8d67 Refactor power menu on lockscreen (1/2)
+ca58ead pm: Add persist property to enable lazy dexopt
+09f1c66 SystemUI: Screenshot rotation
+df3b3a3 Add left QS quick pulldown (1/3)
+0a45b33 Longpress power lockscreen torch [1/2]
+33b9f0b pm: Add persist property to enable lazy dexopt
+bf22092 Keyguard: set separator for multi-sim CarrierText
+d129565 SystemUI: fix qs tile page regressions
+ad0a9ba Merge pull request #1 from CyanogenMod/cm-13.0
+4d84b82 pm: Add persist property to enable lazy dexopt
+79923fb Keyguard: set separator for multi-sim CarrierText
+
+   * frameworks/opt/telephony/
+5a1d942 Fix wrong args when calls OperatorInfo
+5043cb2 Merge branch 'opt-cm-13.0' of https://github.com/JDCTeam/android_frameworks_opt_telephony into HEAD
+af16491 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
+07591f8 telephony: Make sure to check whether application info is null.
+62bcb10 telephony: update tests for disableCarrierAppsUntilPrivileged API change
+
+   * hardware/qcom/keymaster/
+68fe4a7 Disable ION_HEAP_MASK_COMPATIBILITY_WA on Sony 3.10 Kernel
+
+   * kernel/samsung/alucard24/
+58b32a5 gentle_fair_sleepers and arch_power disabled by default
+ea4e2f7 i2c: core: Pick i2c bus number from dt alias if present
+395dc2c i2c: convert to idr_alloc()
+14a601e idr: reorder the fields
+4720caa idr: remove unused prototype of idr_free()
+cd7ec11 lib/idr.c: fix out-of-bounds pointer dereference
+b55dd74 idr: reduce the unneeded check in free_layer()
+8cb5968 idr: don't need to shink the free list when idr_remove()
+318a9a1 idr: fix idr_replace()'s returned error code
+5181d50 idr: fix NULL pointer dereference when ida_remove(unallocated_id)
+79aaa6a idr: fix unexpected ID-removal when idr_remove(unallocated_id)
+e37300f lib/idr.c: use RCU_INIT_POINTER(x, NULL)
+7a34842 idr: remove dead code
+8c8ce38 idr: Add new function idr_is_empty()
+44bde4b idr: print a stack dump after ida_remove warning
+45fb71d Revert "msm_rmnet_bam: Add support for IOCTL RMNET_IOCTL_DEREGISTER_DEV"
+
+   * packages/apps/Bluetooth/
+2449ee9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
+
+   * packages/apps/CarrierConfig/
+e60ee96 Merge https://github.com/JDCTeam/android_packages_apps_CarrierConfig into HEAD
+1c294ad Set voicemail's notification persistent for O2 UK
+
+   * packages/apps/Contacts/
+2089467 Contacts : remove unused CONTACT_URI_EXTRA
+201c1ff Contacts : enable cleartext traffic
+
+   * packages/apps/ContactsCommon/
+d6302ae Add lookupkey for Contact in ContactBuilder
+
+   * packages/apps/Settings/
+a71df28 Merge pull request #392 from beroid/cm-13.0
+5a01a43 Build V3.1
+d0abd7d Refactor power menu on lockscreen (2/2)
+a81e964 Fix up increasing ring tone volume preview behaviour.
+118f1d5 Settings: Update RU translations
+2238e85 Fix up increasing ring tone volume preview behaviour.
+a9f1e6c Add left QS quick pulldown (2/3)
+325bbad Longpress power lockscreen torch [2/2]
+8e692b8 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+5494dfd res: mod_version: -> ROM
+cbe56b1 device info: revamped look
+ca5a8f0 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
+
+   * packages/apps/SetupWizard/
+5e09345 Merge branch 'opt-cm-13.0' of https://github.com/JDCTeam/android_packages_apps_SetupWizard into HEAD
+
+   * packages/apps/Snap/
+4a42fc4 Snap: Add missing ISO350 to ISO arrays
+08ba343 Snap: Set some more qcom features as untranslatable
+
+   * packages/apps/SoundRecorder/
+77e037c soundrecorder: Put the menu back
+
+   * packages/apps/Trebuchet/
+3961290 Themes: Expose hard coded colors from layouts
+
+   * system/bt/
+6f8c80c Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
+61b56ba Merge pull request #1 from CyanogenMod/cm-13.0
+
+   * system/core/
+1b9107f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+5f3506b Merge pull request #2 from JDCTeam/opt-cm-13.0
+b0e1636 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_core into HEAD
+9eaa557 Add UPSTREAM
+0907595 Revert "charger_mode: Set font as 'log'"
+
+   * system/vold/
+d16d80f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
+
+   * vendor/cm/
+df14f23 Fix
+60ea30a Merge branch 'opt-cm-13.0' of https://github.com/JDCTeam/android_vendor_cm into HEAD
+9b77279 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
+
+   * vendor/cmsdk/
+948f216 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+04679a0 Add left QS quick pulldown (3/3)
+80001bf cmsdk: Fix BuildTests. Bump parcelable version.
+
+   * vendor/jdc/
+c6806a3 Merge branch 'opt-cm-13.0' of https://github.com/JDCTeam/android_vendor_jdc into HEAD
+1062ee2 build script: enable Alucard features back
+adb6e2a Merge branch 'opt-cm-13.0' of https://github.com/JDCTeam/android_vendor_jdc into HEAD
+
+   * vendor/samsung/
+0d8c9e8 (2/2)Fix for bt not turning on bug
+
+====================
+     01-19-2016
+====================
+
+
+   * build/
+3a2b79f (1/2) Unified jflte: fix device specific files permissions and context
+dacb62c Use Google Nexus Audio Files [1/3]
+
+   * cts/
+3189f36 merge in marshmallow-cts-release history after reset to marshmallow-cts-dev
+d3c154f Merge "DO NOT MEGE ANYWHERE: BUMP CTS 5.1 to R5" into lollipop-mr1-cts-dev am: c0c1c9e832  -s ours
+c0c1c9e Merge "DO NOT MEGE ANYWHERE: BUMP CTS 5.1 to R5" into lollipop-mr1-cts-dev
+c717d7e DO NOT MEGE ANYWHERE: BUMP CTS 5.1 to R5
+f3db83f Merge "DO NOT MERGE: BUMP CTS 6.0 to R3" into marshmallow-cts-dev
+989dcfb DO NOT MERGE: BUMP CTS 6.0 to R3
+
+   * device/qcom/sepolicy/
+fcabab0 Merge branch 'LA.BF.1.1.3_rb1.8' of git://codeaurora.org/device/qcom/sepolicy into cm-13.0
+
+   * device/samsung/jf-common/
+619b0a3 BoardConfig: drop OTA assert devices
+1b61652 init: set variant-based rild.libpath
+435e95f init: set device family variant
+f682323 jf: add support for SM-S975L (1/2)
+
+   * device/samsung/jflte/
+b23c80e BoardConfig: update OTA assert devices
+e54bdc9 properties: unset rild.libpath
+
+   * external/stagefright-plugins/
+6de1c90 stagefright-plugins: Skip stream with jpeg tag
+
+   * external/uicommon/
+7d9ebd3 Fix merge derp
+
+   * frameworks/av/
+e80385c audio: Update anchor time for offload playback post resume
+4486f97 nuplayer: looping playback only if it was running
+9dae27c ACodec: update native window crop rectangle
+617daaf StagefrightMetadataRetriever: correct the status flag
+f6e8c70 AudioMixer: delete reformatBuffer provider in proper order
+427887b libstagefright:Fix random memcmp crash while accessing output format.
+
+   * frameworks/base/
+b5c716f Improve Recents-View
+7787416 SystemUI: Fix copy-pasta of battery saver tile
+ae2bdcd Add enabled pre-installed carrier apps
+530f73d SystemUI: Fix copy-pasta of battery saver tile
+cded8d8 Add enabled pre-installed carrier apps
+aa4a566 Themes: Expose volume slider and thumb colors and make them work with custom images.
+0ca4524 Updated Nexus Audio Files Some of them has lower volume/quality than the version shipped with our zip and a couple are missing Thanks to @leap_aheadXDA for the reporting
+e983c4a Use Google Nexus Audio Files [2/2]
+b5dd079 SystemUI: add some tile removal hints
+627df3c SystemUI: fix lock screen tile state refresh
+9ee493a SystemUI: handle custom tile long press PendingIntents
+3a11610 SystemUI: improve qs tile layout mechanism
+6fb2c18 SystemUI: add a disabled state for Quick Tiles
+aa4b467 KeyEvent: disable back/menu keys wakeup
+
+   * frameworks/opt/telephony/
+ee0fc82 Add support for permanently enabled carrier apps
+e157bc8 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
+df7ab82 PhoneBase: Add auto-rat switching on capability changes
+e098f64 SubscriptionController: Default to DDS flexmap triggering
+44900a7 RIL: RAF: support unified device trees (1/2)
+
+   * hardware/qcom/gps/
+0e7c6a8 gps: Simplify guard makefile
+
+   * kernel/samsung/alucard24/
+0d0cd54 net: core: introduce netif_skb_dev_features
+ddf2a7c flow_keys: include thoff into flow_keys for later usage
+9a1fd73 net: core: introduce skb_probe_transport_header()
+103423f net: ip, ipv6: handle gso skbs in forwarding path
+f83eee4 netfilter: nf_conntrack_ipv6: improve fragmentation handling
+dc60627 ipv6: disable GSO on sockets hitting dst_allfrag
+d98e72e net: skb_can_coalesce returns a boolean
+df8ab3b netvm: propagate page->pfmemalloc from skb_alloc_page to skb
+db55a92 skbuff: Move definition of NETDEV_FRAG_PAGE_MAX_SIZE
+a939415 net: fix compile error of implicit declaration of skb_probe_transport_header
+8909033 skb: Propagate pfmemalloc on skb from head page only
+23afcee netvm: propagate page->pfmemalloc to skb
+9cdc175 net: skb_peek()/skb_peek_tail() cleanups
+5bc75e0 net: skb_share_check() should use consume_skb()
+0af5f9c net: compute skb->rxhash if nic hash may be 3-tuple
+b392f1d net: add skb_dst_set_noref_force
+b560963 net: Handle encapsulated offloads before fragmentation or handing to lower dev
+8a413d7 ipv4: fix path MTU discovery with connection tracking
+e7b8b61 netfilter: use IS_ENABLE to replace if defined in TRACE target
+e035c8a net-next: add dev_loopback_xmit() to avoid duplicate code
+2755637 ip: fix error handling in ip_finish_output2()
+22d2930 net: Do delayed neigh confirmation.
+44a8982 net: use consume_skb() in place of kfree_skb()
+fcca804 ipv4: Make neigh lookups directly in output packet path.
+7d209f1 ipv4: ip_output: remove inline marking of EXPORT_SYMBOL functions
+f3c8e1f Merge pull request #4 from AntaresOne/my-aospv2-6.0
+29fe31b CONFIG: net updates. Thanks to @dorimanx
+9149cec skbuff: support disabling of skb fragment cache
+e957d31 netlink: Use FIELD_SIZEOF() in netlink_proto_init().
+7f192bd netlink: change presentation of portid in procfs to unsigned
+3780241 netlink: Fix handling of error from netlink_dump().
+6799088 netlink: Don't reorder loads/stores before marking mmap netlink frame as available
+d7adc5b netlink: Always copy on mmap TX.
+8ec2b75 fix misuses of f_count() in ppp and netlink
+061c582 netlink: fix typo in net/netlink/af_netlink.c
+8d8ca2c netlink: fix error propagation in netlink_mmap()
+d3642d9 netlink: don't hold mutex in rcu callback when releasing mmapd ring
+4fcc62b NET: af_netlink for now rename to fix build. need to merge later...
+32061f0 netlink: add flow control for memory mapped I/O
+971bfd4 netlink: implement memory mapped recvmsg()
+2cd1b95 net: socket: move ktime2ts to ktime header api
+1228910 packet: minor: add generic tpacket_uhdr to access packet headers
+c58fa7d NET: SKBUFF: cleanups and function relocate.
+981e69e use skb_end_offset() in skb_try_coalesce()
+3866149 net: fix secpath kmemleak
+6c71257 net: core: let skb_partial_csum_set() set transport header
+85d840e packet: tx timestamping on tpacket ring
+a91722e net: gro: fix possible panic in skb_gro_receive()
+c813b30 net: gro: selective flush of packets
+914898e skbuff: Fix skb checksum partial check.
+842c940 skbuff: Fix skb checksum flag on skb pull
+daf6bc5 fuse: fix pipe_buf_operations
+44c3783 net: splice: fix __splice_segment()
+120581d net: splice: avoid high order page splitting
+5e3b7c6 net: Copy ndisc_nodetype from original skb in skb_clone
+7b8bd3a tunneling: Capture inner mac header during encapsulation.
+aa35ea3 net: Add skb_headers_offset_update helper function.
+2d8f5fb net: Fix inner_network_header assignment in skb-copy.
+5e4337e skb: api to report errors for zero copy skbs
+63d4a19 skb: report completion status for zero copy skbs
+848fe18 net: use bigger pages in __netdev_alloc_frag
+52f956d net: introduce skb_transport_header_was_set()
+ff8ba32 net: Add support for hardware-offloaded encapsulation
+98ed799 net: fix sk_buff head without data area
+4491fb0 netlink: implement memory mapped sendmsg()
+4d567c8 netlink: don't orphan skb in netlink_trim()
+7e2fc07 netlink: add mmap'ed netlink helper functions
+4d96e8e netlink: mmaped netlink: ring setup
+b2afb81 net: prepare netlink code for netlink diag
+b1a635f netlink: add netlink_skb_set_owner_r()
+2bdeb6e netlink: add symbolic value for congested state
+0cda927 netlink: rename ssk to sk in struct netlink_skb_params
+97063b7 net: add function to allocate sk_buff head without data area
+1124420 skbuff: make __kmalloc_reserve static
+3b7ea57 net: skbuff: fix compile error in skb_panic()
+f50b726 skbuff: create skb_panic() function and its wrappers
+5a8ea1a netvm: allow the use of __GFP_MEMALLOC by specific sockets
+f53a131 net: introduce sk_gfp_atomic() to allow addition of GFP flags depending on the individual socket
+2fb18f7 tcp: tcp_make_synack() consumes dst parameter
+c0385b0 ipv6: tcp: dont drop packet but consume it
+d0681db tcp: tcp_make_synack() can use alloc_skb()
+15517ac netvm: allow skb allocation to use PFMEMALLOC reserves
+1e9b0f7 skbuff: convert to skb_orphan_frags
+2f07e30 skbuff: Use correct allocation in skb_copy_ubufs
+ced6d96 net: respect GFP_DMA in __netdev_alloc_skb()
+b3ea583 net: Update alloc frag to reduce get/put page usage and recycle pages
+7bdd4a8 net/core: fix kernel-doc warnings
+ed34204 net: Update kernel-doc for __alloc_skb()
+c00d078 net: introduce skb_try_coalesce()
+3e40cd4 net: introduce netdev_alloc_frag()
+74709a7 net: netdev_alloc_skb() use build_skb()
+268d50b net: Convert net_ratelimit uses to net_<level>_ratelimited
+b6dba4d skb: Add inline helper for getting the skb end offset from head
+0d68e83 skb: Drop "fastpath" variable for skb_cloned check in pskb_expand_head
+5bf44b0 skb: Drop bad code from pskb_expand_head
+04545cd skb: Add skb_head_is_locked helper function
+4a79982 tcp: move stats merge to the end of tcp_try_coalesce
+b3ef2e5 tcp: Move code related to head frag in tcp_try_coalesce
+da49ed0 tcp: Fix truesize accounting in tcp_try_coalesce
+6e50680 net: Fix truesize accounting in skb_gro_receive()
+39ba3bf net: Stop decapitating clones that have a head_frag
+eb2b1c0 net: take care of cloned skbs in tcp_try_coalesce()
+45f9101 tcp: makes tcp_try_coalesce aware of skb->head_frag
+cb39c6e tcp: tcp_try_coalesce returns a boolean
+5c663d1 tcp: introduce tcp_try_coalesce
+dd6f612 net: makes skb_splice_bits() aware of skb->head_frag
+b3ca417 net: make GRO aware of skb->head_frag
+86acf8d net: gro: GRO_MERGED_FREE consumes packets
+514c81a net: allow skb->head to be a page fragment
+d62662a net: make spd_fill_page() linear argument a bool
+6aa9a9a net: Use bool and remove inline in skb_splice_bits() code.
+babfff3 net: speedup skb_splice_bits()
+7610b88 net: allow better page reuse in splice(sock -> pipe)
+cebf098 net: dont drop packet but consume it
+86238a5 net: cleanup unsigned to unsigned int
+2cc00f1 net: remove k{un}map_skb_frag()
+
+   * packages/apps/Bluetooth/
+b9f0d69 Merge branch 'LA.BF.1.1.3_rb1.8' of git://codeaurora.org/platform/packages/apps/Bluetooth into cm-13.0
+
+   * packages/apps/Browser/
+250ebb8 Themes: Expose hard coded colors and styles from layouts
+
+   * packages/apps/CarrierConfig/
+f84e692 CarrierService: support unified device trees (2/2)
+
+   * packages/apps/DeskClock/
+9d09dad Allow theming numpad
+
+   * packages/apps/Messaging/
+2b515af Messaging: Implement option for swipe to delete.
+
+   * packages/apps/Settings/
+31dad1c Merge pull request #1 from Pixelase/cm-13.0
+653a845 Settings: safe headset volume option (2 of 2)
+aaf3d92 Settings: Update RU translations
+7c09a30 Settings: update FOTA link to be implicit
+2519019 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+ecf1797 deviceinfo: add ROM logo
+
+   * packages/apps/SetupWizard/
+5438384 JDC'ify
+073e9c9 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
+0a54e99 Remove CM issue report
+
+   * packages/apps/Snap/
+98ebf87 SnapdragonCamera: Remove 'off' option for antibanding
+48408c9 SnapdragonCamera: Fix overly-aggressive auto rotation
+6411b0a SnapdragonCamera: Clarify antibanding settings
+b5de271 SnapdragonCamera: Add option to control antibanding in camcorder
+
+   * packages/apps/Trebuchet/
+4ff9b7d Trebuchet: Don't animate open folder if already open
+6732817 Trebuchet: Fix landscape spacing issue
+
+   * prebuilts/cmsdk/
+7aa9190 prebuilts/cmsdk: Update future-release maven artifact.
+
+   * system/bt/
+d4cd181 Merge branch 'LA.BF.1.1.3_rb1.8' of git://codeaurora.org/platform/system/bt into cm-13.0
+
+   * system/core/
+e406b65 charger_mode: Set font as 'log'
+ebbecea init: import our extra init script
+
+   * system/vold/
+fb73051 Fix mounting ext4 adopted storage
+30c6a38 Fix mounting ext4 adopted storage
+
+   * vendor/cm/
+9d7b46d Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+3fc63a1 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
+d799806 Use Google Nexus Audio Files [3/3]
+6dbaf05 common: delete CM bootanimation
+976699e common: custom ROM name
+026b942 vendor: remove default CM wallpaper
+7cea4dc init.local: remove setprop ro.radio.noril
+c3c1b45 common: enable superuser by default
+927bb97 common: drop CMUpdater package
+bd94a13 common: set cm_version as optimized
+b1ce4cb common: disable ADB authentication
+a68cb33 common: remove signature compatibility validation script
+67f9e7a vendor/cm: Bump cmsdk platform version.
+f0a6f1e Fixed mmm For Maven APK
+197a9bb Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
+fc52e70 cm: Update maintainers
+
+   * vendor/cmsdk/
+9202e0d Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+735333c cmsdk: Add new version code to the sdkmap.
+24f2bb4 cmsdk: Introduce Elderberry, api level 5.
+ebf0f55 cmsdk: Finalize DragonFruit (api level 4).
+8d49200 CustomTiles: add a custom long press PendingIntent
+
+   * vendor/jdc/
+be46d61 common: add back changelog
+9649b1c overlay: new default wallpaper
+e35244d common: ship STweaks
+387f865 build script: override selinux cmdline property
+
+   * vendor/samsung/
+603b3c4 lib: prebuilt libcnefeatureconfig/libstlport
+084331e jf: vendor: unify variants
+
+====================
      01-18-2016
 ====================
 
+
+   * build/
+0980488 Drop QuickSearchBox
+a15fd31 build: Add Flag to Use Oracle JDK on Codefire
+ed0f566 Create 0 compression ratio jar files
+64e2ad9 makefile: custom OTA package name
+1bc5f53 releasetools: add real-time installation infos
+bb4d804 releasetools: add JDCTeam ASCII Art & ROM name
+d430cc1 releasetools: add support for custom format script
+6f183cb edify_generator: mount partitions as for Lollipop
+7b841f3 releasetools: do not dump fingerprint
+be1cc38 releasetools: disable OTA key signature validation
+0c782ed Always disable block-based OTA
+
+   * device/samsung/jf-common/
+b9a252d jf: add support for SGH-S970G (1/2)
+7236c66 releasetools: general update
+4a170c8 init: cosmetic jflteatt model property fix
+683da6d init: build vendor init as C++
+7f4b1b0 init: update product name
+6761e73 init_jflte: update to match opt-cm-12.1 branch
+1eee6df releasetools: update Loki for MultiROM compatibility
+4113059 jf: set SELinux permissive
+8f66be0 jf: add F2FS for /system
+78e1ed7 jf: re-unify variants
 
    * external/ffmpeg/
 a86ba66 Merge branch 'release/2.8' of https://github.com/FFmpeg/FFmpeg into cm-13.0
@@ -13,6 +694,8 @@ d911c8f gello-build: remove dead code
 58d16c1 gello-build: streamline flag parsing
 
    * frameworks/base/
+1d07f46 Disable some debugging
+5a3c5f4 Framework: safe headset volume option (1 of 2)
 8f2df3d FWB: QS shade transparency (1/2)
 bb64dd5 Revert "Notifications: Custom colors, (1/2):"
 c8a3eca base: correctly save app notification config
@@ -22,164 +705,92 @@ e767bd0 Themes: Call recreateTheme when theme changed
 8aa54e4 SysUI: Fix keyguard wallpaper not updating
 02fd8b0 SysUI: Pass themed resources on to NavBarEditor
 3a77bd4 Themes: Fix applying theme for notifications
+f15ce7a SystemUI: Add battery saver tile (1/2)
+a7e5f92 SystemUI: Add heads up tile (1/2)
+9848b97 Themes: Call recreateTheme when theme changed
+5b5e5de SysUI: Fix keyguard wallpaper not updating
+b277145 SysUI: Pass themed resources on to NavBarEditor
+12245b8 Themes: Fix applying theme for notifications
 
    * kernel/samsung/Ramdisk/
+0d55171 20160118
 3e3a2f9 20160117
 
    * kernel/samsung/alucard24/
-c62ac20 BACKPORT: arm: don't open-code ptrace_report_syscall() (part deux)
-908e429 UPSTREAM: ARM: 7475/1: sys_trace: allow all syscall arguments to be updated via ptrace
-d138d41 BACKPORT: ARM: 7474/1: get rid of TIF_SYSCALL_RESTARTSYS
-621a2ea BACKPORT: ARM: 7473/1: deal with handlerless restarts without leaving the kernel
-42bec57 BACKPORT: ARM: 7472/1: pull all work_pending logics into C function
-28cd105 UPSTREAM: arm: don't open-code ptrace_report_syscall()
-3c7bab9 UPSTREAM: arm: bury unused _TIF_RESTORE_SIGMASK
-99c37c6 UPSTREAM: arm: remove unused restart trampoline
-75a4bec UPSTREAM: arm: if we get into work_pending while returning to kernel mode, just go away
-51b71a4 BACKPORT: arm: don't call try_to_freeze() from do_signal()
-4836e7a UPSTREAM: arm: trim _TIF_WORK_MASK, get rid of useless test and branch...
-1e1bbe1 UPSTREAM: arm: missing checks of __get_user()/__put_user() return values
-954bfd2 ARM: 7470/1: Revert "7443/1: Revert "new way of handling ERESTART_RES… …TARTBLOCK""
-b985cd9 net: udp: Adjust UDP socket state for encapsulation sockets
-bc05cca USB: gadget: android: Fix checkpatch related errors
-2b77dbb USB: gadget: android: Integrate f_midi USB MIDI gadget driver part deux
-12257cb msm_rmnet_bam: Remove watchdog_timeo
-26bc65d msm_rmnet_bam: Add support for IOCTL RMNET_IOCTL_DEREGISTER_DEV
-d3290c8 net: msm_rmnet: Add an IOCTL definition to deregister a net device
-daf674c F2FS: merge more changes from 4.5.y that now can be used with my tree.
-c8b0544 list: introduce list_last_entry(), use list_{first,last}_entry()
-0e0bc5f list: change list_for_each_entry*() to use list_*_entry()
-a5ff015 LLIST: add llist_for_each_entry_safe for F2FS.
-78468b7 llists: move llist_reverse_order from raid5 to llist.c
-9245869 f2fs: should unset atomic flag after successful commit
-3a04801 f2fs: fix wrong memory condition check
-4d2801c f2fs: monitor the number of background checkpoint
-c87ddd4 f2fs: detect idle time depending on user behavior
-6e98998 f2fs: introduce time and interval facility
-c8320f5 f2fs: skip releasing nodes in chindless extent tree
-621eb0f f2fs: use atomic type for node count in extent tree
-7b6a111 f2fs: recognize encrypted data in f2fs_fiemap
-1cbd895 f2fs: clean up f2fs_balance_fs
-1dcf94a f2fs: remove redundant calls
-ef2c7cb f2fs: avoid unnecessary f2fs_balance_fs calls
-a5b2601 f2fs: check the page status filled from disk
-9040215 f2fs: introduce __get_node_page to reuse common code
-d5710cf f2fs: check node id earily when readaheading node page
-f78e3ac f2fs: read isize while holding i_mutex in fiemap
-e8b7fdf Revert "f2fs: check the node block address of newly allocated nid"
-fe8d7b1 f2fs: cover more area with nat_tree_lock
-1e08ae5 f2fs: introduce max_file_blocks in sbi
-43983fb f2fs crypto: check CONFIG_F2FS_FS_XATTR for encrypted symlink
-043e5e6 f2fs: introduce zombie list for fast shrinking extent trees
-bc9bcf8 f2fs: monitor zombie_tree count
-23e0d55 f2fs: use IPU for fdatasync
-9f512c8 f2fs: write pending bios when cp_error is set
-a48d705 f2fs: remove f2fs_bug_on in terms of max_depth
-02d7427 f2fs: fix f2fs_ioc_abort_volatile_write
-23e0fe8 f2fs: fix to skip recovering dot dentries in a readonly fs
-6a82450 f2fs: load largest extent all the time
-425880c f2fs: use i_size_read to get i_size
-a74182f f2fs: early check broken symlink length in the encrypted case
-56ce0bd f2fs: clean up f2fs_ioc_write_checkpoint
-ff6ff7f f2fs: add a max block check for get_data_block_bmap
-7d6bcba f2fs: fix bugs and simplify codes of f2fs_fiemap
-cd3fea7 f2fs: let user being aware of IO error
-3bada8d f2fs: add missing f2fs_balance_fs in __recover_dot_dentries
-51ad48e f2fs: declare static function
-55f6fcc f2fs: avoid f2fs_lock_op in f2fs_write_begin
-3dab6c4 f2fs: return early when trying to read null nid
-fc25883 f2fs: introduce prepare_write_begin to clean up
-a31afc0 f2fs: don't convert inline inode when inline_data option is disable
-ed947ec f2fs: report error of do_checkpoint
-80294b0 f2fs: call f2fs_balance_fs only when node was changed
-cfbcc12 f2fs: reduce covered region of sbi->cp_rwsem in f2fs_map_blocks
-03a70ce f2fs: record node block allocation in dnode_of_data
-2956e3f f2fs: avoid unnecessary f2fs_gc for dir operations
-871d23c f2fs: check inline_data flag at converting time
-edb9f83 f2fs: speed up shrinking extent tree entries
-b9dc244 f2fs: use atomic variable for total_extent_tree
-acad2c7 f2fs: add a tracepoint for sync_dirty_inodes
-8feb390 f2fs: optimize the flow of f2fs_map_blocks
-ff42c51 f2fs: support data flush in background
-39551cc f2fs: stat dirty regular/symlink inodes
-184dd3e f2fs: introduce new option for controlling data flush
-7efa539 f2fs: record dirty status of regular/symlink inode
-185f269 f2fs: introduce __f2fs_commit_super
-037d9b0 f2fs: relocate tracepoint of write_checkpoint
-6b061ac f2fs: don't grab super block buffer header all the time
-4113277 f2fs: backup raw_super in sbi
-1dea4a3 f2fs: fix to reset variable correctlly
-ed31936 f2fs: introduce __remove_dirty_inode
-0c7181d f2fs: introduce dirty list node in inode info
-3a253d8 f2fs: rename {add,remove,release}_dirty_inode to {add,remove,release}_ino_entry
-5ecb264 f2fs: do more integrity verification for superblock
-4b7977a f2fs: fix to update variable correctly when skip a unmapped block
-41ae86f f2fs: write only the pages in range during defragment
-611db22 f2fs: clean up node page updating flow
-3c3bca4 f2fs: use lock_buffer when changing superblock
-0367c18 f2fs: refactor f2fs_commit_super
-f779a99 f2fs: enhance the bit operation for SSR
-60624bb f2fs: it's umode_t, not mode_t...
-3feeaf9 f2fs: fix to convert inline inode in ->setattr
-809a3c0 f2fs: use sbi->blocks_per_seg to avoid unnecessary calculation
-7111965 f2fs: kill f2fs_drop_largest_extent
-924cba2 f2fs: clean up argument of recover_data
-59fef8a f2fs: clean up code with __has_cursum_space
-b15821f f2fs: clean up error path in f2fs_readdir
-efe29f2 f2fs: do not recover from previous remained wrong dnodes
-3654e5b f2fs: avoid deadlock in f2fs_shrink_extent_tree
-20e0087 f2fs: fix to report error in f2fs_readdir
-1fb9d59 f2fs: clear page uptodate when dropping cache for atomic write
-ab62ad2 f2fs: optimize __find_rev_next_bit
-9427485 f2fs: fix to remove directory inode from dirty list
-2f176e7 f2fs: fix to enable missing ioctl interfaces in ->compat_ioctl
-198944f f2fs: fix memory leak of kobject in error path of fill_super
-8e9273a f2fs: support file defragment
-48f1088 f2fs: commit atomic written page in LFS mode
-445f60c f2fs: report error of f2fs_create_root_stats
-f46afd7 fs/f2fs/namei.c: remove unnecessary new_valid_dev() check
-690c0da f2fs: fix to skip shrinking extent nodes
-aaa537f f2fs: fix error path of ->symlink
-5f57ae3 f2fs: fix to clear GCed flag for atomic written page
-aff31d3 f2fs: don't need to submit bio on error case
-dee142a f2fs: fix leakage of inmemory atomic pages
-2a918eb ARM: kernel setup: clean dual seq_printf for Proccesor Rev. got one below in this function.
-ba28498 MM: update UKSM changes after commit 330c3f50b67a2420aaf824631601c01ea43a95e2
-ea7a124 zram/zcomp: do not zero out zcomp private pages
-289b9bb zram: pass gfp from zcomp frontend to backend
-1b315f5 zram: try vmalloc() after kmalloc()
-8acebcf zram/zcomp: use GFP_NOIO to allocate streams
-ca9b386 mm: microoptimize zonelist operations
-0fac05c mm: memcontrol: micro-optimize mem_cgroup_split_huge_fixup()
-9f99e23 mm/vmacache: inline vmacache_valid_mm()
-727ecb6 mm,vmacache: optimize overflow system-wide flushing
-4aac9ee mm: don't pointlessly use BUG_ON() for sanity check
-82eb537 mm: per-thread vma caching
-ef02840 mm/msync.c: sync only the requested range in msync()
-122d09c mm: optimize put_mems_allowed() usage
-28f3488 timekeeping: Move clock sync work to power efficient workqueue
-476ed65 rcu: Move SRCU grace period work to power efficient workqueue
-257af74 unix: convert printks to pr_<level>
-3332d7d af_unix: fixes!
-555556a af_unix: speedup /proc/net/unix
-672f710 gadget: composite: Fix crash seen when SS descriptor is not available
-2100c65 xt_qtaguid: fix a race condition in if_tag_stat_update
-13c8760 nf: xt_qtaguid: fix handling for cases where tunnels are used.
-595e9cd xt_qtaguid: Use sk_callback_lock read locks before reading sk->sk_socket
-ec7bc52 netfilter: xt_qtaguid: Protect iface list access with necessary lock
-45480b0 ARM: 8430/1: use default ioremap alignment for SMP or LPAE
-e1d8a13 ARM: 8432/1: move VMALLOC_END from 0xff000000 to 0xff800000
-fa3b74e ARM: 8023/1: remove remnants of the static DMA mapping
-db27fcf  msm: msm_bus: Provide valid input pointer argument
-347e001 net: socket: make sure refs are not released on fd before calling sockev
-f7292cd net: socket: Added notifier chains for socket administrative functions
-aba4b79 Revert "net: socket: make sure refs are not released on fd before calling sockev"
-8b44781 Revert "net/socket: "fixed net: socket: make sure refs are not released on fd before calling sockev" commit!"
+c8921c4 zram: don't call idr_remove() from zram_remove()
+a2b6ac1 F2FS: code style cleanups.
+c2bb7bf f2fs: Fix a system panic caused by f2fs_follow_link
+d212054 usb: use %*pb[l] to print bitmaps including cpumasks and nodemasks
+0e5286e scsi: use %*pb[l] to print bitmaps including cpumasks and nodemasks
+16dc3ee net: use %*pb[l] to print bitmaps including cpumasks and nodemasks
+b124533 workqueue: use %*pb[l] to format bitmaps including cpumasks and nodemasks
+180cff4 percpu: use %*pb[l] to print bitmaps including cpumasks and nodemasks
+aaa7ad3 sched: use %*pb[l] to print bitmaps including cpumasks and nodemasks
+e14aa09 drivers/base: use %*pb[l] to print bitmaps including cpumasks and nodemasks
+ff5a074 mm: fix off-by-one bug in print_nodes_state()
+84254d5 input: use %*pb[l] to print bitmaps including cpumasks and nodemasks
+f44a3f7 BITMAP: hmm restore description. it's exist, the __bitmap_empty is not.
+575b1c3 CLEANUP __bitmap_empty + __bitmap_full and replace in code.
+9e8ac4e lib: add glibc style strchrnul() variant
+e356c29 linux/bitmap: Force inlining of bitmap weight functions
+db1e4b2 linux/bitmap.h: improve BITMAP_{LAST,FIRST}_WORD_MASK
+ee6f629 BITMAP: merge descriptions
+148e1f9 lib/bitmap.c: bitmap_[empty,full]: remove code duplication
+125f5c2 lib/vsprintf: implement bitmap printing through '%*pb[l]'
+fda6ecf vsprintf: add support of '%*ph[CDN]'
+aee570e lib: bitmap: remove redundant code from __bitmap_shift_right
+4638a7c lib: bitmap: fix typo in kerneldoc for bitmap_pos_to_ord
+e36003c lib/bitmap.c: elide bitmap_copy_le on little-endian
+e726043 lib/bitmap.c: change prototype of bitmap_copy_le
+30fb34d lib: bitmap: micro-optimize bitmap_allocate_region
+187cbb5 lib/bitmap.c: change parameters of bitmap_fold to unsigned
+5994d71 lib: bitmap: change parameter of bitmap_*_region to unsigned
+f24ed7c lib/bitmap.c: update bitmap_onto to unsigned
+484b815 lib/bitmap.c: make the bits parameter of bitmap_remap unsigned
+33115ee lib/bitmap.c: simplify bitmap_ord_to_pos
+77505a6 lib/bitmap.c: simplify bitmap_pos_to_ord
+adef89f lib: bitmap: simplify bitmap_parselist
+e2d6fa0 lib/bitmap.c: bitmap_parselist can accept string with whitespaces on head or tail
+7cd18fe lib/bitmap.c: fix a special string handling bug in __bitmap_parselist
+bba9ff2 bitmap: remove explicit newline handling using scnprintf format string
+6656b44 bitmap: use %*pb[l] to print bitmaps including cpumasks and nodemasks
+20fbde1 cpumask: factor out show_cpumap into separate helper function
+b050d35 lib/bitmap.c: correct a code style and do some, optimization
+9539fd5 lib: bitmap: make the start index of bitmap_clear unsigned
+fee3c47 lib: bitmap: make nbits parameter of bitmap_full unsigned
+76ac7c0 lib: bitmap: make nbits parameter of bitmap_empty unsigned
+b38239d lib: bitmap: make the start index of bitmap_set unsigned
+a596f92 lib: bitmap: make nbits parameter of bitmap_weight unsigned
+73a17c1 lib: bitmap: make nbits parameter of bitmap_subset unsigned
+5b29f17 lib: bitmap: make nbits parameter of bitmap_intersects unsigned
+82c64c2 lib: bitmap: add missing mask in bitmap_andnot
+0d627f5 lib: bitmap: add missing mask in bitmap_and
+2e4327b lib: bitmap: make nbits parameter of bitmap_{and,or,xor,andnot} unsigned
+9e5d93b lib: bitmap: make nbits parameter of bitmap_equal unsigned
+117cbbb lib: bitmap: remove unnecessary mask from bitmap_complement
+11c9a1e lib: bitmap: eliminate branch in __bitmap_shift_right
+aa6ddf6 lib: bitmap: yet another simplification in __bitmap_shift_right
+3b6c14d lib: bitmap: remove redundant code from __bitmap_shift_left
+d53c152 lib: bitmap: eliminate branch in __bitmap_shift_left
+3381f56 lib: bitmap: change bitmap_shift_left to take unsigned parameters
+1505583 lib: bitmap: change bitmap_shift_right to take unsigned parameters
+e649793 lib: bitmap: add missing mask in bitmap_shift_right
+467ee91 lib: bitmap: make nbits parameter of bitmap_complement unsigned
+81fa5ed linux/nodemask.h: update bitmap wrappers to take unsigned int
+08f4097 lib/bitmap.c: more signed->unsigned conversions
+0f80463 cpumask, nodemask: implement cpumask/nodemask_pr_args()
+cb820f0 mm, oom: ensure memoryless node zonelist always includes zones
+b245d96 mm, oom: ensure sysrq+f always passes valid zonelist
+1f537e0 numa: Mark __node_set() as __always_inline
+9685d90 proc: add a reschedule point in proc_readfd_common()
+14fdc86 sensors: global var: add S970 & S975
 
    * packages/apps/Dialer/
 bd62aa8 Lookup: make people lookups work without location
 
    * packages/apps/Settings/
+f39ea8d Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
+f1d72a6 Settings: safe headset volume option (2 of 2)
 bb0c14c Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
 6629bd7 Merge pull request #388 from beroid/cm-13.0
 94fa642 Settings: Update RU translations
@@ -188,391 +799,18 @@ d9ba16e Settings: QS shade transparency (2/2)
 cf8ade6 Notification drawer: Custom clear all icon color, (2/2):
 5f5f02e Revert "Notifications: Custom colors, (2/2):"
 e87ab5b Allow launching notification manager settings externally
+f19108b Allow launching notification manager settings externally
 
-   * packages/providers/ThemesProvider/
-5756a99 Fix blank WiFi and signal icon previews
-
-   * system/vold/
-9c26580 vold ext4/f2fs: do not use dirsync if we're mounting adopted storage
-926d9ba Add UPSTREAM again
-5786ce6 Revert "Merge https://github.com/temasek/android_system_vold into HEAD"
-ead1e25 vold ext4/f2fs: do not use dirsync if we're mounting adopted storage
-2d75c38 Revert "vold ext4/f2fs: do not use dirsync if we're mounting adopted storage"
-f2e6a29 Revert "Revert "vold ext4/f2fs: do not use dirsync if we're mounting adopted storage""
-66bf860 Revert "vold ext4/f2fs: do not use dirsync if we're mounting adopted storage" Doubled This reverts commit 4c867ad2d89a187e20c587f968bd575388f5280a.
+   * packages/apps/Snap/
+860c1f5 Snap: Enlarge the saving queue size to 60M
 
    * vendor/cmsdk/
 0295218 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 5400b2f cmsdk: Add battery saver tile (2/2)
 55cb123 cmsdk: Add heads up tile (2/2)
 
-====================
-     01-17-2016
-====================
-
-
-   * device/samsung/jflte/
-39a9aaa Merge https://github.com/AOSP-JF-MM/platform_device_samsung_jflte into HEAD
-
-   * external/uicommon/
-3e92fbe Don't intercept onTap event
-5ca66e4 Add a simple SnackBar that doesn't rely on AppCompat
-
-   * frameworks/opt/telephony/
-e57b9f3 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
-
-   * kernel/samsung/Ramdisk/
-f42fbe2 Updated battery and extreme battery profiles!
-
-   * packages/apps/Settings/
-b6a8fb7 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-0c1ce9c Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
-
-   * system/vold/
-c0b1085 Merge https://github.com/temasek/android_system_vold into HEAD
-
-   * vendor/cm/
-4b7f315 Merge https://github.com/temasek/android_vendor_cm into HEAD
-
-====================
-     01-16-2016
-====================
-
-
-   * external/ffmpeg/
-b8fa3ff avcodec/wavpackenc: print channel count in av_log call
-0639289 configure: bump copyright year to 2016
-e303ca3 Update for 2.8.5
-28f89bc avformat/hls: Even stricter URL checks
-23b903a avformat/hls: More strict url checks
-4676e20 avcodec/pngenc: Fix mixed up linesizes
-0c5a71f avcodec/pngenc: Replace memcpy by av_image_copy()
-07da255 swscale/vscale: Check that 2 tap filters are bilinear before using bilinear code
-be9b893 swscale: Move VScalerContext into vscale.c
-cdac68f swscale/utils: Detect and skip unneeded sws_setColorspaceDetails() calls
-1fd9556 swscale/yuv2rgb: Increase YUV2RGB table headroom
-c781a1e swscale/yuv2rgb: Factor YUVRGB_TABLE_LUMA_HEADROOM out
-b7d54d6 avformat/hls: forbid all protocols except http(s) & file
-90c2256 avformat/aviobuf: Fix end check in put_str16()
-f459afd avformat/asfenc: Check pts
-d408261 avcodec/mpeg4video: Check time_incr
-d7f7586 avcodec/wavpackenc: Check the number of channels
-f05e0e7 avcodec/wavpackenc: Headers are per channel
-e5567f2 avcodec/aacdec_template: Check id_map
-b8382a1 avcodec/dvdec: Fix "left shift of negative value -254"
-9cad208 avcodec/g2meet: Check for ff_els_decode_bit() failure in epic_decode_run_length()
-34e06ce avcodec/mjpegdec: Fix negative shift
-df4ee16 avcodec/mss2: Check for repeat overflow
-cb4ba74 avformat: Add integer fps from 31 to 60 to get_std_framerate()
-d79b6dd avformat/ivfenc: fix division by zero
-3686155 avcodec/mpegvideo_enc: Clip bits_per_raw_sample within valid range
-3fb97a0 avfilter/vf_scale: set proper out frame color range
-6457cd1 avcodec/motion_est: Fix mv_penalty table size
-aee9aa9 avcodec/h264_slice: Fix integer overflow in implicit weight computation
-14c63dc swscale/utils: Use normal bilinear scaler if fast cannot be used due to tiny dimensions
-709abc7 avcodec/put_bits: Always check buffer end before writing
-83c0df9 mjpegdec: extend check for incompatible values of s->rgb and s->ls
-0a6324f swscale/utils: Fix intermediate format for cascaded alpha downscaling
-2f65366 avformat/mov: Update handbrake_version threshold for full mp3 parsing
-
-   * external/gello_build/
-5550f56 gello-build: add clean build
-67205fc gello-build: we don't support all those flags anymore
-fb02913 gello-build: ignore .gclient_entries
-332b650 gello-build: unbreak first-time usage
-
-   * external/uicommon/
-b0a0872 Revert "Add a simple SnackBar that doesn't rely on AppCompat"
-
-   * frameworks/base/
-1bb785d Keyguard: Clarify error message on bad input length.
-630eb4b SystemUI: Update recents memorybar on recents clear all
-f7495c4 Include color picker, (1/2)
-786f738 SysUI: Clean up objects when recreating statusbar
-2fe4549 SettingsProvider: Force aosp upgrade path from 12.1.
-e793581 SysUI: Use Objects.equals() for comparing components
-dc975fe SysUI: Fix notification panel alignment after theme change
-bc7da55 policy: disable EdgeGestureService
-a4c194e allow GET_ACCOUNTS_PRIVELEGED to be whitelisted
-
-   * kernel/samsung/alucard24/
-c5a59d7 net/socket: "fixed net: socket: make sure refs are not released on fd before calling sockev" commit!
-d0f2ce7 CONFIG: update ARCH_MMAP_RND_BITS
-67d32f1  rpm-smd: Raise priority of thread waiting for SMD buffer
-55f4a1d rpm-smd: Add a check to validate the rpm message length
-c5780a3  qcom: rpm-smd: Add NULL check for input data variable
-e604822 arm: mm: support ARCH_MMAP_RND_BITS
-067b42e mm: mmap: Add new /proc tunable for mmap_base ASLR
-4403ce9 Revert "arm: mm: support ARCH_MMAP_RND_BITS."
-2907f36 Revert "mm: mmap: Add new /proc tunable for mmap_base ASLR."
-c26b84a seccomp: cap SECCOMP_RET_ERRNO data to MAX_ERRNO
-681085e seccomp: Make syscall skipping and nr changes more consistent
-4a6676b net: socket: make sure refs are not released on fd before calling sockev
-7b1137d include/linux/compiler-gcc.h: improve __visible documentation
-77d610e include/linux/compiler-gcc.h: hide assume_aligned attribute from sparse
-38ab01d compiler.h: add support for function attribute assume_aligned
-e0c7e41 compiler-gcc: integrate the various compiler-gcc[345].h files
-246e486 compiler/gcc4+: Remove inaccurate comment about 'asm goto' miscompiles
-04c9feb gcc4: disable __compiletime_object_size for GCC 4.6+
-39ef79a compiler/gcc4: Make quirk for asm_volatile_goto() unconditional
-97c4276 compiler-gcc{3,4}.h: Use GCC_VERSION macro
-70522ac compiler-gcc4.h: Reorder macros based upon gcc ver
-be4b9fd __UNIQUE_ID()
-185c9f7 byteorder: allow arch to opt to use GCC intrinsics for byteswapping
-a85c0af compiler-gcc4.h: correct verion check for __compiletime_error
-2d70939 compiler.h: add __visible
-c1ac188 compiler-gcc.h: neatening
-a685a40 ftrace: Make all inline tags also include notrace
-dcf8eae compiler: introduce __alias(symbol) shortcut
-f5da176 lib: make memzero_explicit more robust against dead store  elimination
-b5f230f lib: memzero_explicit: use barrier instead of OPTIMIZER_HIDE_VAR
-75c556f kasan: fix kmemleak false-positive in kasan_module_alloc()
-0806cf3  android: binder: fix binder mmap failures
-649a414 kasan, module: move MODULE_ALIGN macro into <linux/moduleloader.h>
-0021d33 kasan, module, vmalloc: rework shadow allocation for modules
-c6dd23b kasan: enable instrumentation of global variables
-ad8979f x86_64: add KASan support
-f126753 module: fix types of device tables aliases
-a32d24b kmemleak: disable kasan instrumentation for kmemleak
-c1e0ca9 x86_64: kasan: add interceptors for memset/memmove/memcpy functions
-64c68ae mm: slub: add kernel address sanitizer support for slub allocator
-b472c9b mm: slub: introduce metadata_access_enable()/metadata_access_disable()
-9837c85 mm: slub: introduce virt_to_obj function
-7f0fdd9 mm: page_alloc: add kasan hooks on alloc and free paths
-0d5352c kasan: disable memory hotplug
-2196db5 kasan: add kernel address sanitizer infrastructure
-a2ff081 usb: gadget: android: Use 1024 bytes as MIDI buffer size
-4ee8715 sys: Bail out reboot if already triggered.
-90d1b6a kernel: Add reboot_in_progress
-3db3a1e cpuidle: kick all cpu after idle handler installed
-d7bbb51 arm: idle: add missing need_resched check
-4cd6297 fs: fat: move fat_truncate_blocks to unlink
-
-   * packages/apps/ContactsCommon/
-b88149f Add required permission to read vcf from gmail
-
-   * packages/apps/LockClock/
-ff1cf25 LockClock : Update to v23 + runtime permissions
-
-   * packages/apps/OmniSwitch/
-bb1d62c Merge pull request #6 from Mai19930513/cm-13.0
-14997d4 add zh-rCN translation
-
-   * packages/apps/Settings/
-79097e0 Merge pull request #387 from beroid/cm-13.0
-996bdf1 Settings: Update RU translations
-2303408 Merge pull request #386 from Mai19930513/cm-13.0
-c0beb7b update zh-rCN translation
-39deb82 Color picker: Enable alpha slider as default
-9344a34 Include color picker, (2/2):
-c4291fa Revert "Add marginov color picker"
-4f8f5c4 Revert "Settings: show warning in lock screen settings when disabled by qs"
-bc60346 Support multiple SAR values, separate args list with ','
-faa6be8 Notifications: Custom colors, (2/2):
-
-   * packages/apps/Snap/
-a676e15 Revert "Camera: Propagate power mode selection from UI to lower layers."
-44cfc31 Don't needlessly make menu button larger than the other toggle buttons.
-3b96d32 Snap: Set some qcom features as untranslatable
-d8420e3 Drop new focus indicator into Camera2.
-db27186 Snap: Actually select the highest quality video by default
-
-   * packages/apps/Trebuchet/
-ab66f21 Trebuchet: Fix NPE when app search controller is off
-
-   * system/vold/
-6cfcaf9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
-78f24b1 vold ext4/f2fs: do not use dirsync if we're mounting adopted storage
-
-   * vendor/cm/
-a2b164d Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-04864b1 Fixed Maven Artifactory to work with jack
-
-   * vendor/cmsdk/
-9f1bfdb Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-cf3f38c cmsdk: Add CYANOGENMOD_VERSION constant.
-969cda0 cmsdk/tests: Temp hack to fix `mka` builds.
-
-====================
-     01-15-2016
-====================
-
-
-   * device/samsung/jflte/
-10ff8f7 Delay SIM status message until after radio is on
-62c6f14 Update RIL_UNSOL_RESPONSE_IMS_NETWORK_STATE_CHANGED + small changes
-fc91018 RIL: remove unused UNSOLs
-e15d446 Merge branch 'aosp-6.0-test-new-ril' of https://github.com/AOSP-JF-MM/platform_device_samsung_jflte into HEAD
-
-   * external/uicommon/
-fcf1798 Add a simple SnackBar that doesn't rely on AppCompat
-b87d655 Add GalleryNext fixes to SlideUpPanelLayout
-
-   * frameworks/av/
-bb73be0 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_av into HEAD
-
-   * frameworks/base/
-49a8305 Notification drawer: Custom clear all icon color, (1/2):
-cacc418 Notifications: Custom colors, (1/2):
-2764704 Make G notification font colors more compatible with dark and light themes
-e7bc5dc AdbOverNetworkTile: only de/reregister the observer when setListening changes whether we should be listening
-e40ada2 SysUI: Reuse controllers and managers
-e4de9a9 Disable Quick Settings on secure lockscreen (1/2)
-ffb4904 Merge pull request #103 from Mai19930513/cm-13.0
-2e5a8c9 add zh-rCN translation
-
-   * frameworks/opt/telephony/
-6d6213a telephony: Fix persistence of automatic network selection
-
-   * kernel/samsung/Ramdisk/
-57db3dd Fix
-e0eae88 20160114
-
-   * kernel/samsung/alucard24/
-40c6a3c f_mtp: syncing with dorimanx branch!
-bb24e0e ext4: suppress ext4 orphan messages on mount
-7dde460 printk: Fix lockup on panic with lockdep
-72769fb KEYS: Don't permit request_key() to construct a new keyring
-367c19d KEYS: Fix race between read and revoke
-50ceb3c KEYS: use kvfree() in add_key
-a00ab93 devres: fix a for loop bounds check
-c36640a lib: zlib_inflage: fixed potential buffer overflow
-d0f772d USB: MTP: clean mess after merge in include/linux/usb/f_mtp.h
-aa37ae4 usb: gadget: Add debug message to print the control line state information
-b85877c usb: gadget: mtp: Increase RX transfer length to 1M
-b66059e USB: f_accessory: Set manufacturer and model string to default value
-fb05c14 USB: gadget: Implement COMPAT_IOCTL for ioctls
-9c61e24 drivers: usb: gadget: 64-bit related type fixes
-595d998 USB: gadget: Compilation fixes for 64-bit support
-2be4ef4 usb: gadget: f_accessory: Make RX buffer size aligned to EP's MTU
-767d56d USB: f_fs: Fix null pointer access in epfile_io
-5e82a26 USB: f_fs: do not WARN when already bound
-d01b685 usb: gadget: f_fs: Allow only one adb daemon perform device open
-380f588 USB: f_fs: Add print message in case of error scenario
-eaf23aa USB: f_fs: Check error status before doing epfile I/O
-9e508b0 USB: f_fs: Cutoff epfile IO before epfile could get freed
-6507657 usb: gadget: f_fs: Align epout buf size to wMaxPacketSize
-01d0244 usb: gadget: f_fs: Reuse string indexes when possible
-a1db835 USB: f_fs: Set ffs->func to NULL after disabling endpoint in set_alt()
-1de9dbd usb: gadget: f_fs: Add support for SuperSpeed Mode
-8644ac2 USB: Fix breakage in ffs_fs_mount()
-8512add FunctionFS: enable multiple functions
-fe56beb usb: gadget: f_fs: Fix enumeration in fullspeed mode
-791c330 fs: Limit sys_mount to only request filesystem modules.
-f4aa86b gadgetfs: don't bother with fops->owner
-8dccc1b usb: gadget: FunctionFS: Use kstrtoul()
-b806845 usb/gadget: fix misannotations
-98fb3bd usb: gadget: add multiple definition guards
-6d9c73a USB: f_fs: Use config_ep_by_speed() for ADB endpoints
-f9a468b USB: f_fs: Don't queue already queued request again
-56cdddf USB: f_fs: Move ep completion out of stack
-12e17d6 USB: f_fs: Fail stale read IOs after disconnect
-d352ddf USB: gadget: f_fs: Release endpoint upon disable
-d866316 USB: gagget: f_fs: Return error if TX req is queued during device offline
-8339a56 USB: f_fs: Fix disconnect check during ongoing IO
-a879af2 f_fs: ffs_func_free: cleanup requests allocated by autoconfig
-f8180bd USB: f_fs: Fix epfile crash during composition switch
-25ff23b usb: gadget: f_fs: HACK: Round reads up to 512 bytes to work with dwc3
-
-   * packages/apps/ContactsCommon/
-f1501f5 Ensure non-null encoded uri before attempting to parse
-
-   * packages/apps/Settings/
-c2ac6e0 Support multiple SAR values, separate args list with ','
-8c2598c Disable Quick Settings on secure lockscreen (2/2)
-e474bfb Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-35b8592 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
-663eb41 Merge pull request #385 from Mai19930513/cm-13.0
-
-   * packages/apps/SetupWizard/
-23b1347 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
-
-   * packages/apps/Snap/
-2233950 CameraActivity: Don't hide navigation bar
-607a2f0 SnapdragonCamera: limit video file size on SD card
-f0e709d SnapdragonCamera: Hide all camera setting when countdown timer starts
-24081ba SnapdragonCamera: Set color effect as none when turn HDR on
-645970f SnapdragonCamera: Fixing NullPointerException in onCreate of VideoModule
-8a0414d SnapdragonCamera: fix thumbnail display
-ff10b54 SnapdragonCamera: fix crash taking Macro+ from MMS
-8eeafc1 SnapdragonCamera: fix NumberFormatException when input value invalide
-cd14209 Snap: Remove touch AF/AEC option
-4b6ac95 Snap: Support 1:1 aspect ratio
-
-   * packages/providers/ThemesProvider/
-59bff5c No default lock wallpaper and live lock screen for system theme
-
-   * packages/wallpapers/PhotoPhase/
-6a4f804 PhotoPhase: ask for runtime permissions
-
-   * system/vold/
-dddf1aa Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
-6ab045a vold: hw_fde: Fix merge damage
-e04bbb8 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_vold into HEAD
-
-   * vendor/cm/
-5441c61 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
-
-====================
-     01-14-2016
-====================
-
-
-   * external/libpng/
-7ca7cb2 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_external_libpng into cm-13.0
-75a4e74 libpng: fix hang during read when inflate fails
-
-   * frameworks/base/
-6f821a4 Have Battery bar controller obey Hide value
-3cb2e99 Fix WallpaperCropper crash when setting wallpaper over 8MB
-a52eea2 Update Lockscreen clock font option [1/2]
-1a32fd9 SystemUI: write keyguard enabled setting to CMSettings
-4368542 SystemUI: Make lockscreen visualizer battery friendly
-72e300b SysUI: Re-add status icons in recreateStatusBar()
-
-   * packages/apps/CMFileManager/
-26fd0d7 Bump target SDK version to 23
-
-   * packages/apps/Email/
-34fb128 email: junk icon
-c929853 email: return default folder name for subfolders
-
-   * packages/apps/Messaging/
-2e34d86 Messaging: Bring back Unicode Stripping
-
-   * packages/apps/Settings/
-a301ebe update zh-rCN translation
-03ad24b Update Lockscreen clock font option [2/2]
-19b4d14 Settings: show warning in lock screen settings when disabled by qs
-c971ae3 Settings: show warning in lock screen settings when disabled by qs
-729af14 Merge pull request #383 from beroid/cm-13.0
-
-   * packages/apps/Snap/
-0ad4095 Snap: Support for HTC's HDR mode
-
-   * packages/apps/Trebuchet/
-fb312de Trebuchet: Remove app search controller if turned off
-5b04456 Trebuchet: Fix some monkey test race condition bugs
-
-   * packages/apps/UnifiedEmail/
-032f3a2 Remove mail signatures from notification text.
-7a5f09b unifiedemail: junk icon
-b50cac5 email: allow move/copy operations to more system folders
-
-   * packages/providers/TelephonyProvider/
-37604de TelephonyProvider: Handle database migration from cm-11.0.
-
-   * system/vold/
-a9746cb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_vold into cm-13.0
-ba3b7bd cryptfs: Set HW FDE flags when building libvold
-
-   * vendor/cm/
-6b6b6f8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-356bb56 APN: Remove wrong T-Mobile CZ and Vodafone CZ APNs
-6f6e11f fix cricket APN
-
-   * vendor/cmsdk/
-cda6566 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-b9f80b6 cmsdk: Load notification led customization defaults
-bf9cc6d cmsdk: add lockscreen internal enabled setting
+   * vendor/jdc/
+d13ca28 LEDify: run from /system/bin/sh
+fd05def build script: update Alucard scripts names
+9723f09 build script: check if Toolbox app is available or not
 
