@@ -12,6 +12,9 @@
 9be9dd1 Revert "roomservice: check uniqueness by path, not name"
 c5ef7f3 roomservice: check uniqueness by path, not name
 
+   * external/libnfc-nci/
+9fb5e21 libnfc-nci: Fix Ubikey on pn5xx devices
+
    * frameworks/av/
 912b1f4 Merge https://github.com/temasek/android_frameworks_av into HEAD
 4c4b02a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
@@ -82,7 +85,12 @@ bf5927e Add UPSTREAM
 e6c0f3f Enable -Os to bluetooth
 
    * packages/apps/CMFileManager/
+1f90d24 Automatic translation import
+901e396 Adding NULL checks AsyncResultProgram.java
 04abecb Improve permission string & cleanup code
+
+   * packages/apps/DeskClock/
+c3bfce9 Automatic translation import
 
    * packages/apps/Settings/
 281d911 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
@@ -106,7 +114,17 @@ c02cb4d Improve a SIM enabler string
 de2b0aa Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
 00ad221 SetupWizard : Ensure we don't override user locale picks
 
+   * packages/apps/Snap/
+af80c14 Automatic translation import
+
+   * packages/apps/ThemeChooser/
+a989ded Automatic translation import
+
+   * packages/providers/ThemesProvider/
+0bc8eda Automatic translation import
+
    * packages/screensavers/PhotoTable/
+d36882e Automatic translation import
 ce7a816 PhotoTable: Move & improve CM string
 
    * packages/services/Telephony/
@@ -348,7 +366,6 @@ c07c278 Settings : Improve usage stats screen
 da61737 Settings: Actually expose protected apps settings.
 f99ff0d Settings : Improve usage stats screen
 4148242 Settings: Add fingerprint authentication for protected apps.
-623f36f Settings: Actually expose protected apps settings.
 
    * packages/apps/SetupWizard/
 a32749f Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
@@ -372,7 +389,6 @@ e73b2b2 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm
 fc50f7c ExtViews: Add action and meta-data
 d994fe1 LiveLockScreen: Add setting for enabled/disabled
 0d9d1ab CMSettings: Introduce concept of protected apps managers.
-31962b2 cmsdk/tests: Fix zenmode tests.
 
 ====================
      01-22-2016
@@ -398,7 +414,6 @@ c876665 f2fs-utils: Fix Android host utils
 c7df6fe Regenerate generated files.
 1207e62 Merge remote-tracking branch 'toybox/master' into HEAD
 83c6d22 Replace slot[] constants with SLOT_blah, fix some that weren't displaying right.
-5c725e9 I cleaned up the code in 'netstat.c' as belows.
 
    * frameworks/av/
 df1c503 Revert "Stagefright: Allow setting high-framerates in CameraSource"
@@ -439,6 +454,7 @@ c3a1367 20160122
 62af736 Updated all profiles!
 
    * packages/apps/Settings/
+623f36f Settings: Actually expose protected apps settings.
 272abf8 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
 c319845 Merge pull request #395 from Mai19930513/cm-13.0
 5d0889e update zh-rCN translations
@@ -476,6 +492,7 @@ f3ccd23 Merge https://github.com/temasek/android_vendor_cm into HEAD
 9d3ac68 Viper4Android: Don't use it on 64 bit devices
 
    * vendor/cmsdk/
+31962b2 cmsdk/tests: Fix zenmode tests.
 7fb0a06 cmsdk: change persistent storage test cases to void return type
 20d9638 Add overlay for SWAP_VOLUME_KEYS_ON_ROTATION
 f499009 Change THIRD_PARTY_KEYGUARD permission to normal
@@ -504,6 +521,7 @@ fa89388 ril: Fix data after reboot
 db58d5b add ll and la aliases to shell
 
    * external/toybox/
+5c725e9 I cleaned up the code in 'netstat.c' as belows.
 2081ec6 Add a sed test from the posix mailing list.
 08db7e5 Disable CFG_TOYBOX_DEBUG for now.
 a729fc8 Regenerate generated files.
