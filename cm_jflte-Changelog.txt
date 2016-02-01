@@ -12,6 +12,12 @@ b9e6a00 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_bui
 858c51c Remove libdex (including dexdump/list).
 
    * frameworks/base/
+aa41e79 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_base into HEAD
+6542c71 Themes: Process applied themes before boot finishes
+5e0821f Add FDN enabled related API
+6709e43 IMS: Add Ims reason info codes for supplementary service failures
+b1269e8 IMS: Fix video call forwarding options issue
+d1d7f3b Add mapping string for call reject cause code 26.
 45d8689 Fix merge
 b41ed72 Fix merge (again)
 5ad4673 Fix merge
@@ -22,16 +28,30 @@ e5c5827 Merge https://github.com/temasek/android_frameworks_base into HEAD
 086c1b5 Make task manager button themeable
 
    * frameworks/opt/telephony/
+d31e005 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
+9158cae IMS: Changes for VICE FR
+0cacbf2 Add a setting for call deflect support
+e2150d9 IMS: Add capability constant for add participant
+e506270 IMS-VT: Add capability constants for downgrade to voice support
+b004996 IMS: Default Implementation for ims interface listener
+6a5d588 IMS: Add supplementary services (hold/resume) failure codes
 410ee86 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
 
    * kernel/samsung/Ramdisk/
+98301bc Updated profiles.
 6bc61ef Update from 20160201
 
-   * packages/apps/Gello/
-5b9b052 Gello: improve icon
+   * kernel/samsung/alucard24/
+6fa0c2f IR: fixed phone hotboot, crash, reboot using IR-Blaster. Now it works!
+659c329 cpufreq_alucard: Reviewed CPU frequency scaling logic. cpufreq_nightmare: Reviewed CPU frequency scaling logic. alucard_hotplug: Reviewed CPU hotplugging on/off logic.                  Use mutex to protect hotplug start and stop phase.
 
    * packages/apps/InCallUI/
+737eaa0 Merge pull request #1 from CyanogenMod/cm-13.0
+f9d5a1a Fix a race-condition that causes incorrect call deflect status
 da41b22 Flip to Mute/Reject Call [3/3]
+
+   * packages/apps/Messaging/
+a53f97d QuickMessage: Forward port string improvements
 
    * packages/apps/Settings/
 1c652bc Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
@@ -105,6 +125,9 @@ e24118c More spam
 386cc71 Fix a bug checking cid before install external storage package
 3619610 Lockscreen fonts: set correct default value [1/2]
 
+   * packages/apps/Gello/
+5b9b052 Gello: improve icon
+
    * packages/apps/OmniSwitch/
 7e03acc Fix build
 442ad10 OmniSwitch: bugfix update 01/2016
@@ -121,7 +144,6 @@ b4be240 Lockscreen fonts: set correct default value [2/2]
    * build/
 c073360 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_build into HEAD
 e129b5e releasetools: add compatibility for full ota functions with incrementals
-1a1555c releasetools: Use the first entry of a mount point when reading fstab
 
    * frameworks/base/
 19b81a2 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
@@ -134,16 +156,16 @@ c4a6398 SystemUI: add better hints when trying to delete edit tile
    * kernel/samsung/Ramdisk/
 12cb8ab Update from 20160130
 
-   * packages/apps/Messaging/
-005a261 Messaging: Port of quick message from MMS
-
    * packages/apps/Settings/
 47e8388 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
 cdca7d0 Add DancingScript / ComingSoon / NotoSerif to Statusbar Temp (2/2)
 7dad842 Add DancingScript / ComingSoon / NotoSerif to Statusbar Clock (2/2)
 
-   * packages/apps/Snap/
-7c3f01e Improve maps app string
+   * packages/apps/Trebuchet/
+b68836f Add additional setting to launcher options for remote apps in drawer.
+
+   * packages/providers/ThemesProvider/
+767ac8c Prevents extra thumbnails in Lockscreen component
 
    * system/core/
 49ed818 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_core into HEAD
@@ -160,6 +182,9 @@ cdca7d0 Add DancingScript / ComingSoon / NotoSerif to Statusbar Temp (2/2)
    * bootable/recovery/
 a6a4c8a recovery: Fix mount_for_wipe
 c7610f2 recovery: Fix recursive rm wipe of data
+
+   * build/
+1a1555c releasetools: Use the first entry of a mount point when reading fstab
 
    * external/sepolicy/
 6227e10 Merge https://github.com/temasek/android_external_sepolicy into HEAD
@@ -182,9 +207,6 @@ cebe1a1 ZenMode : Update defaults for CTSVerifier
 57da980 am: Don't take down activity process if target intent component is null.
 789d700 SeekBarVolumizer : Disable notification volume if RINGER_MODE_VIBRATE
 538c895 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
-5404af1 Partially revert 'SOFTAP: implement SOFTAP new requirement in framework.'
-141e029 ZenMode : Update defaults for CTSVerifier
-1150754 Tethering: Fix number of device connected
 
    * frameworks/opt/telephony/
 81c5d8c telephony: Do not set default subscriptions on shutdown
@@ -200,22 +222,12 @@ f468ed1 init: drop unneeded code
 af7437c Fix
 b2ad1d0 Update from 20160129
 
-   * kernel/samsung/alucard24/
-7421cf2 CONFIG: NET update. Thanks to @dorimanx
-d13e0a7 net: diag: support v4mapped sockets in inet_diag_find_one_icsk()
-a3f4f0d net: tcp: deal with listen sockets properly in tcp_abort.
-8eacbe9 net: diag: Support destroying TCP sockets.
-ddb9700 net: diag: Support SOCK_DESTROY for inet sockets.
-bd2d868 net: diag: Add the ability to destroy a socket.
-edf03ac net: diag: split inet_diag_dump_one_icsk into two
-2afd231 alucard hotplug governor: get online cpus from local cpumask var.
-
    * packages/apps/CMFileManager/
 e0318a5 Cleanup permission strings again
 
    * packages/apps/Messaging/
+005a261 Messaging: Port of quick message from MMS
 7f5fbb7 Messaging: Fix for UnicodeStripping for multi-character replacement
-8668700 Framework to Local Blacklist Synchronization Fix
 
    * packages/apps/PhoneCommon/
 a809cc0 Add last call fail cause 26 string.
@@ -237,12 +249,12 @@ c5ff8df Fingerprint: do not error out when stopping to listen
 de00b25 ProtectedApps: add up navigation and fix action bar icons
 62d50cc Settings : Finish SimPreferenceDialog on dismiss
 850f103 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-5895648 Settings : Fix linked volume crash + inconsistent state
-6d19f57 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
-456e21e Settings : Improve app info screen
 
    * packages/apps/SetupWizard/
 34b0e9a Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
+
+   * packages/apps/Snap/
+7c3f01e Improve maps app string
 
    * packages/apps/Stk/
 f61ae60 Launcher: Present STK app name if possible
@@ -283,6 +295,9 @@ d4c97ef Merge "Revert "Cts test fix for shortcode 48000" BUG: 26714654" into mar
 1247bca Revert "Cts test fix for shortcode 48000" BUG: 26714654
 
    * frameworks/base/
+5404af1 Partially revert 'SOFTAP: implement SOFTAP new requirement in framework.'
+141e029 ZenMode : Update defaults for CTSVerifier
+1150754 Tethering: Fix number of device connected
 1ab548f am: Don't take down activity process if target intent component is null.
 c5afa7f SystemUI: Don't update if HeadsUp is disabled
 b99b2e4 Themes: Fix CMSetupWizard package name in ThemeService
@@ -338,7 +353,23 @@ bdd37ec Parcel: file descriptor leak
 dd4ec25 Parcel: include Android coding standard
 0b9d525 Parcel: LOG_TAG cleanup
 
+   * kernel/samsung/alucard24/
+7421cf2 CONFIG: NET update. Thanks to @dorimanx
+d13e0a7 net: diag: support v4mapped sockets in inet_diag_find_one_icsk()
+a3f4f0d net: tcp: deal with listen sockets properly in tcp_abort.
+8eacbe9 net: diag: Support destroying TCP sockets.
+ddb9700 net: diag: Support SOCK_DESTROY for inet sockets.
+bd2d868 net: diag: Add the ability to destroy a socket.
+edf03ac net: diag: split inet_diag_dump_one_icsk into two
+2afd231 alucard hotplug governor: get online cpus from local cpumask var.
+
+   * packages/apps/Messaging/
+8668700 Framework to Local Blacklist Synchronization Fix
+
    * packages/apps/Settings/
+5895648 Settings : Fix linked volume crash + inconsistent state
+6d19f57 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
+456e21e Settings : Improve app info screen
 7b613ae [2/2] Settings: blacklist: update iconography
 b14763e Settings: hide light pulse settings if not available
 94d17b4 Settings: fix a few color picker inconsistentcies
