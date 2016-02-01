@@ -12,6 +12,10 @@ b9e6a00 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_bui
 858c51c Remove libdex (including dexdump/list).
 
    * frameworks/base/
+d4b03b8 Fix commits
+88fcff0 GAPPS: Add Google Play Services, Google App and Account Manager permissions
+7f2a91d PermissionGrant: Introduce Support for flashing Gapps
+cb9c89e Revert "Revert "Core: Fix setupwizard FC""
 aa41e79 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_base into HEAD
 6542c71 Themes: Process applied themes before boot finishes
 5e0821f Add FDN enabled related API
@@ -38,6 +42,7 @@ b004996 IMS: Default Implementation for ims interface listener
 410ee86 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
 
    * kernel/samsung/Ramdisk/
+4be0894 Update from 20160216-2
 98301bc Updated profiles.
 6bc61ef Update from 20160201
 
@@ -61,8 +66,6 @@ b57b5dd Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_pac
 c3fc738 Settings: Use correct icon for lock screen settings entry.
 f20004d Bluetooth/Wifi: center empty view and set textAppearance to medium
 0352eee Settings: Use correct icon for lock screen settings entry.
-109060f Settings : Remove cmstats from about phone
-f676d3c Bluetooth/Wifi: center empty view and set textAppearance to medium
 
    * packages/screensavers/Basic/
 06c485f Create a live lock screen for Colors
@@ -134,6 +137,8 @@ e24118c More spam
 c58284f OmniSwitch: add translations by @shevT and @fast0n
 
    * packages/apps/Settings/
+109060f Settings : Remove cmstats from about phone
+f676d3c Bluetooth/Wifi: center empty view and set textAppearance to medium
 b4be240 Lockscreen fonts: set correct default value [2/2]
 
 ====================
@@ -164,12 +169,8 @@ cdca7d0 Add DancingScript / ComingSoon / NotoSerif to Statusbar Temp (2/2)
    * packages/apps/Trebuchet/
 b68836f Add additional setting to launcher options for remote apps in drawer.
 
-   * packages/providers/ThemesProvider/
-767ac8c Prevents extra thumbnails in Lockscreen component
-
    * system/core/
 49ed818 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_core into HEAD
-0d7baec fastboot: add Zuk to the list of known vendors
 
    * vendor/cm/
 92a49a9 apns: T-Mobile 310260: Compatibility update
@@ -205,17 +206,9 @@ a7d3897 Partially revert 'SOFTAP: implement SOFTAP new requirement in framework.
 cebe1a1 ZenMode : Update defaults for CTSVerifier
 9ec5178 Tethering: Fix number of device connected
 57da980 am: Don't take down activity process if target intent component is null.
-789d700 SeekBarVolumizer : Disable notification volume if RINGER_MODE_VIBRATE
-538c895 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
-
-   * frameworks/opt/telephony/
-81c5d8c telephony: Do not set default subscriptions on shutdown
 
    * hardware/qcom/media-caf/msm8916/
 19a2e7f Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.8' into cm-13.0-caf-8916
-
-   * hardware/samsung/
-79a9b15 Initial unified Samsung lights HAL
 
    * kernel/samsung/Ramdisk/
 f468ed1 init: drop unneeded code
@@ -245,13 +238,6 @@ fb2dbba Build V3.7
 aa3f4fa Settings : Fix linked volume crash + inconsistent state
 46ece19 Settings : Improve app info screen
 6a60c25 [2/2] Settings: blacklist: update iconography
-c5ff8df Fingerprint: do not error out when stopping to listen
-de00b25 ProtectedApps: add up navigation and fix action bar icons
-62d50cc Settings : Finish SimPreferenceDialog on dismiss
-850f103 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-
-   * packages/apps/SetupWizard/
-34b0e9a Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
 
    * packages/apps/Snap/
 7c3f01e Improve maps app string
@@ -263,10 +249,14 @@ e2d12df Update layout to Material
    * packages/apps/Trebuchet/
 7df0227 Port Remote Folder from 12.1 to 13.
 
+   * packages/providers/ThemesProvider/
+767ac8c Prevents extra thumbnails in Lockscreen component
+
    * packages/services/Telephony/
 3fcd41c Merge https://github.com/temasek/android_packages_services_Telephony into HEAD
 
    * system/core/
+0d7baec fastboot: add Zuk to the list of known vendors
 a437a70 Merge https://github.com/temasek/android_system_core into HEAD
 89196c5 healthd: BatteryPropertiesRegistrar binder service ref count fixup
 e1a050f Revert "Allow SELinux to be disabled, set it to permissive by default"
@@ -295,6 +285,8 @@ d4c97ef Merge "Revert "Cts test fix for shortcode 48000" BUG: 26714654" into mar
 1247bca Revert "Cts test fix for shortcode 48000" BUG: 26714654
 
    * frameworks/base/
+789d700 SeekBarVolumizer : Disable notification volume if RINGER_MODE_VIBRATE
+538c895 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
 5404af1 Partially revert 'SOFTAP: implement SOFTAP new requirement in framework.'
 141e029 ZenMode : Update defaults for CTSVerifier
 1150754 Tethering: Fix number of device connected
@@ -342,16 +334,18 @@ ef3fe68 Remove -ffast-math from libhwui makefile
 5c0980b Fix NPE in SyncRequest builder
 d3e777e Reduce synchronized region when checking idle states.
 093c9be Remove infinity invalidation when both scrollbars are shown
-fdbad83 Wifi tile: don't set items visible from non-ui thread
-b4c3428 SystemUI: fix contracting qs settings page
-805ef76 SystemUI: improve tile caching mechanism
-d3d5237 allow whitelisting of ACCESS_KEYGUARD_SECURE_STORAGE
 
    * frameworks/native/
 77b90d3 system_server BINDER_TYPE_FD sockets using ashmem accessors
 bdd37ec Parcel: file descriptor leak
 dd4ec25 Parcel: include Android coding standard
 0b9d525 Parcel: LOG_TAG cleanup
+
+   * frameworks/opt/telephony/
+81c5d8c telephony: Do not set default subscriptions on shutdown
+
+   * hardware/samsung/
+79a9b15 Initial unified Samsung lights HAL
 
    * kernel/samsung/alucard24/
 7421cf2 CONFIG: NET update. Thanks to @dorimanx
@@ -367,6 +361,10 @@ edf03ac net: diag: split inet_diag_dump_one_icsk into two
 8668700 Framework to Local Blacklist Synchronization Fix
 
    * packages/apps/Settings/
+c5ff8df Fingerprint: do not error out when stopping to listen
+de00b25 ProtectedApps: add up navigation and fix action bar icons
+62d50cc Settings : Finish SimPreferenceDialog on dismiss
+850f103 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
 5895648 Settings : Fix linked volume crash + inconsistent state
 6d19f57 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
 456e21e Settings : Improve app info screen
@@ -385,9 +383,9 @@ b49c04d Fix merge
 9d99b63 ProtectedApps: add up navigation and fix action bar icons
 5b722f9 Build V3.6
 d98c21f MasterClear: update UI
-db44284 MasterClear: update UI
 
    * packages/apps/SetupWizard/
+34b0e9a Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
 95246f2 SetupWizard : Use MccTable for mcc -> locale lookup
 06aa3eb Themes: Re-enable applying theme in OOBE
 
