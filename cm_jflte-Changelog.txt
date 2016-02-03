@@ -1,7 +1,14 @@
 ====================
-     02-02-2016
+     02-03-2016
 ====================
 
+
+   * art/
+0e70d29 Revert "Disable sanitization of dex2oat on device."
+caa9879 Revert "Move dmtracedump from dalvik to art."
+
+   * bootable/recovery/
+3b963ad recovery: Fix media wipe
 
    * build/
 1404488 Merge https://github.com/temasek/android_build into HEAD
@@ -9,23 +16,23 @@
 f784fcd Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
 47a95cb Revert "releasetools: Use the first entry of a mount point when reading fstab"
 c1d802f Revert "releasetools: add compatibility for full ota functions with incrementals"
-705e90f Merge tag 'android-6.0.1_r13' into HEAD
-
-   * device/common/
-e0e0d5b Merge tag 'android-6.0.1_r13' into 13.0
-
-   * device/samsung/qcom-common/
-7675f70 Automatic translation import
 
    * frameworks/av/
 13c7599 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_av into HEAD
-fda1413 Revert "AudioMixer: delete reformatBuffer provider in proper order"
-da6f52d AudioMixer: Clear bufferProviders in correct order
-0276a2f audioflinger: Enable TEE_SINK compilation
-77062b4 Merge tag 'android-6.0.1_r13' into HEAD
-96985ed Combine 'DTS Sound (TruMedia) Postpro support in frameworks/av for Android 6.0' as a single patch.
 
    * frameworks/base/
+c1c93bb SysUI: Clean up objects when recreating statusbar
+76203e5 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
+232edf1 Merge https://github.com/temasek/android_frameworks_base into HEAD
+196537e PermissionGrant: Introduce Support for flashing Gapps
+887c984 fw: Make sure to get the actual ringtone uri per subId.
+f696a25 nms: Actually allow smsRingtone to work.
+52a5f8e SystemUI : Show create profile if user doesn't have one setup
+1ec1c7a Automatic translation import
+c268447 Tethering: Turn off Wi-Fi Hotspot after inactivity (1/3)
+5ad4b83 fw: Make sure to get the actual ringtone uri per subId.
+d3205e3 nms: Actually allow smsRingtone to work.
+afa838c SystemUI : Show create profile if user doesn't have one setup
 5968a4a Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
 5578bd8 Automatic translation import
 52e4b23 Tethering: Turn off Wi-Fi Hotspot after inactivity (1/3)
@@ -37,6 +44,241 @@ c0c8c78 Revert "GAPPS: Add Google Play Services, Google App and Account Manager 
 fd56acb Revert "PermissionGrant: Introduce Support for flashing Gapps"
 21f29b4 Alarm: add missing closedir after opendir when searching for RTC
 ae26c09 close file in PersistentDataBlockService jni
+
+   * frameworks/native/
+c62c0f3 Binder: Add log output in IPCThreadState::self()
+
+   * frameworks/opt/hardware/
+bb99ef5 hardware: Add UniqueDeviceId support
+
+   * frameworks/opt/telephony/
+7374bd7 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
+cb7c1f5 telephony: Set multi-rat default to true.
+5129ac7 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
+12c6e62 Merge https://github.com/temasek/android_frameworks_opt_telephony into HEAD
+a966679 SIMRecords: Treat empty SPN fields as null and proceed with the fallbacks
+6119c4c SIMRecords: If there's no EF_SPN record, fallback to EF_PNN
+
+   * hardware/cyanogen/
+3083116 cmhw: Add UniqueDeviceId implementation
+
+   * hardware/libhardware_legacy/
+17d8e9f wifi: Ensure supplicant stopped in wifi_stop_supplicant
+
+   * kernel/samsung/Ramdisk/
+04782f1 Update from 20160202
+
+   * kernel/samsung/alucard24/
+02ceac1 alucard_hotplug: removed useless cpumask_t cpus.
+9727b41 Config update.
+47496fb LMK and PR_REC: if driver is OFF, set pressure to 0. thnaks @neobuddy89
+d40ca46 radix-tree: fix preload vector size
+20f0665 lib/: rename random32() to prandom_u32()
+53cc087 lib:kfifo: export __kfifo_max_r symbol
+24a33f9 digsig: remove unnecessary memory allocation and copying
+dc4b5f3 decompress_bunzip2: off by one in get_next_block()
+0113b94 lib/crc32.c: fix unused variables warnings
+67104a8 lib/crc32: update the comments of crc32_{be,le}_generic()
+566517c sections: fix const sections for crc32 table
+3edb9e8 rtmutex: Make wait_lock irq safe
+c54e66e lib/sort: Add 64 bit swap function
+01cc9fc lib/sort.c: move include inside #if 0
+31a3270 lib/sort.c: use simpler includes
+00d4be1 lib/genalloc.c: check result of devres_alloc()
+046239f lib/genalloc.c: remove redundant include
+337a069 LIB: GENALLOC: sync with 3.10.y
+3998b40 genalloc: fix device node resource counter
+3033d83 lib/genalloc.c: fix overflow of ending address of memory chunk
+a9819e0 genalloc: add devres support, allow to find a managed pool by device
+76a92d6 genalloc: make it possible to use a custom allocation algorithm
+21bb2c6 random32: add prandom_seed_full_state helper
+362d12f lib: radix_tree: tree node interface
+e0f448a mm: filemap: move radix tree hole searching here
+e22818f lib: radix-tree: add radix_tree_delete_item()
+2b0c181 lib/radix-tree.c: swapoff tmpfs radix_tree: remember to rcu_read_unlock
+e8b887e lib/radix-tree.c: make radix_tree_node_alloc() work correctly within interrupt
+c4594a5 lib/md5.c: simplify include
+4d21c8d lib: list_sort.c: Limit number of unused cmp callbacks
+a23c5a1 crypto: LLVMLinux: Remove VLAIS usage from libcrc32c.c
+93d2ccd crypto: LLVMLinux: Add macro to remove use of VLAIS in crypto code
+e258493 block: fix blk_stack_limits() regression due to lcm() change
+fa43662 lib/lcm.c: replace include
+5448cd4 lib/lcm.c: lcm(n,0)=lcm(0,n) is 0, not n
+ce04480 lib/lcm.c: ensure correct result whenever it fits
+9bd95f6 kfifo: use BUG_ON
+ca334b4 kfifo: kfifo_copy_{to,from}_user: fix copied bytes calculation
+e2a8129 kfifo: fix kfifo_alloc() and kfifo_init()
+0dd9324 kfifo: move kfifo.c from kernel/ to lib/
+314b596 lib/halfmd4.c: use rol32 inline function in the ROUND macro
+ac0f328 SMALL FIX: i dont have UAPI.
+b68c57a lib/halfmd4.c: simplify includes
+166f64d lib/digsig.c: kernel-doc warning fixes
+23bab07 lib/digsig.c: use ERR_CAST inlined function instead of ERR_PTR(PTR_ERR(...))
+f48862d lib/decompress_unlzma: Do a NULL check for pointer
+b0659d6 lib/decompress_inflate.c: include appropriate header file
+934f1ea lib/decompressors: use real out buf size for gunzip with kernel
+a8d259b lib/decompressors: fix "no limit" output buffer length
+6ad2554 lib/decompress: set the compressor name to NULL on error
+0a8ba1f lib/decompress.c: consistency of compress formats for kernel image
+c0803d4 initramfs: support initramfs that is bigger than 2GiB
+62b0097 lib/decompress.c: fix initconst
+ffcf6c3 lib/decompress.c add __init to decompress_method and data
+3733e09 net/sctp: Refactor SCTP skb checksum computation
+8618812 net: sctp: prevent checksum.h from double inclusion
+445ea6b lib/crc7: Shift crc7() output left 1 bit
+c2f83dc lib: crc32: Add some additional __pure annotations
+bef9a12 lib: crc32: Mark test data __initconst
+7af3a99 lib: crc32: Greatly shrink CRC combining code
+3649ab8 lib/crc32.c: remove unnecessary __constant
+359d013 lib: crc32: reduce number of cases for crc32{, c}_combine
+fff7c35 lib: crc32: conditionally resched when running testcases
+451744a lib: crc32: add test cases for crc32{, c}_combine routines
+81a9c53 lib: crc32: add functionality to combine two crc32{, c}s in GF(2)
+c4dbbca lib: crc32: clean up spacing in test cases
+d474c14 ARM: 8287/1: add bitrev.h file to support rbit instruction
+2541357 ARM: 8187/1: add CONFIG_HAVE_ARCH_BITREVERSE to support rbit instruction
+94e7267 zlib_deflate/deftree: remove bi_reverse()
+a1c0bfe lib/is_single_threaded.c: change current_is_single_threaded() to use for_each_thread()
+ef56ead HID: core: Avoid uninitialized buffer access
+eb58248 scripts/recordmcount.pl: support data in text section on powerpc
+5f617bd phonet: properly unshare skbs in phonet_rcv()
+7a10d1f tcp_yeah: don't set ssthresh below 2
+12e1c93 net: possible use after free in dst_release
+0f8a9b4 bridge: Only call /sbin/bridge-stp for the initial network namespace
+bad8d40 unix: properly account for FDs passed over unix sockets
+176d878 ipv6/addrlabel: fix ip6addrlbl_get()
+85bccb5 xhci: refuse loading if nousb is used
+975e814 USB: cp210x: add ID for ELV Marble Sound Board 1
+158fa90 USB: ipaq.c: fix a timeout loop
+797bc07 usb: xhci: fix config fail of FS hub behind a HS hub with MTT
+395f5b4 ALSA: control: Avoid kernel warnings from tlv ioctl with numid 0
+5ff1970 ALSA: hrtimer: Fix stall by hrtimer_cancel()
+cd354f7 ALSA: pcm: Fix snd_pcm_hw_params struct copy in compat mode
+62e9328 ALSA: timer: Fix double unlink of active_list
+c404af3 ALSA: timer: Fix race among timer ioctls
+444cb36 ALSA: timer: Harden slave timer list handling
+4661578 alucard_hotplug: Fixed warning: 'sum_freq' may be used uninitialized... Big thanks to @dorimanx
+
+   * packages/apps/Bluetooth/
+8a9f83f Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Bluetooth into HEAD
+6d9a6f7 [2/3]Bluetooth: add "Accept all files" option for incoming files
+
+   * packages/apps/BluetoothExt/
+3c097b1 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_BluetoothExt into HEAD
+
+   * packages/apps/CMFileManager/
+b73f0c1 Automatic translation import
+
+   * packages/apps/DeskClock/
+4ffb13d Automatic translation import
+474327d deskclock: internationalize repeat days layout
+
+   * packages/apps/Eleven/
+9afedcf Automatic translation import
+
+   * packages/apps/InCallUI/
+385a25c Merge https://github.com/temasek/android_packages_apps_InCallUI into HEAD
+
+   * packages/apps/Messaging/
+b5157d2 Messaging: Don't add quick reply for MMS
+
+   * packages/apps/Settings/
+e0105e5 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+0b241d7 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
+6302b52 Build V3.9
+6b6d640 Lockscreen: Show redaction interstitial when swipe selected
+4fd5b18 Settings : Recompute highlight index upon changes
+588b18c Settings : Show search on all panels
+12fde96 LiveLockScreen: Add live lock screen settings
+7d39f8c Automatic translation import
+7392a77 Tethering: Turn off Wi-Fi Hotspot after inactivity (3/3)
+0431910 [3/3]Settings: add "Accept all files" option for incoming files via BT
+2c021b1 Lockscreen: Show redaction interstitial when swipe selected
+946b1e2 Settings : Recompute highlight index upon changes
+4a42249 Settings : Show search on all panels
+e6e1ac4 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+eb2af24 LiveLockScreen: Add live lock screen settings
+d8ed0a3 Automatic translation import
+6d13b71 Fix commit
+1976c00 Fix
+d8eeaa9 Tethering: Turn off Wi-Fi Hotspot after inactivity (3/3)
+5ce476c Fix
+a47878c Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+a6032a5 [3/3]Settings: add "Accept all files" option for incoming files via BT
+d7271e4 [3/3]Settings: add "Accept all files" option for incoming files via BT
+6d7e3b3 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
+6f0bca5 Merge pull request #401 from beroid/cm-13.0
+113c66c Settings: Update RU translations
+
+   * packages/apps/SetupWizard/
+61606a7 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
+a11d936 Automatic translation import
+10c2cc5 Fix merge
+956d4f0 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
+1353951 SetupWizard: Remove useless WhisperPushUtils
+c55fe77 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
+
+   * packages/providers/DownloadProvider/
+203ba0d Automatic translation import
+
+   * packages/services/Telecomm/
+d6f1fd0 Add UPSTREAM
+e48fc04 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_services_Telecomm into HEAD
+
+   * packages/services/Telephony/
+5f7248c Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_services_Telephony into HEAD
+68b7c7a telephony: Set multi-rat default to true.
+87d7846 telephony: Allow default ssn toast notifications to be overlaid.
+a4a374d Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_services_Telephony into HEAD
+82e74c4 Merge https://github.com/temasek/android_packages_services_Telephony into HEAD
+
+   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
+a291550 2/1/2016 - 4.9.4 UBERTC Snapshot
+
+   * system/core/
+637be12 Merge https://github.com/temasek/android_system_core into HEAD
+
+   * system/vold/
+06904dc cryptfs: run e2fsck/fsck.f2fs in fsck domain
+
+   * vendor/cm/
+e62458a Merge https://github.com/temasek/android_vendor_cm into HEAD
+9f45552 Revert "Add "APP REMOVAL" Script - Remove SetupWizard.apk"
+460fcdc Add "APP REMOVAL" Script - Remove SetupWizard.apk
+7368e41 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+34b5b97 cm: Add live lockscreen feature
+e404f94 Merge https://github.com/temasek/android_vendor_cm into HEAD
+
+   * vendor/cmsdk/
+ccba0a1 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into HEAD
+eb82dbf cmsdk: cmhw: Add UniqueDeviceId support
+4044a52 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into HEAD
+087a7cd Merge https://github.com/temasek/cm_platform_sdk into HEAD
+
+====================
+     02-02-2016
+====================
+
+
+   * build/
+705e90f Merge tag 'android-6.0.1_r13' into HEAD
+b9e6a00 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_build into HEAD
+567d6aa roomservice: check uniqueness by path, not name
+
+   * device/common/
+e0e0d5b Merge tag 'android-6.0.1_r13' into 13.0
+
+   * device/samsung/qcom-common/
+7675f70 Automatic translation import
+
+   * frameworks/av/
+fda1413 Revert "AudioMixer: delete reformatBuffer provider in proper order"
+da6f52d AudioMixer: Clear bufferProviders in correct order
+0276a2f audioflinger: Enable TEE_SINK compilation
+77062b4 Merge tag 'android-6.0.1_r13' into HEAD
+96985ed Combine 'DTS Sound (TruMedia) Postpro support in frameworks/av for Android 6.0' as a single patch.
+
+   * frameworks/base/
 ca8e3fd am: Handle potential NPE when activity info can't be resolved.
 19960eb am: Handle potential NPE when activity info can't be resolved.
 6447d04 Merge tag 'android-6.0.1_r13' into HEAD
@@ -67,15 +309,17 @@ aa41e79 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_framewo
 6709e43 IMS: Add Ims reason info codes for supplementary service failures
 b1269e8 IMS: Fix video call forwarding options issue
 d1d7f3b Add mapping string for call reject cause code 26.
+45d8689 Fix merge
+b41ed72 Fix merge (again)
+5ad4673 Fix merge
+bd2de34 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
+bc3f2de SysUI: Listen for changes to LIVE_LOCK_SCREEN_ENABLED
+e5c5827 Merge https://github.com/temasek/android_frameworks_base into HEAD
 
    * frameworks/minikin/
 bf5465a Merge tag 'android-6.0.1_r13' into 13.0
 
    * frameworks/opt/telephony/
-5129ac7 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
-12c6e62 Merge https://github.com/temasek/android_frameworks_opt_telephony into HEAD
-a966679 SIMRecords: Treat empty SPN fields as null and proceed with the fallbacks
-6119c4c SIMRecords: If there's no EF_SPN record, fallback to EF_PNN
 3169f38 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
 d31e005 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
 9158cae IMS: Changes for VICE FR
@@ -95,7 +339,6 @@ b004996 IMS: Default Implementation for ims interface listener
 6bc61ef Update from 20160201
 
    * kernel/samsung/alucard24/
-4661578 alucard_hotplug: Fixed warning: 'sum_freq' may be used uninitialized... Big thanks to @dorimanx
 6fa0c2f IR: fixed phone hotboot, crash, reboot using IR-Blaster. Now it works!
 659c329 cpufreq_alucard: Reviewed CPU frequency scaling logic. cpufreq_nightmare: Reviewed CPU frequency scaling logic. alucard_hotplug: Reviewed CPU hotplugging on/off logic.                  Use mutex to protect hotplug start and stop phase.
 
@@ -103,19 +346,13 @@ b004996 IMS: Default Implementation for ims interface listener
 6b34e3d Automatic translation import
 
    * packages/apps/Bluetooth/
-8a9f83f Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Bluetooth into HEAD
-6d9a6f7 [2/3]Bluetooth: add "Accept all files" option for incoming files
 1d9319a Automatic translation import
 
    * packages/apps/BluetoothExt/
-3c097b1 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_BluetoothExt into HEAD
 a80ed8b Automatic translation import
 
    * packages/apps/Browser/
 e10bde3 Automatic translation import
-
-   * packages/apps/CMFileManager/
-b73f0c1 Automatic translation import
 
    * packages/apps/CMWallpapers/
 d701513 Automatic translation import
@@ -132,15 +369,8 @@ ef961d6 Automatic translation import
    * packages/apps/ContactsCommon/
 1e000e6 Automatic translation import
 
-   * packages/apps/DeskClock/
-4ffb13d Automatic translation import
-474327d deskclock: internationalize repeat days layout
-
    * packages/apps/Dialer/
 8f517b2 Automatic translation import
-
-   * packages/apps/Eleven/
-9afedcf Automatic translation import
 
    * packages/apps/Email/
 08bde27 Automatic translation import
@@ -149,7 +379,6 @@ ef961d6 Automatic translation import
 7b8f013 Automatic translation import
 
    * packages/apps/InCallUI/
-385a25c Merge https://github.com/temasek/android_packages_apps_InCallUI into HEAD
 dae04d6 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
 737eaa0 Merge pull request #1 from CyanogenMod/cm-13.0
 f9d5a1a Fix a race-condition that causes incorrect call deflect status
@@ -174,31 +403,17 @@ a53f97d QuickMessage: Forward port string improvements
 4ffc37c Automatic translation import
 
    * packages/apps/Settings/
-e6e1ac4 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-d8ed0a3 Automatic translation import
-6d13b71 Fix commit
-1976c00 Fix
-d8eeaa9 Tethering: Turn off Wi-Fi Hotspot after inactivity (3/3)
-5ce476c Fix
-a47878c Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-a6032a5 [3/3]Settings: add "Accept all files" option for incoming files via BT
-d7271e4 [3/3]Settings: add "Accept all files" option for incoming files via BT
-6d7e3b3 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
-6f0bca5 Merge pull request #401 from beroid/cm-13.0
-113c66c Settings: Update RU translations
 86584f2 Build V3.8
 1a3f635 Android 6.0.1_r13
 6fe2e5a Settings: Cleanup lock screen settings
 8a292f1 SimSettings: Disable entry for missing sim
 5d51dda Settings: Cleanup lock screen settings
+1c652bc Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+646e120 SimSettings: Disable entry for missing sim
+b57b5dd Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+608ef27 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
 
    * packages/apps/SetupWizard/
-61606a7 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
-a11d936 Automatic translation import
-10c2cc5 Fix merge
-956d4f0 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
-1353951 SetupWizard: Remove useless WhisperPushUtils
-c55fe77 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
 1b1b991 SetupWizard: Ensure UI doesn't show when user is guest
 5b276ea SetupWizard: Bring back software nav keys option
 d40d8b8 SetupWizard: Fix test app building in 13
@@ -233,11 +448,11 @@ f688a0e Automatic translation import
    * packages/inputmethods/LatinIME/
 5f629e9 Automatic translation import
 
-   * packages/providers/DownloadProvider/
-203ba0d Automatic translation import
-
    * packages/providers/ThemesProvider/
 9c50005 Automatic translation import
+
+   * packages/screensavers/Basic/
+06c485f Create a live lock screen for Colors
 
    * packages/screensavers/PhotoTable/
 32c4328 Automatic translation import
@@ -246,16 +461,15 @@ f688a0e Automatic translation import
 bcba7f5 Automatic translation import
 
    * packages/services/Telecomm/
-d6f1fd0 Add UPSTREAM
-e48fc04 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_services_Telecomm into HEAD
 e22b715 Automatic translation import
 d3a90b4 Ensure missed call notification isn't triggered for Blacklisted calls
 
    * packages/services/Telephony/
-a4a374d Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_services_Telephony into HEAD
-82e74c4 Merge https://github.com/temasek/android_packages_services_Telephony into HEAD
 928cd7d Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
 06363d5 Automatic translation import
+56c34dd Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_services_Telephony into HEAD
+3d91a3b networksettings: Don't crash when the sim is ejected
+8b020ce Merge https://github.com/temasek/android_packages_services_Telephony into HEAD
 
    * packages/wallpapers/Galaxy4/
 067b4a0 Automatic translation import
@@ -266,22 +480,18 @@ a4a374d Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_pac
    * packages/wallpapers/PhotoPhase/
 de75745 Automatic translation import
 
-   * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
-a291550 2/1/2016 - 4.9.4 UBERTC Snapshot
-
    * system/core/
-637be12 Merge https://github.com/temasek/android_system_core into HEAD
 ae362e6 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
 0d7937a Merge tag 'android-6.0.1_r13' into 13.0
 
    * vendor/cm/
-e404f94 Merge https://github.com/temasek/android_vendor_cm into HEAD
 765c07a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 f45bb5c Update pre-built V4A to 2.4.0.1
+30eabfa Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
+1442910 apns: Cricket AIO 310150: Remove duplicate
+3e1dbcf Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
 
    * vendor/cmsdk/
-4044a52 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into HEAD
-087a7cd Merge https://github.com/temasek/cm_platform_sdk into HEAD
 5d3443f Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 ee703e7 Automatic translation import
 
@@ -290,21 +500,11 @@ ee703e7 Automatic translation import
 ====================
 
 
-   * build/
-b9e6a00 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_build into HEAD
-567d6aa roomservice: check uniqueness by path, not name
-
    * dalvik/
 05e0bcb Remove dmtracedump from dalvik.
 858c51c Remove libdex (including dexdump/list).
 
    * frameworks/base/
-45d8689 Fix merge
-b41ed72 Fix merge (again)
-5ad4673 Fix merge
-bd2de34 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
-bc3f2de SysUI: Listen for changes to LIVE_LOCK_SCREEN_ENABLED
-e5c5827 Merge https://github.com/temasek/android_frameworks_base into HEAD
 614b933 Flip to Mute/Reject Call [1/3]
 086c1b5 Make task manager button themeable
 
@@ -315,32 +515,19 @@ e5c5827 Merge https://github.com/temasek/android_frameworks_base into HEAD
 da41b22 Flip to Mute/Reject Call [3/3]
 
    * packages/apps/Settings/
-1c652bc Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-646e120 SimSettings: Disable entry for missing sim
-b57b5dd Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-608ef27 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
 c3fc738 Settings: Use correct icon for lock screen settings entry.
 f20004d Bluetooth/Wifi: center empty view and set textAppearance to medium
 0352eee Settings: Use correct icon for lock screen settings entry.
 109060f Settings : Remove cmstats from about phone
 f676d3c Bluetooth/Wifi: center empty view and set textAppearance to medium
 
-   * packages/screensavers/Basic/
-06c485f Create a live lock screen for Colors
-
    * packages/services/Telephony/
-56c34dd Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_services_Telephony into HEAD
-3d91a3b networksettings: Don't crash when the sim is ejected
-8b020ce Merge https://github.com/temasek/android_packages_services_Telephony into HEAD
 2d28057 Flip to Mute/Reject Call [2/3]
 
    * system/core/
 c2b9b8d Revert "healthd: BatteryPropertiesRegistrar binder service ref count fixup"
 
    * vendor/cm/
-30eabfa Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
-1442910 apns: Cricket AIO 310150: Remove duplicate
-3e1dbcf Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
 f2b4518 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 
 ====================
@@ -385,6 +572,7 @@ a37e8a4 Delegate long-to-float type conversions to the runtime on ARM.
 
    * build/
 22f2286 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+c073360 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_build into HEAD
 
    * external/libpng/
 e24118c More spam
@@ -392,6 +580,11 @@ e24118c More spam
    * frameworks/base/
 386cc71 Fix a bug checking cid before install external storage package
 3619610 Lockscreen fonts: set correct default value [1/2]
+19b81a2 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
+4a7ad07 Merge https://github.com/temasek/android_frameworks_base into HEAD
+
+   * kernel/samsung/Ramdisk/
+12cb8ab Update from 20160130
 
    * packages/apps/OmniSwitch/
 7e03acc Fix build
@@ -400,9 +593,14 @@ c58284f OmniSwitch: add translations by @shevT and @fast0n
 
    * packages/apps/Settings/
 b4be240 Lockscreen fonts: set correct default value [2/2]
+47e8388 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
 
    * system/core/
 b93a058 Change Permissions to CPUs/Governors
+49ed818 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_core into HEAD
+
+   * vendor/cmsdk/
+c17ac38 CMSettingsProvider: Update app icon
 
 ====================
      01-30-2016
@@ -410,34 +608,50 @@ b93a058 Change Permissions to CPUs/Governors
 
 
    * build/
-c073360 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_build into HEAD
 e129b5e releasetools: add compatibility for full ota functions with incrementals
 1a1555c releasetools: Use the first entry of a mount point when reading fstab
 
+   * external/sepolicy/
+6227e10 Merge https://github.com/temasek/android_external_sepolicy into HEAD
+
    * frameworks/base/
-19b81a2 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
-4a7ad07 Merge https://github.com/temasek/android_frameworks_base into HEAD
 36b3fc4 FBW: Add DancingScript / ComingSoon / NotoSerif to Statusbar Temp (1/2)
 c78f825 FBW: Add DancingScript / ComingSoon / NotoSerif to Statusbar Clock (1/2)
 b305a28 Taskmanager: Reduce Logging
 c4a6398 SystemUI: add better hints when trying to delete edit tile
+e94af6a SystemUI: add better hints when trying to delete edit tile
+e2ad6b5 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
+88cdfde Merge https://github.com/temasek/android_frameworks_base into HEAD
 
    * frameworks/opt/net/wifi/
 bb978df Tethering: Turn off Wi-Fi Hotspot after inactivity (2/3)
 
+   * hardware/qcom/media-caf/msm8916/
+19a2e7f Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.8' into cm-13.0-caf-8916
+
    * kernel/samsung/Ramdisk/
-12cb8ab Update from 20160130
+f468ed1 init: drop unneeded code
+af7437c Fix
+b2ad1d0 Update from 20160129
+
+   * packages/apps/CMFileManager/
+e0318a5 Cleanup permission strings again
 
    * packages/apps/Messaging/
 005a261 Messaging: Port of quick message from MMS
 
    * packages/apps/Settings/
-47e8388 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
 cdca7d0 Add DancingScript / ComingSoon / NotoSerif to Statusbar Temp (2/2)
 7dad842 Add DancingScript / ComingSoon / NotoSerif to Statusbar Clock (2/2)
+3323faf Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+306911e Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
 
    * packages/apps/Snap/
 7c3f01e Improve maps app string
+
+   * packages/apps/Stk/
+f61ae60 Launcher: Present STK app name if possible
+e2d12df Update layout to Material
 
    * packages/apps/Trebuchet/
 b68836f Add additional setting to launcher options for remote apps in drawer.
@@ -445,130 +659,15 @@ b68836f Add additional setting to launcher options for remote apps in drawer.
    * packages/providers/ThemesProvider/
 767ac8c Prevents extra thumbnails in Lockscreen component
 
-   * system/core/
-49ed818 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_core into HEAD
-e705009 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
-0d7baec fastboot: add Zuk to the list of known vendors
-
-   * vendor/cm/
-92a49a9 apns: T-Mobile 310260: Compatibility update
-
-   * vendor/cmsdk/
-c17ac38 CMSettingsProvider: Update app icon
-
-====================
-     01-29-2016
-====================
-
-
-   * bootable/recovery/
-a6a4c8a recovery: Fix mount_for_wipe
-c7610f2 recovery: Fix recursive rm wipe of data
-
-   * build/
-89d514a Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-
-   * external/sepolicy/
-6227e10 Merge https://github.com/temasek/android_external_sepolicy into HEAD
-b27c839 Allow sdcardd tmpfs read access.
-009bead vold: allow execute cp and rm
-e0f5754 Settings: Add option to disable logging
-d5ab779 Add permissions back to app / shell domains
-f3a3aa1 adbd: allow "adb pull /sdcard/"
-
-   * frameworks/base/
-e94af6a SystemUI: add better hints when trying to delete edit tile
-e2ad6b5 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
-88cdfde Merge https://github.com/temasek/android_frameworks_base into HEAD
-1f32069 Intent: Fix a NPE on readFromParcel
-1e1a426 SettingsProvider: Add missing INTERACT_ACROSS_USERS_FULL permission
-47a31bf SeekBarVolumizer : Disable notification volume if RINGER_MODE_VIBRATE
-a7d3897 Partially revert 'SOFTAP: implement SOFTAP new requirement in framework.'
-cebe1a1 ZenMode : Update defaults for CTSVerifier
-9ec5178 Tethering: Fix number of device connected
-57da980 am: Don't take down activity process if target intent component is null.
-789d700 SeekBarVolumizer : Disable notification volume if RINGER_MODE_VIBRATE
-538c895 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
-5404af1 Partially revert 'SOFTAP: implement SOFTAP new requirement in framework.'
-141e029 ZenMode : Update defaults for CTSVerifier
-1150754 Tethering: Fix number of device connected
-
-   * frameworks/opt/telephony/
-81c5d8c telephony: Do not set default subscriptions on shutdown
-
-   * hardware/qcom/media-caf/msm8916/
-19a2e7f Merge remote-tracking branch 'caf/LA.BR.1.2.6_rb1.8' into cm-13.0-caf-8916
-
-   * hardware/samsung/
-79a9b15 Initial unified Samsung lights HAL
-
-   * kernel/samsung/Ramdisk/
-f468ed1 init: drop unneeded code
-af7437c Fix
-b2ad1d0 Update from 20160129
-
-   * kernel/samsung/alucard24/
-7421cf2 CONFIG: NET update. Thanks to @dorimanx
-d13e0a7 net: diag: support v4mapped sockets in inet_diag_find_one_icsk()
-a3f4f0d net: tcp: deal with listen sockets properly in tcp_abort.
-8eacbe9 net: diag: Support destroying TCP sockets.
-ddb9700 net: diag: Support SOCK_DESTROY for inet sockets.
-bd2d868 net: diag: Add the ability to destroy a socket.
-edf03ac net: diag: split inet_diag_dump_one_icsk into two
-2afd231 alucard hotplug governor: get online cpus from local cpumask var.
-
-   * packages/apps/CMFileManager/
-e0318a5 Cleanup permission strings again
-
-   * packages/apps/Messaging/
-7f5fbb7 Messaging: Fix for UnicodeStripping for multi-character replacement
-8668700 Framework to Local Blacklist Synchronization Fix
-
-   * packages/apps/PhoneCommon/
-a809cc0 Add last call fail cause 26 string.
-
-   * packages/apps/Settings/
-3323faf Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-306911e Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
-21b1632 Merge pull request #400 from Mai19930513/cm-13.0
-a2ffa78 update zh-rCN translations
-fb2dbba Build V3.7
-6611b13 Fingerprint: do not error out when stopping to listen
-77cd68e ProtectedApps: add up navigation and fix action bar icons
-3dc7787 Revert "ProtectedApps: add up navigation and fix action bar icons"
-106e53e Settings : Finish SimPreferenceDialog on dismiss
-aa3f4fa Settings : Fix linked volume crash + inconsistent state
-46ece19 Settings : Improve app info screen
-6a60c25 [2/2] Settings: blacklist: update iconography
-c5ff8df Fingerprint: do not error out when stopping to listen
-de00b25 ProtectedApps: add up navigation and fix action bar icons
-62d50cc Settings : Finish SimPreferenceDialog on dismiss
-850f103 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-5895648 Settings : Fix linked volume crash + inconsistent state
-6d19f57 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
-456e21e Settings : Improve app info screen
-
-   * packages/apps/SetupWizard/
-34b0e9a Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
-95246f2 SetupWizard : Use MccTable for mcc -> locale lookup
-
-   * packages/apps/Stk/
-f61ae60 Launcher: Present STK app name if possible
-e2d12df Update layout to Material
-
-   * packages/apps/Trebuchet/
-7df0227 Port Remote Folder from 12.1 to 13.
-
    * packages/services/Telephony/
 3fcd41c Merge https://github.com/temasek/android_packages_services_Telephony into HEAD
 
    * system/core/
+e705009 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+0d7baec fastboot: add Zuk to the list of known vendors
 a437a70 Merge https://github.com/temasek/android_system_core into HEAD
-89196c5 healthd: BatteryPropertiesRegistrar binder service ref count fixup
-e1a050f Revert "Allow SELinux to be disabled, set it to permissive by default"
 
    * vendor/cm/
+92a49a9 apns: T-Mobile 310260: Compatibility update
 fabdcab Merge https://github.com/temasek/android_vendor_cm into HEAD
-4f5508e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-db4fb0e recovery: Add new rules for recursive wipe
 
