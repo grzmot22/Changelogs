@@ -6,13 +6,9 @@
    * build/
 1eaea8b Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_build into HEAD
 def4129 Merge branch 'opt-cm-13.0' of https://github.com/JDCTeam/android_build into HEAD
-ba29741 binary: Generate dummy rule for relocated protobuf headers
 
    * device/samsung/jf-common/
 0ad1524 Merge branch 'opt-cm-13.0-test' of https://github.com/JDCTeam/android_device_samsung_jf-common into HEAD
-
-   * frameworks/av/
-3cccf74 Merge https://github.com/temasek/android_frameworks_av into HEAD
 
    * frameworks/base/
 d57fc4d Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
@@ -21,15 +17,25 @@ de45e4b SystemUI: Don't vibrate on touchscreen camera gesture
 e0c77b2 livedisplay: Factoring out color temperature to RGB conversion algorithm
 39948e9 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
 2993904 am: Cancel protected app notification on validation launch.
-83b7925 Merge https://github.com/temasek/android_frameworks_base into HEAD
 
    * hardware/cyanogen/
 fa60003 cmhw: UniqueDeviceId: don't generate hardware IDs from SD card CIDs
 
    * kernel/samsung/Ramdisk/
+217a6cc CONTROL: stop logd sucking battery and cpu power. allow to enable for debug.
+53fe155 Update from 201602027
 5b5d945 cortexbrain-tune: disable mpdecision if it is online when FORCE_CPUS_ONOFF fn is called!
 
    * kernel/samsung/alucard24/
+f062c9b CONFIG: disable CONFIG_SYSVIPC. 	disable new hotplugs for now
+7ef6521 soc: qcom: rpm-smd: Add API to send message without waiting on ACK
+f7a0470 mach-msm: Remove unused headers in power drivers
+860169b msm: kgsl: Fix race condition in adreno_spin_idle()
+3bbfd62 ipv6: addrconf: Fix recursive spin lock call
+9c489d6 AUTOSMP HotPlug: adapted and fixed code style and work functions.
+9e8b01f MSM_HOTPLUG: calc load based on max possible freq. not on set max.
+1f08e3c Merged 3 hotplugs: MAKO,AUTOSMP,BLUE_PLUG next will be to adapt and fix.
+43b4517 alucard_hotplug: initialize all cpu rate during governor starting.
 6928467 alucard_hotplug: code optimization.                  fixed a bug detecting the online cpu having min. load and min. frequency!
 
    * packages/apps/Settings/
@@ -38,7 +44,6 @@ c5c122c Merge https://github.com/temasek/android_packages_apps_Settings into HEA
 e3ae208 Merge pull request #421 from Mai19930513/cm-13.0
 b52069f update zh-rCN translation
 2297ae4 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-6a11cb2 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
 
    * system/bt/
 de894e4 Merge branch 'opt-cm-13.0' of https://github.com/JDCTeam/android_system_bt into HEAD
@@ -51,13 +56,11 @@ d1716b4 Merge https://github.com/temasek/android_vendor_cm into HEAD
 7d9cbd7 Merge branch 'opt-cm-13.0' of https://github.com/JDCTeam/android_vendor_cm into HEAD
 24233a5 Merge pull request #27 from Joshndroid/fix
 d2c8be2 Unary : I hate you, go away.
-c7cb0dd Merge https://github.com/temasek/android_vendor_cm into HEAD
 
    * vendor/cmsdk/
 c2ba919 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into HEAD
 62c6bf2 Merge branch 'opt-cm-13.0' of https://github.com/JDCTeam/cm_platform_sdk into HEAD
 73fafc1 cmsdk: Add touch gesture haptic feedback setting
-df825ad Merge https://github.com/temasek/cm_platform_sdk into HEAD
 
    * vendor/jdc/
 a75b0d0 Merge branch 'opt-cm-13.0' of https://github.com/JDCTeam/android_vendor_jdc into HEAD
@@ -70,14 +73,19 @@ a75b0d0 Merge branch 'opt-cm-13.0' of https://github.com/JDCTeam/android_vendor_
    * art/
 bc97168 ART: make ART extension available only in 32bit for msm8996
 
+   * build/
+ba29741 binary: Generate dummy rule for relocated protobuf headers
+
    * device/samsung/jf-common/
 7d65498 Bluetooth: change prepatch location
 
    * frameworks/av/
+3cccf74 Merge https://github.com/temasek/android_frameworks_av into HEAD
 b39ba64 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
 c5fa90a audio: omx encoder isn't expected for raw recording
 
    * frameworks/base/
+83b7925 Merge https://github.com/temasek/android_frameworks_base into HEAD
 80c5cb9 Revert "When the device boots up, netd works more than required"
 73e91ed QSList: Option to restore old items height
 f137d79 AudioManager: add missing @hide
@@ -92,17 +100,12 @@ c50ac3e Add zh-rTW translation
 cb57a31 Show correct pinning message for accessibility
 49ff3c4 Show correct pinning message without navbar
 6fc672d NotificationPanelView : Fix incorrect panel translation
-9c1b730 SystemUI: reset tile page after inactivity
 
    * kernel/samsung/alucard24/
 c245c36 cpufreq_limit_manager, alu-t-boost: it is not safe to call cpufreq_driver_target function especially outside from governor control. Phone could stuck..... so I removed!
-0727661 cpufreq: Clean up header files included in the core
-942eee9 qcom-cpufreq: Add support for separate governor tunables per policy
-007ae84 cpufreq: use cpufreq_driver->flags to mark CPUFREQ_HAVE_GOVERNOR_PER_POLICY
-336fb9e cpufreq: fixed CPU_VOLTAGE_TABLE, GPU_VOLTAGE_TABLE and MULTI_CPU_POLICY_LIMIT group attributes creation according to new CPUFREQ 3.10Y
-2cec66b cpufreq: SYNC cpufreq_driver_target function to 3.10Y and updated all custom modules!
 
    * packages/apps/Settings/
+6a11cb2 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
 6d27fa6 Settings : Fix back button for sim card lock
 672db85 Settings : Fix back button for sim card lock
 
@@ -110,14 +113,15 @@ c245c36 cpufreq_limit_manager, alu-t-boost: it is not safe to call cpufreq_drive
 1b0670f Snap: Remove face detection option if not supported
 
    * vendor/cm/
+c7cb0dd Merge https://github.com/temasek/android_vendor_cm into HEAD
 6be451e Merge pull request #26 from Joshndroid/fix
 7e25407 Bootanimation - remove duplicate and code cleanup
 e97e138 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 
    * vendor/cmsdk/
+df825ad Merge https://github.com/temasek/cm_platform_sdk into HEAD
 6f3c30a cmsdk: Factoring out color temperature to RGB conversion algorithm
 7866e06 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-e3c9668 cmsdk: send intent to intialize CMHW
 
 ====================
      02-25-2016
@@ -136,15 +140,16 @@ fb5e917 kernel: Don't use override config in kernel(x)config
 d1449f5 build: e2fsck missing from emulator
 4911911 releasetools: Store the proper base64 release key in the target files
 
-   * device/samsung/jf-common/
-572138b Add UPSTREAM
-
    * frameworks/base/
+9c1b730 SystemUI: reset tile page after inactivity
 7e81362 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_frameworks_base into HEAD
-02702db Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
-1953892 Merge https://github.com/temasek/android_frameworks_base into HEAD
 
    * kernel/samsung/alucard24/
+0727661 cpufreq: Clean up header files included in the core
+942eee9 qcom-cpufreq: Add support for separate governor tunables per policy
+007ae84 cpufreq: use cpufreq_driver->flags to mark CPUFREQ_HAVE_GOVERNOR_PER_POLICY
+336fb9e cpufreq: fixed CPU_VOLTAGE_TABLE, GPU_VOLTAGE_TABLE and MULTI_CPU_POLICY_LIMIT group attributes creation according to new CPUFREQ 3.10Y
+2cec66b cpufreq: SYNC cpufreq_driver_target function to 3.10Y and updated all custom modules!
 e0f70f4 cpufreq: create per policy rwsem instead of per CPU cpu_policy_rwsem We have per-CPU cpu_policy_rwsem for cpufreq core, but we never use all of them. We always use rwsem of policy->cpu and so we can actually make this rwsem per policy instead.
 f1fd531 qcom-cpufreq: removed unused mutex l2bw_lock.
 bf8aa27 qcom-cpufreq: we don't need to register an hotplug notifier is "is_clk" var is false!
@@ -178,34 +183,24 @@ bbab6ea Use a hash set to manage listeners in LookupProvider Manager
 4fa584e Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_apps_Settings into HEAD
 38ae876 Split out drawable to separate from dashboard drawable
 e9c1362 Merge pull request #418 from 14121042/cm-13.0
-84e68cf Break out text color value from commonly used color.
-aef0a19 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-96920e0 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
-77d4611 Update zh-rTW translation
-
-   * packages/services/Telephony/
-0c7c5cc Merge https://github.com/temasek/android_packages_services_Telephony into HEAD
 
    * system/bt/
 3a1c595 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_system_bt into HEAD
 6ccb8f9 main: ignore system-wide -O3
-8e55181 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_bt into HEAD
 
    * system/core/
 77652b3 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_system_core into HEAD
-ae1aab8 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_core into HEAD
 
    * vendor/cm/
 be883d4 common: delete log banner
 56a8e4a Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_vendor_cm into HEAD
 92b7259 add yufone APN
-355a500 Merge https://github.com/temasek/android_vendor_cm into HEAD
 
    * vendor/cmsdk/
+e3c9668 cmsdk: send intent to intialize CMHW
 d06ae38 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 c5b6b84 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/cm_platform_sdk into HEAD
 c2efaa7 Uncomment out getHotwordPackageNameInternal impl
-5f5a8b7 Merge https://github.com/temasek/cm_platform_sdk into HEAD
 
    * vendor/jdc/
 8e78fd8 Update changelog
@@ -220,9 +215,11 @@ c2efaa7 Uncomment out getHotwordPackageNameInternal impl
 fdbc583 art: fix dex2oat watchdog timeout
 
    * device/samsung/jf-common/
-a0c0092 Revert "(1/2)Fix for bt not turning on bug"
+572138b Add UPSTREAM
 
    * frameworks/base/
+02702db Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
+1953892 Merge https://github.com/temasek/android_frameworks_base into HEAD
 d218a20 When the device boots up, netd works more than required
 93e2a44 Performance Optimization: Align texture dirty rect
 42c8331 SharedStorageAgent: fix off by 1
@@ -238,7 +235,6 @@ bd25f24 Revert "Alarm: Don't use invalid timerfd alarm types"
 69f8fca Revert "Alarm: Don't use invalid timerfd alarm types"
 1291c93 ActivityManager : Remove POWER_OFF_ALARM_MODE HOME_KEY button override
 2c6a658 SystemUI: Listen for phone state change
-e30cc7e Inflate custom notifications with the app's theme.
 
    * hardware/qcom/keymaster/
 0919e4a keymaster: add msm8909 into support list
@@ -251,6 +247,94 @@ efb2b81 alucard hotplug: check always if offcpu is offline!
 10e3bf9 alucard_hotplug: use DEFINE_PER_CPU_SHARED_ALIGNED for pcpu_info structure. 		 sampling time sync.
 bf455d1 cpufreq_governor: Send govinfo notification (cpu | load | sampling rate)
 2e8a7bf alucard cpu governor: use DEFINE_PER_CPU_SHARED_ALIGNED for parameters structure!
+
+   * packages/apps/CellBroadcastReceiver/
+42a60b2 Hide CMAS dev options in user builds
+
+   * packages/apps/DeskClock/
+a1de334 DeskClock : Don't set POWER_OFF_ALARM_MODE unecessarily
+
+   * packages/apps/Messaging/
+5d32a6e Fix image and text binding issues in People & Options screen
+cdee383 Fix image re-binding issues for contacts obtained via a LookupProvider
+
+   * packages/apps/OmniSwitch/
+2fc1efa Merge pull request #7 from 14121042/cm-13.0
+66e75ff Add zh-rTW translation
+
+   * packages/apps/Settings/
+84e68cf Break out text color value from commonly used color.
+aef0a19 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+96920e0 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
+77d4611 Update zh-rTW translation
+a8b1862 Merge pull request #417 from 14121042/cm-13.0
+b924050 Add zh-rTW translation
+83496e4 Merge pull request #415 from beroid/cm-13.0
+0321696 Settings: Update RU translations
+a220140 Build V4.6
+23df934 PowerUsage : Don't update if profile didn't change
+68d10e7 Revert "Customize regulatory info."
+a6b79fd Automatic translation import
+e0e5bd2 SimStatus: Don't crash because of missing resource.
+e1a196a PowerUsage : Don't update if profile didn't change
+8fd9afd Revert "Customize regulatory info."
+
+   * packages/apps/Trebuchet/
+1acee18 Trebuchet: re-enable rotation by default on tablets
+
+   * packages/services/Telephony/
+0c7c5cc Merge https://github.com/temasek/android_packages_services_Telephony into HEAD
+94d45a9 Make voicemail notifications dismissable on all carriers
+
+   * system/bt/
+8e55181 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_bt into HEAD
+
+   * system/core/
+ae1aab8 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_core into HEAD
+f81fd9a healthd: use timerfd if dev alarm not exist
+
+   * vendor/cm/
+355a500 Merge https://github.com/temasek/android_vendor_cm into HEAD
+a51c0a2 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+36cb29d recovery: Add new rule for sys.usb.ffs.ready
+
+   * vendor/cmsdk/
+c2efaa7 Uncomment out getHotwordPackageNameInternal impl
+5f5a8b7 Merge https://github.com/temasek/cm_platform_sdk into HEAD
+d4ef68f Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+61afdc1 PerformanceManager : Ensure we clear calling identity
+
+====================
+     02-23-2016
+====================
+
+
+   * device/samsung/jf-common/
+a0c0092 Revert "(1/2)Fix for bt not turning on bug"
+
+   * external/jemalloc/
+8d1d234 Merge remote-tracking branch 'google/master' into android-6.0
+
+   * external/sqlite/
+811e38e Update DL link in version file
+8468602 Reduce sync safety levels from 3 to 1
+4894fa7 sqlite: upgrade to SQLite 3.11.0
+46e856f sqlite: upgrade to SQLite 3.10.2
+d1956cc Reduce sync safety levels from 3 to 1
+
+   * frameworks/base/
+e30cc7e Inflate custom notifications with the app's theme.
+c6457c7 Fix the NullPointerException
+06ccf92 WifiTracker : Don't queue up duplicate messages for updating access points
+98e2262 NetworkPolicyManager: Null check list of packages belonging to UID
+ff5e0e5 SystemUI: Show lockscreen wallpaper if no album art is available
+67e9649 QS: Show # of clients connected to hotspot
+0a63d0b Automatic translation import
+6bb513a FWB: Lockscreen Colors [1/2]
+78f9faa WifiTracker : Don't queue up duplicate messages for updating access points
+e5423f8 NetworkPolicyManager: Null check list of packages belonging to UID
+
+   * kernel/samsung/alucard24/
 939dda4 Revert "soc: qcom: ssr: Check the subsystem state before initiating SSR"
 8b0f841 ANDROID: dm-crypt: run in a WQ_HIGHPRI workqueue
 c648b33 ANDROID: mmc: move to a SCHED_FIFO thread
@@ -307,88 +391,6 @@ c01395d crypto: algif_hash - Only export and import on sockets with data
 370707b xhci: fix placement of call to usb_disabled()
 ad2f292 recordmcount: Fix endianness handling bug for nop_mcount
 
-   * packages/apps/CellBroadcastReceiver/
-42a60b2 Hide CMAS dev options in user builds
-
-   * packages/apps/DeskClock/
-a1de334 DeskClock : Don't set POWER_OFF_ALARM_MODE unecessarily
-
-   * packages/apps/Messaging/
-5d32a6e Fix image and text binding issues in People & Options screen
-cdee383 Fix image re-binding issues for contacts obtained via a LookupProvider
-
-   * packages/apps/OmniSwitch/
-2fc1efa Merge pull request #7 from 14121042/cm-13.0
-66e75ff Add zh-rTW translation
-
-   * packages/apps/Settings/
-a8b1862 Merge pull request #417 from 14121042/cm-13.0
-b924050 Add zh-rTW translation
-83496e4 Merge pull request #415 from beroid/cm-13.0
-0321696 Settings: Update RU translations
-a220140 Build V4.6
-23df934 PowerUsage : Don't update if profile didn't change
-68d10e7 Revert "Customize regulatory info."
-a6b79fd Automatic translation import
-e0e5bd2 SimStatus: Don't crash because of missing resource.
-e1a196a PowerUsage : Don't update if profile didn't change
-8fd9afd Revert "Customize regulatory info."
-
-   * packages/apps/Trebuchet/
-1acee18 Trebuchet: re-enable rotation by default on tablets
-
-   * packages/services/Telephony/
-94d45a9 Make voicemail notifications dismissable on all carriers
-
-   * system/core/
-f81fd9a healthd: use timerfd if dev alarm not exist
-
-   * vendor/cm/
-a51c0a2 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-36cb29d recovery: Add new rule for sys.usb.ffs.ready
-
-   * vendor/cmsdk/
-d4ef68f Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-61afdc1 PerformanceManager : Ensure we clear calling identity
-
-====================
-     02-23-2016
-====================
-
-
-   * external/ffmpeg/
-ea5478c fix invalid linked for target atom , move x86-atom to atom
-
-   * external/jemalloc/
-8d1d234 Merge remote-tracking branch 'google/master' into android-6.0
-
-   * external/sqlite/
-811e38e Update DL link in version file
-8468602 Reduce sync safety levels from 3 to 1
-4894fa7 sqlite: upgrade to SQLite 3.11.0
-46e856f sqlite: upgrade to SQLite 3.10.2
-d1956cc Reduce sync safety levels from 3 to 1
-
-   * frameworks/base/
-c6457c7 Fix the NullPointerException
-06ccf92 WifiTracker : Don't queue up duplicate messages for updating access points
-98e2262 NetworkPolicyManager: Null check list of packages belonging to UID
-ff5e0e5 SystemUI: Show lockscreen wallpaper if no album art is available
-67e9649 QS: Show # of clients connected to hotspot
-0a63d0b Automatic translation import
-6bb513a FWB: Lockscreen Colors [1/2]
-78f9faa WifiTracker : Don't queue up duplicate messages for updating access points
-e5423f8 NetworkPolicyManager: Null check list of packages belonging to UID
-eacbbd7 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
-a735ab8 SystemUI: Show lockscreen wallpaper if no album art is available
-28585cd QS: Show # of clients connected to hotspot
-
-   * packages/apps/Bluetooth/
-26ec45c Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Bluetooth into HEAD
-
-   * packages/apps/BluetoothExt/
-09430a4 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_BluetoothExt into HEAD
-
    * packages/apps/Dialer/
 77a7245 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
 
@@ -398,26 +400,14 @@ b606545 Add new colors and icon.
 
    * packages/apps/Settings/
 dbb9c9d Settings: Lockscreen Colors [2/2]
-25112c3 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-
-   * packages/apps/SetupWizard/
-493e4ce Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
 
    * packages/apps/Trebuchet/
 3e6ed3e Trebuchet: Featured Apps uses themed composed icons and responds to theme changes
 
-   * packages/services/Telecomm/
-9af0c85 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_services_Telecomm into HEAD
-
    * packages/services/Telephony/
 9642384 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-a16abd1 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_services_Telephony into HEAD
-
-   * system/bt/
-5db0f54 l2cap: ifdef checks for BLE_INCLUDED
 
    * vendor/cmsdk/
 5917208 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 9c902f8 cmsdk: Update binder transaction tests for new interfaces.
-1d82da3 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into HEAD
 
