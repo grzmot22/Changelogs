@@ -1,21 +1,193 @@
 ====================
-     04-13-2016
+     04-14-2016
 ====================
 
+   * .repo/local_manifests/
+a5967cd Update
+
+   * bionic/
+5bf1fb9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_bionic into cm-13.0
 
    * build/
+8b0b407 Add UPSTREAM
+a30273a Merge branch 'cm-13.0' of https://www.github.com/temasek/android_build into HEAD
+e6a3f64 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+4bbce4f build: Add BOOTIMAGE_EXTRA_DEPS for BOOT_SIGNER products too
+f31558c build: Use compatibility DTB directory path for custom DTB tool builds
 043db77 Merge tag 'android-6.0.1_r31' of https://github.com/android/platform_build into HEAD
 
    * device/samsung/jf-common/
 d851266 Merge https://github.com/CyanogenMod/android_device_samsung_jf-common into HEAD
+
+   * external/toybox/
+3b06b02 Merge branch 'master' of https://android.googlesource.com/platform/external/toybox into cm-13.0
+
+   * frameworks/av/
+7d458f8 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_frameworks_av into HEAD
+912f3f2 Add UPSTREAM
+c471f01 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+5153cdc libmedia: Initialize mState/mActive value to avoid possible crash
+20f0782 stagefright: Fix CLANG compilation for AMR decoder
+4882796 nuplayer: Seek to valid position in setVideoSurface
+51b3174 video: Use boot clock for recording start time
+7262eae nuplayer: ignore openAudioSink while waiting for teardown completion
+3fe0fe6 nuplayer: update anchor time for offload usecase
+d27aa05 frameworks/av: Fix LOG_NDEBUG compilation issues
+8a69897 libavextensions: Add LOG_NDEBUG define
+f888ced libstagefright: handle error when B-frame is sent to MPEG4Writer
+0ecd6fb cameraservice: Run HAL3 in Non ZSL mode
+0d34354 audio: QTI resampler supports for 32 bit input format
+02d9acd nuplayer: Reverting GenericSource changes done for STA integration
+9fd0a69 rtsp: keep video damaged access unit to enhance fault tolerance
+322d0a4 libstagefright: Allow for MPEG4Writer extension
+d38f175 audioflinger: Compile 192k resampler for 32 bit environment
+804eeff Update Instrumentation code
+135352e NuPlayer: extend onResume funtion
+
+   * frameworks/base/
+d8e3670 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
+7718496 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_frameworks_base into HEAD
+f9fdc4f Add UPSTREAM
+9734599 Merge pull request #122 from neobuddy89/cm-13.0
+e1e9a22 Race in WapPushManager under multi-thread environment
+0b1c243 packagemanager: Fix bootloop if packages.xml is deleted
+d1d0795 Themes: Restore original value if getValue fails
+6f4e0ea Check for deprecated third party keyguard perm
+0a765d3 base: Add support to show GPU Frequency
+7a8a51b Race in WapPushManager under multi-thread environment
+15e7a21 Correct MediaAudioTrackTest testPlaybackHeadPositionAfterStop
+ad3fa41 packagemanager: Fix bootloop if packages.xml is deleted
+bf2ddee Themes: Restore original value if getValue fails
+d6f2d2c Check for deprecated third party keyguard perm
+b2cfd7d Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
+
+   * frameworks/opt/bluetooth/
+47861cf Add UPSTREAMS
+
+   * frameworks/opt/telephony/
+446185f Add UPTREAM
+
+   * kernel/samsung/Ramdisk/
+b02f9ef Update from 20160413
+
+   * packages/apps/Bluetooth/
+8c55ab3 Add UPSTREAMS
+8d6aa19 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Bluetooth into HEAD
+
+   * packages/apps/BluetoothExt/
+319983a Add UPSTREAMS
+
+   * packages/apps/CarrierConfig/
+1972f54 Add UPSTREAM
+
+   * packages/apps/DeskClock/
+a868c2e Revert "AlarmActivity: Fix NPE temporary by removing animations"
+
+   * packages/apps/Dialer/
+d4f1598 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+dcc7560 Remove superfluous method parameter.
+6e1f155 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+f222cf9 InCallMetrics: null check our content resolver query
+
+   * packages/apps/InCallUI/
+584f9e7 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_InCallUI into HEAD
+bde371e Add UPSTREAM
+ba11476 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+
+   * packages/apps/OmniSwitch/
+3919e6d OmniSwitch: update 04/2016
+c8944e2 OmniSwitch: Create a shortcut to exposed toggle activity
+
+   * packages/apps/Settings/
+d8f220b Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+f22e9fa Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_Settings into HEAD
+02747f2 Add UPTREAMS
+ef3407c Setting: Disable WPS Push Button/Pin Entry when WiFi is disabled
+dc4d090 Build V6.6
+0978295 SpamList: Set correct color & remove text from notifications menu item
+5eff3e8 SpamList: Set correct color & remove text from notifications menu item
+035a87b Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+
+   * packages/apps/SetupWizard/
+762b525 Add UPSTREAM
+ae0718e Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
+
+   * packages/apps/Snap/
+57799db Snap: Improve focusing
+
+   * packages/apps/Trebuchet/
+95d1934 avoid NPE
+5e5f825 Trebuchet: Don't crash when AppWidgetService is unavailable
+
+   * packages/providers/ContactsProvider/
+8d13918 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_ContactsProvider into cm-13.0
+a629c55 ContactsProvider: Fix polyphones in Chinese.
+
+   * packages/services/Telecomm/
+571bd47 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_services_Telecomm into HEAD
+caef239 Add UPSTREAM
+
+   * packages/services/Telephony/
+3fd5673 Fix
+4e50d5e Add UPSTREAM
+429191b Fix
+
+   * prebuilts/cmsdk/
+f8f3aaf Remove public default constructor from CMWeatherManager.RequestStatus [2/2]
+
+   * system/bt/
+0586932 Update UPSTREAMS
+8c07d37 Add UPSTREAM
+
+   * system/core/
+9e45e08 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_system_core into HEAD
+368c107 Update UPSTREAMS
+16c7931 Add UPTREAM
+
+   * vendor/cm/
+4401f6f Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
+b539a65 Update UPSTREAMS
+52b0a15 Add UPSTREAM
+40ab914 APN: fixup single-digit mnc APNs
+
+   * vendor/cmsdk/
+462f015 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into HEAD
+a34a251 Merge branch 'cm-13.0' of https://www.github.com/temasek/cm_platform_sdk into HEAD
+1ee98fb Add UPSTREAM
+62604cf cmsdk: Exclude compiled 'cyanogenmod/library' java package.
+9788496 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+ad5e5d0 Remove public default constructor from CMWeatherManager.RequestStatus [1/2]
+b49885a ExtViews: Pass input events to underlying Window
+fe1812f Weather API: Delegate the responsability of rejecting back to back requests [1/2]
+377fffc Use temperature unit from CMSettings on weather update requests
+ed4d063 Add WEATHER_TEMPERATURE_UNIT to CMSettings [1/2]
+10da08a cmsdk: correct naming of THIRD_PARTY_KEYGUARD perm
+4117623 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into HEAD
+ad0d8c5 Weather API: Return ID rather than RequestInfo [1/2]
+
+   * vendor/jdc/
+91c0f43 Fix
+e864460 Update build script(add check secondary upstream) and add UPSTREAM
+
+====================
+     04-13-2016
+====================
+
+
+   * bionic/
+98ea086 bionic: Teach fnmatch(3) to handle UTF-8 characters in patterns
+
+   * device/samsung/jf-common/
 15d78dc Remove the Ethernet configuration
 69065b0 fstab: update otg entry for M
+
+   * external/toybox/
+d5de717 toybox: find: Fix segfault when using -iname/-ipath with -exec
 
    * frameworks/av/
 fc1ac6b Merge https://github.com/temasek/android_frameworks_av into HEAD
 
    * frameworks/base/
-b2cfd7d Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
 d739b68 Merge https://github.com/temasek/android_frameworks_base into HEAD
 0bece0d Add check whether wallpaper's size has changed
 b025232 Let's not recreate the statusbar for task manager
@@ -33,46 +205,48 @@ f6a4fc6 SystemUI: add closed all tasks event log
 
    * frameworks/native/
 d5a3f3a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
+2b4df0b surfaceflinger: Add support for secondary color matrix
+
+   * hardware/cyanogen/
+df9286e cmhw: Add support for GPU-based color calibration
 
    * kernel/samsung/jf/
 e7ae96b neigh: Better handling of transition to NUD_PROBE state
 92a761f pipe: Fix buffer offset after partially failed read
 
    * packages/apps/Bluetooth/
-8d6aa19 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Bluetooth into HEAD
 f64343e hdp: do not return a null value when hdp interface unavailable
 
    * packages/apps/CarrierConfig/
 f00c377 Merge https://github.com/JDCTeam/android_packages_apps_CarrierConfig into HEAD
+ef82687 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_CarrierConfig into HEAD
 
    * packages/apps/InCallUI/
 32f2493 Merge https://github.com/temasek/android_packages_apps_InCallUI into HEAD
+b63eca0 InCallUI: add LookupProvider and VoLTE to landscape layout
 7f977b1 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-13.0
 20f930a Missed rebase: add coordinator layout
 f8f8032 Change in InCallAPI handover button UI
 
    * packages/apps/Settings/
-035a87b Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
 3f6e71e Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
 6aa8c9b Build V6.5
 f3f01e7 livedisplay: Update Settings for new LiveDisplay API
 
    * packages/apps/SetupWizard/
-ae0718e Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
 c8c765c Update the theme apply label string
 
    * packages/services/Telephony/
-429191b Fix
 710cae4 Merge https://github.com/temasek/android_packages_services_Telephony into HEAD
 0bc59fa Fix
 752b032 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-13.0
 
-   * prebuilts/cmsdk/
-663ce62 Merge "Weather API: Return ID rather than RequestInfo [2/2]"
-
    * system/extras/
 7a66a32 f2fs_utils: Update for f2fs-tools 1.6.1
 0aef861 f2fs_utils: Alloc f2fs_journal
+
+   * system/extras/su/
+d2c8eb2 su: Fix crash due to invalid file descriptor
 
    * vendor/cm/
 a4a326c Merge https://github.com/temasek/android_vendor_cm into HEAD
@@ -83,18 +257,20 @@ a4a326c Merge https://github.com/temasek/android_vendor_cm into HEAD
 0766148 cm: Support maven artifact as aar for publish.
 
    * vendor/cmsdk/
-4117623 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into HEAD
-ad0d8c5 Weather API: Return ID rather than RequestInfo [1/2]
 0682dd6 Merge https://github.com/temasek/cm_platform_sdk into HEAD
 5a2c27a Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 1dab5a0 cmsdk: Refactoring LiveDisplay
 67b0002 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 620b1eb cmsdk: compile as aar
+8a35e12 Themes: Clear out bootanimation if pkgName empty
 
 ====================
      04-12-2016
 ====================
 
+
+   * build/
+b968302 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
 
    * frameworks/av/
 9e472d2 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
@@ -118,24 +294,34 @@ ee929a2 Incorrect evictor key in TokenCache
 485576f SysUI: reset mCanDismissKeyguard in setBarState
 e47b2f5 SystemUI: remove extraneous debug log
 2a99942 Incorrect evictor key in TokenCache
+5f1cf78 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
 
-   * frameworks/native/
-2b4df0b surfaceflinger: Add support for secondary color matrix
+   * hardware/samsung/
+6d6daf9 libril: Use a board flag for video call field
 
-   * hardware/cyanogen/
-df9286e cmhw: Add support for GPU-based color calibration
+   * kernel/samsung/Ramdisk/
+3e85ef0 Update from 20160411
+
+   * kernel/samsung/alucard24/
+b5fe3a3 lib: align source before using optimized implementation
+5256935  state_notifier: schedule work on any available CPU
 
    * packages/apps/CarrierConfig/
-ef82687 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_CarrierConfig into HEAD
 98e6fca Enable enabledNotifyWapMMSC for Telefonica Europe carriers
 
    * packages/apps/ContactsCommon/
 d4b8508 Remove duplicate ambientsdk reference
 7ff2d1e Add 'ims-common' & 'info_lookup' build dependency
 
+   * packages/apps/Dialer/
+9e8a087 Dialer: Customize features for regional package
+
    * packages/apps/Messaging/
 d29cf54 Revert "added enabledNotifyWapMMSC flag to mms_config.xml"
 06c4913 Added new feature MMS Validity Period, MMS Delivery,Read Report and MMS Sending Report
+
+   * packages/apps/PhoneCommon/
+63c90d0 Only fire visibility change callback if visibility actually changed.
 
    * packages/apps/Settings/
 4370045 livedisplay: Update Settings for new LiveDisplay API
@@ -145,18 +331,31 @@ de3deec Update Italian translation
 bde97fb Fix the improper string and increment database version to kick off a new indexing job.
 547c088 Settings: fix default sim radio selections
 70e9aea Fix the improper string and increment database version to kick off a new indexing job.
+f8c461b Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+
+   * packages/apps/Snap/
+a78d012 SnapdragonCamera: Fix crash issue when changing TNR setting
 
    * packages/services/Telephony/
 4bb3b53 telephony: Handle no valid subscription scenario for MNS.
 fad523a Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
 ec9e706 Revert "Revert "Phone: Sprint MWI Quirk: Phantom message wait indicator workaround""
+f2dc3c7 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_services_Telephony into HEAD
+1272934 Telephony: Fix NPEs
+
+   * system/core/
+5db81cb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+a34bca4 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_core into HEAD
+0373c8d Revert "Revert "init: Temporarily increase coldboot timeout to 5s""
 
    * system/extras/
 0c8a8e1 Revert "f2fs_utils: Update for f2fs-tools 1.6.1"
 
    * vendor/cmsdk/
-8a35e12 Themes: Clear out bootanimation if pkgName empty
 16d3dc6 LLS: Deprecate collapseNotificationPanel [1/2]
+
+   * vendor/jdc/
+77a4fae Fix
 
 ====================
      04-11-2016
@@ -179,24 +378,17 @@ f3bdaa9 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_fra
 baf93ea CameraClient: MTK Support
 
    * frameworks/base/
-5f1cf78 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
 a59bf9d SystemUI: add closed all tasks event log
 c07b146 SystemUI: add RecentsView EventLogs
 c1be957 Update italian translation
-
-   * hardware/samsung/
-6d6daf9 libril: Use a board flag for video call field
-
-   * kernel/samsung/Ramdisk/
-3e85ef0 Update from 20160411
-
-   * kernel/samsung/alucard24/
-b5fe3a3 lib: align source before using optimized implementation
-5256935  state_notifier: schedule work on any available CPU
+17297b7 SysUI: reset mCanDismissKeyguard in setBarState
 
    * packages/apps/AudioFX/
 985c5b0 AudioFX: Fix FC when opening the app
 853e7fb Merge "Rename package back to AudioFX" into cm-13.0
+
+   * packages/apps/Calendar/
+1dbb27e Fix alerts in doze mode
 
    * packages/apps/ContactsCommon/
 9590c56 Remove scaling option for the Front drawable in CheckableFlipDrawable
@@ -209,11 +401,9 @@ b5fe3a3 lib: align source before using optimized implementation
 cf215ef Eleven: Remove unnecessary local variables
 
    * packages/apps/PhoneCommon/
-63c90d0 Only fire visibility change callback if visibility actually changed.
 5c9ce9b Remove unneeded source line
 
    * packages/apps/Settings/
-f8c461b Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
 6575827 Settings: fix default sim radio selections
 54f6836 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
 c733020 Allow adding a shortcut icon for carrier selection
@@ -225,9 +415,6 @@ c733020 Allow adding a shortcut icon for carrier selection
 8e51f67 Merge https://github.com/JDCTeam/android_packages_apps_SetupWizard into HEAD
 7fa1a1f Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
 
-   * packages/apps/Snap/
-a78d012 SnapdragonCamera: Fix crash issue when changing TNR setting
-
    * packages/providers/MediaProvider/
 3be5df1 Merge pull request #3 from entony80/patch-3
 2c6405c Update italian translation
@@ -235,8 +422,6 @@ fc8f34d Merge pull request #2 from entony80/patch-2
 0d04100 Update italian translation
 
    * packages/services/Telephony/
-f2dc3c7 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_services_Telephony into HEAD
-1272934 Telephony: Fix NPEs
 d1d1659 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
 5515808 Don't impose limitations on network mode selection for non-multi RAT phones.
 6364ca8 Merge https://github.com/temasek/android_packages_services_Telephony into HEAD
@@ -245,16 +430,9 @@ d1d1659 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_servic
 ae56cc8 Merge https://github.com/JDCTeam/android_system_bt into HEAD
 2d582db Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_bt into HEAD
 
-   * system/core/
-a34bca4 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_core into HEAD
-0373c8d Revert "Revert "init: Temporarily increase coldboot timeout to 5s""
-
    * vendor/cm/
 cf0f37c Merge https://github.com/JDCTeam/android_vendor_cm into HEAD
 630cade Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
-
-   * vendor/jdc/
-77a4fae Fix
 
 ====================
      04-10-2016
@@ -264,8 +442,10 @@ cf0f37c Merge https://github.com/JDCTeam/android_vendor_cm into HEAD
    * device/samsung/jf-common/
 405eab8 Merge https://github.com/CyanogenMod/android_device_samsung_jf-common into HEAD
 
+   * external/jpeg/
+60a4dc2 porting jpeg_mem_src() from jpeg lib v8c
+
    * frameworks/base/
-17297b7 SysUI: reset mCanDismissKeyguard in setBarState
 888d48d Merge https://github.com/temasek/android_frameworks_base into HEAD
 1c21ca7 Merge pull request #114 from Mai19930513/cm-13.0
 8de8f3d update zh-rCN translations
@@ -277,75 +457,4 @@ eb9abb7 Build V6.3
 
    * prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
 6cf0727 Initial commit
-
-====================
-     04-09-2016
-====================
-
-
-   * frameworks/av/
-cf99f0d Merge https://github.com/temasek/android_frameworks_av into HEAD
-25edcd2 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
-
-   * frameworks/base/
-af270b6 Merge cm13
-a69f6d9 Merge https://github.com/temasek/android_frameworks_base into HEAD
-c96ff3f Revert "Fix show charging speed on Keyguard"
-527f87f6 Revert "SystemUI: Keyguard: Divide mA on plugged USB"
-5806245 Fix MTP_TYPE_UINT128 data conversion issue
-a631310 add googles updated backup transfer service
-125a036 Revert "backup: backup manager is using the wrong transport"
-b0f87b9 media: Add flags, channelMask, and UID to audio session callbacks
-2976236 SysUI: Add event logs for live lock screen interactions
-a8eb613 Merge pull request #113 from beroid/cm-13.0
-
-   * frameworks/opt/telephony/
-5071b21 Merge https://github.com/JDCTeam/android_frameworks_opt_telephony into HEAD
-bb92a76 Merge https://github.com/temasek/android_frameworks_opt_telephony into HEAD
-67be2ca Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-
-   * packages/apps/AudioFX/
-1589b3f Rename package back to AudioFX
-
-   * packages/apps/Bluetooth/
-15f3a46 Merge https://github.com/temasek/android_packages_apps_Bluetooth into HEAD
-d80bb1c Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
-
-   * packages/apps/Contacts/
-5201b4b Add null object check
-
-   * packages/apps/Dialer/
-627c751 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-
-   * packages/apps/InCallUI/
-8fcf012 Merge https://github.com/temasek/android_packages_apps_InCallUI into HEAD
-aa58eb0 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-
-   * packages/apps/Messaging/
-49f0c07 Add 'ims-common' build dependency
-
-   * packages/apps/Settings/
-0c921b2 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-5209841 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
-f87e8e5 Merge pull request #436 from beroid/cm-13.0
-32644dd Merge pull request #435 from Mai19930513/cm-13.0
-
-   * packages/apps/SetupWizard/
-f31692d Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
-
-   * packages/providers/ContactsProvider/
-b619099 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_ContactsProvider into cm-13.0
-
-   * system/bt/
-3043ad7 Merge https://github.com/temasek/android_system_bt into HEAD
-2e08845 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
-
-   * vendor/cm/
-7db9a56 Merge https://github.com/temasek/android_vendor_cm into HEAD
-cb622f0 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-   * vendor/cmsdk/
-f8020a8 Merge https://github.com/JDCTeam/cm_platform_sdk into HEAD
-6b36f0c Merge https://github.com/temasek/cm_platform_sdk into HEAD
-e21c8e5 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 
