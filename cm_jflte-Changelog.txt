@@ -1,4 +1,164 @@
 ====================
+     04-13-2016
+====================
+
+
+   * build/
+043db77 Merge tag 'android-6.0.1_r31' of https://github.com/android/platform_build into HEAD
+
+   * device/samsung/jf-common/
+d851266 Merge https://github.com/CyanogenMod/android_device_samsung_jf-common into HEAD
+15d78dc Remove the Ethernet configuration
+69065b0 fstab: update otg entry for M
+
+   * frameworks/av/
+fc1ac6b Merge https://github.com/temasek/android_frameworks_av into HEAD
+
+   * frameworks/base/
+b2cfd7d Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
+d739b68 Merge https://github.com/temasek/android_frameworks_base into HEAD
+0bece0d Add check whether wallpaper's size has changed
+b025232 Let's not recreate the statusbar for task manager
+973997f livedisplay: Moving LiveDisplay to CMSDK
+4a54c55 livedisplay: Moving LiveDisplay to CMSDK
+45bee5d Lockscreen : Update shortcuts in onAttachWindow
+0f5d25b Lockscreen : Ensure we hide bottom area in bouncer
+3c85a43 lockscreen: Add option for showing unlock screen directly (1/3)
+85f57c3 GlobalActions: Always use setZenMode
+f9d9edc SysUI: Deprecate collapseNotificationPanel [2/2]
+afd54c12 SystemUI: remove extraneous debug log
+f6a4fc6 SystemUI: add closed all tasks event log
+2e815d4 SystemUI: add RecentsView EventLogs
+43afec7 Revert "Update Italian translation"
+
+   * frameworks/native/
+d5a3f3a Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
+
+   * kernel/samsung/jf/
+e7ae96b neigh: Better handling of transition to NUD_PROBE state
+92a761f pipe: Fix buffer offset after partially failed read
+
+   * packages/apps/Bluetooth/
+8d6aa19 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Bluetooth into HEAD
+f64343e hdp: do not return a null value when hdp interface unavailable
+
+   * packages/apps/CarrierConfig/
+f00c377 Merge https://github.com/JDCTeam/android_packages_apps_CarrierConfig into HEAD
+
+   * packages/apps/InCallUI/
+32f2493 Merge https://github.com/temasek/android_packages_apps_InCallUI into HEAD
+7f977b1 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+20f930a Missed rebase: add coordinator layout
+f8f8032 Change in InCallAPI handover button UI
+
+   * packages/apps/Settings/
+035a87b Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+3f6e71e Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
+6aa8c9b Build V6.5
+f3f01e7 livedisplay: Update Settings for new LiveDisplay API
+
+   * packages/apps/SetupWizard/
+ae0718e Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
+c8c765c Update the theme apply label string
+
+   * packages/services/Telephony/
+429191b Fix
+710cae4 Merge https://github.com/temasek/android_packages_services_Telephony into HEAD
+0bc59fa Fix
+752b032 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-13.0
+
+   * prebuilts/cmsdk/
+663ce62 Merge "Weather API: Return ID rather than RequestInfo [2/2]"
+
+   * system/extras/
+7a66a32 f2fs_utils: Update for f2fs-tools 1.6.1
+0aef861 f2fs_utils: Alloc f2fs_journal
+
+   * vendor/cm/
+a4a326c Merge https://github.com/temasek/android_vendor_cm into HEAD
+898d9ef Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+512d428 cm: Moving LiveDisplay to CMSDK
+1ff07a8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+83bfc82 SMART [PH] APN updates
+0766148 cm: Support maven artifact as aar for publish.
+
+   * vendor/cmsdk/
+4117623 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into HEAD
+ad0d8c5 Weather API: Return ID rather than RequestInfo [1/2]
+0682dd6 Merge https://github.com/temasek/cm_platform_sdk into HEAD
+5a2c27a Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+1dab5a0 cmsdk: Refactoring LiveDisplay
+67b0002 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+620b1eb cmsdk: compile as aar
+
+====================
+     04-12-2016
+====================
+
+
+   * frameworks/av/
+9e472d2 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+
+   * frameworks/base/
+3476163 GlobalActions: Always use setZenMode
+65bda83 SysUI: Deprecate collapseNotificationPanel [2/2]
+327acc7 SystemUI: fix double tap power launching custom lockscreen icon
+a98ffcf Merge pull request #120 from entony80/patch-9
+e8e4476 Merge pull request #119 from entony80/patch-8
+d12d3ff Update Italian translation
+86b4dff Update Italian translation
+fae1ad4 Merge pull request #117 from entony80/patch-6
+34e8a5c Merge pull request #116 from entony80/patch-5
+4b6ebe7 Merge pull request #115 from entony80/patch-4
+3f5d3dd Update Italian translation
+987859d Update Italian translation
+41992fe SystemUI: fix double tab launching custom lockscreen icon
+f943628 Lockscreen : Fix dead-zone in bottom area
+ee929a2 Incorrect evictor key in TokenCache
+485576f SysUI: reset mCanDismissKeyguard in setBarState
+e47b2f5 SystemUI: remove extraneous debug log
+2a99942 Incorrect evictor key in TokenCache
+
+   * frameworks/native/
+2b4df0b surfaceflinger: Add support for secondary color matrix
+
+   * hardware/cyanogen/
+df9286e cmhw: Add support for GPU-based color calibration
+
+   * packages/apps/CarrierConfig/
+ef82687 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_CarrierConfig into HEAD
+98e6fca Enable enabledNotifyWapMMSC for Telefonica Europe carriers
+
+   * packages/apps/ContactsCommon/
+d4b8508 Remove duplicate ambientsdk reference
+7ff2d1e Add 'ims-common' & 'info_lookup' build dependency
+
+   * packages/apps/Messaging/
+d29cf54 Revert "added enabledNotifyWapMMSC flag to mms_config.xml"
+06c4913 Added new feature MMS Validity Period, MMS Delivery,Read Report and MMS Sending Report
+
+   * packages/apps/Settings/
+4370045 livedisplay: Update Settings for new LiveDisplay API
+f43dcf9 Merge pull request #438 from entony80/patch-6
+de3deec Update Italian translation
+21134e9 Build V6.4
+bde97fb Fix the improper string and increment database version to kick off a new indexing job.
+547c088 Settings: fix default sim radio selections
+70e9aea Fix the improper string and increment database version to kick off a new indexing job.
+
+   * packages/services/Telephony/
+4bb3b53 telephony: Handle no valid subscription scenario for MNS.
+fad523a Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+ec9e706 Revert "Revert "Phone: Sprint MWI Quirk: Phantom message wait indicator workaround""
+
+   * system/extras/
+0c8a8e1 Revert "f2fs_utils: Update for f2fs-tools 1.6.1"
+
+   * vendor/cmsdk/
+8a35e12 Themes: Clear out bootanimation if pkgName empty
+16d3dc6 LLS: Deprecate collapseNotificationPanel [1/2]
+
+====================
      04-11-2016
 ====================
 
@@ -22,6 +182,10 @@ baf93ea CameraClient: MTK Support
 5f1cf78 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
 a59bf9d SystemUI: add closed all tasks event log
 c07b146 SystemUI: add RecentsView EventLogs
+c1be957 Update italian translation
+
+   * hardware/samsung/
+6d6daf9 libril: Use a board flag for video call field
 
    * kernel/samsung/Ramdisk/
 3e85ef0 Update from 20160411
@@ -34,6 +198,9 @@ b5fe3a3 lib: align source before using optimized implementation
 985c5b0 AudioFX: Fix FC when opening the app
 853e7fb Merge "Rename package back to AudioFX" into cm-13.0
 
+   * packages/apps/ContactsCommon/
+9590c56 Remove scaling option for the Front drawable in CheckableFlipDrawable
+
    * packages/apps/Dialer/
 521a0a6 Don't FC on T9 search input selection of default setting.
 
@@ -41,14 +208,18 @@ b5fe3a3 lib: align source before using optimized implementation
 5b70660 Eleven: Use appropriate String value comparison
 cf215ef Eleven: Remove unnecessary local variables
 
+   * packages/apps/PhoneCommon/
+63c90d0 Only fire visibility change callback if visibility actually changed.
+5c9ce9b Remove unneeded source line
+
    * packages/apps/Settings/
 f8c461b Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
 6575827 Settings: fix default sim radio selections
 54f6836 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-72806b3 Allow adding a shortcut icon for carrier selection
-61c52ab Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
 c733020 Allow adding a shortcut icon for carrier selection
+72806b3 Allow adding a shortcut icon for carrier selection
 373bd9d Merge pull request #437 from entony80/patch-5
+61c52ab Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
 
    * packages/apps/SetupWizard/
 8e51f67 Merge https://github.com/JDCTeam/android_packages_apps_SetupWizard into HEAD
@@ -66,9 +237,9 @@ fc8f34d Merge pull request #2 from entony80/patch-2
    * packages/services/Telephony/
 f2dc3c7 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_services_Telephony into HEAD
 1272934 Telephony: Fix NPEs
+d1d1659 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
 5515808 Don't impose limitations on network mode selection for non-multi RAT phones.
 6364ca8 Merge https://github.com/temasek/android_packages_services_Telephony into HEAD
-d1d1659 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
 
    * system/bt/
 ae56cc8 Merge https://github.com/JDCTeam/android_system_bt into HEAD
@@ -177,430 +348,4 @@ cb622f0 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm
 f8020a8 Merge https://github.com/JDCTeam/cm_platform_sdk into HEAD
 6b36f0c Merge https://github.com/temasek/cm_platform_sdk into HEAD
 e21c8e5 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-
-====================
-     04-08-2016
-====================
-
-   * .repo/local_manifests/
-dc5468f Update
-
-   * build/
-7bff3fa Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-e7ac98d build: Add MTK support
-
-   * frameworks/av/
-a412380 audiopolicy: Be a little smarter with auto-attach
-
-   * frameworks/base/
-e0554d4 media: Add flags, channelMask, and UID to audio session callbacks
-638b5fd SystemUI: Update RU translations
-726377a SysUI: Add event logs for live lock screen interactions
-63bb119 Fix for reboot due to Volume State not updated in callback
-ff31561 Lockscreen target fixes
-ab3ef8b Fix typo in RankingHelper.
-38f250b Force Heads up in all applications [1/2]
-5070a6c QS: update AppSidebar Tile to use CM metrics
-1e8bb32 Revert "Revert "App sidebar: Fix Left/Right position.""
-cc15496 Revert "Revert "App sidebar: notify if app is not installed""
-0cb3814 Revert "Revert "Fix force close for App Sidebar.""
-b8f8e60 Revert "Revert "App sidebar (1/2)""
-6705db9 Revert "Revert "QS: Add App SideBar Tile [1/2]""
-347f67e Merge pull request #111 from entony80/patch-3
-5cdc53c Merge pull request #112 from ZdrowyGosciu/keyguard-mA
-706e798 SystemUI: Keyguard: Divide mA on plugged USB
-e50c672 Update Italian translation
-f8d9e89 Lockscreen target fixes
-
-   * frameworks/opt/telephony/
-28549b9 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-eda0588 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_opt_telephony into opt-cm-13.0
-
-   * hardware/qcom/bt-caf/
-dec5d09 Merge branch 'LA.BF.1.1.3_rb1.12' of git://codeaurora.org/platform/hardware/qcom/bt into cm-13.0
-
-   * packages/apps/AudioFX/
-846d5ed audiofx: Add support for line-out path
-e4e3997 audiofx: Don't link with android-visualizer
-c227786 audiofx-oss: Use new callback API
-
-   * packages/apps/Bluetooth/
-efb1d74 Merge branch 'LA.BF.1.1.3_rb1.12' of git://codeaurora.org/platform/packages/apps/Bluetooth into cm-13.0
-
-   * packages/apps/Contacts/
-7de12b0 Add 'ims-common' build dependency
-
-   * packages/apps/ContactsCommon/
-0a27115 Really change the ambient version
-9d3da7d Change ambient version
-
-   * packages/apps/Dialer/
-0a5abcd Fix rebase errors
-795f46c Port VoLTE support from DialerNext into AOSP Dialer
-153585f Add new method for getting hinttext
-90ae36a Call Log - fix issues with expanded call log options
-c9aa85c Only clear dialpad on success
-9c490ff Check for phone permissions before gathering call history
-d1684bf Metrics: Fix some bugs found by testing
-dc65a3c Fix 'turn on phone permissions' hint
-56d8996 Remove FAB hiding and showing
-baf30ce Update search drawable when dialpad is hidden
-61583e1 Fix expanded call options for InCallApi provider
-d8f7228 Add Metrics for Dialer call origins and incall items
-aff8cf3 Update roaming text
-2902377 Add Wifi Call nudge
-7ae75d5 Temporarily revert DeepLink
-b338120 Add RequestOrigin to ContactInfoHelper
-86f1f7b Add metrics for logging a successful LookupProvider response
-6a89808 Utilize status codes on LookupResponse
-36df0be Add BlockContactActivity to the manifest
-3eb91f5 Bring coachmark up to spec
-94ea6cc Use CALL_ACTION instead of InCallAPI for emergency calls
-58f0d08 Construct encoded lookup uris for Lookup responses
-d9623d5 Modify BlockContactPresenter
-fae836f [2/2] MultiSIM: Call using specified SIM
-c0553ca Refactor Blacklist and Contact Blocking
-666fc39 Wi-fi help text does not show first time when SIM is selected
-93f9bb5 Use BrandIcon instead of BadgeIcon
-3d05339 InCall plugin search shortcut text fix
-625ad12 Only show enabled CallMethods
-80cc555 Move adapter updating into updateCallCreditInfo
-bcbe31f Create new drawable before we scale
-86d7d78 Fix crash where overflow does not exist
-dde67a8 Fix coachmark rotation and text size
-cd91ec8 Add null check to query string
-cf41dae Add back missing icon in portrait mode
-8803300 Fix text in call log to match specs
-848c314 Show credit banner if supported in dialpad and search ui
-ee66a85 getCurrentCallMethod if it is currently null
-4326931 Port coachmark to DialerNow
-c0b01af Remove sign_in_credit_banner_text, this should live in PhoneCommon
-21ce88f Fix CallMethodHelper change
-4d9d892 Use correct placeCall method
-4dfef33 Fix InCall plugin user lookup
-1ac2c1d Finally fix our search to behave as expected
-3ac55cf Fix race with credit listener removal
-cd9060a Fix NPE rotation issue
-a0cae1a [1/2] Use UICommon simple SnackBar
-669a60e Fix refreshing if data is already available
-69dfa2b Properly size icon for provider quickaction
-83efea2 Start using android support design from frameworks
-f803f18 Move pause/resume logic from regular search to main fragment
-d96febd Decouple getAllCallMethods from refreshing
-fbe23b1 Hide t9 dialpad overflow menu when incall plugin selected
-24e0a61 [2/2] fix spinner/hint issues
-8bb7a41 [1/2] Update credits banner style
-88b1d19 Fix fab position when not in searchUI
-c2ec82f Fix CallLogDetails for InCall Plugins
-e2c76a9 DialerDatabaseHelper: Don't update last updated time on execute
-9ec8fdd Fixes a misalignment between the DeepLink icon in Call History.
-cff1831 Refine criteria that triggers LookupProvider search
-aed3d6c Fix block status refresh issue in call log entries
-f5e6962 Amend contact blocking UI
-ee37b4b Fix roaming hint text
-b653e06 Add null check to text listener
-04e24ee Refactors the CallLog code to follow proper design patterns, fixes a number of bugs related to callback mechanisms.
-0f8ff3f Consolidate global credits bar
-73d13e9 Force PSTN from quickactions
-fd4ce2b fix import
-c28a908 Fix mimetype query
-ccb0ea8 Fix multiple issues with regular search credits bar
-19a3ef0 InCall: update CreditBarHelper imports
-e7fcd23 Add Credits Bar in Regular search
-f788030 Fix multiple search issues
-a90a86a Fix layout issues with hint texts
-3de0820 Uses the new alreadyHasContent boolean to determine whether to show icons
-e54c2e0 Add LookupProvider to the call log
-2cd23bd DeepLink refactors and bug fixes.
-a5a41ae Fix a two issues with DialerDatabase
-718852f Fix derp in labeling that breaks messaging
-e917f5c (1/2) T9 fixes and quickactions
-ffdc00e Hide 'send message' in call log for providers
-5c56a65 Add CallerInfoProvider options in Settings
-acb0f2e Hide block calls for providers
-102468f Dialer DeepLink Integration Phase 1
-4db74d3 Fix crashes from permissions errors
-2b383db Fix ANR when no providers are available
-584557f Fix PSTN calls from search
-16af95a Remove extra callMethodListener update
-3da7a2e Fix rebase issue
-0cc800d Fix CallDetails Activity from calllog
-4d037cb Fix credits and cut down on extra work
-9155ee2 Update spinners to reflect plugin enabled status
-3f2d727 Pass mimetype to adapter for regular search
-4111e1a Fix potential crash with dialpad not being attached
-0b9b934 Fix Dialer crash when selecting call details
-02d09b2 Don't try to show InCall Plugin based hints if no plugins are available
-260d8d9 [2/2] Use provider string instead of user name
-737c3ac Add null check to emptyview setup
-79d8b33 Fix hint text logic to be correct
-2386114 Create spinner in search and port auth credits bar
-7038fa4 Fix attribution badge bug
-5b3defa (2/2) Call Lookup: Update call log handler to process usernames
-d4e023a Bring click code out of common
-c267285 Fix hint text in landscape
-84522fd Update SIM's when necessary
-32c77e3 InCall: Port Authentication and CallCredit Listeners
-933af05 Show Emergency Call action in method spinner
-b0e4394 InCall: port nudges and fix plugin settings
-8312e55 Cleanup and Spinner update fix
-bed499a Fix speeddial rotate issue
-89368cb Initial T9 search bringup
-07defe6 Incorporate namespace changes for PluginStatus
-5955744 Libraries needed for InCallUI
-b9516de Fix a number of issues
-3fca833 Move CallMethod items to PhoneCommon
-ed6e921 Initial import of credits bar
-18fa2d2 Add InCall Settings
-03414c9 Initial Bringup of InCall Call Log modifications
-0e7b096 Bringup Favorites and CallMethodSpinner
-e9f88c4 Initial Bringup of Ambient and InCall for M
-
-   * packages/apps/ExactCalculator/
-a804631 ExactCalculator: Remove override of Calculator package
-
-   * packages/apps/InCallUI/
-7ae53c9 Port VoLTE support from InCallUINext to InCallUI
-25cd7bf Temporarily revert DeepLink
-a5eb044 Add RequestOrigin to ContactInfoCache
-d57745b Add additional content to call Notifications
-ea294b5 Ensure presence of a valid Call in LookupProvider callback
-070ba75 Implement ability to add incoming call to Blacklist within Glow ring
-d4812c8 Adjust end call fab relative to invite snackbar
-c05de72 Resolves a few issues related to call buttons:  The DeepLink slot will now update after sending a link to be handled. onResume() will now start a new query.  This gives the handling application an opportunity to trigger a "view" action instead of receiving the content as if it were new.
-61d7ca7 Only get our enabled call methods
-9a7a617 Add LookupProvider to ContactInfoCache
-407efb4 Resolves a NPE when the UI isn't available at the time of the callback ticket NOTES-16
-fef1a35 Tints the DeepLink icons loaded into the callbuttonfragment to keep the look and feel consistent
-4121225 Fix incall button ordering
-a72e4cb DeepLink Refactors for CallButtonPresenter and CallButtonFragment
-ea458a1 DeepLink integration phase 1
-ff82047 Use CallMethodHelper for plugin info
-91d03c8 InCallAPI Handover M-bringup
-435eac4 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-
-   * packages/apps/PhoneCommon/
-cf732b7 Move VoLTE changes to PhoneCommon
-ade2cdf Add new method for getting hinttext
-5bbda91 Use subscription check
-b36eab1 Only clear dialpad on success
-7823a59 InCall: add low credit warnings
-18a593c Fix equals and hashcode override
-64949d3 Remove resources instance saved in CallMethodInfo
-89e5527 [1/2]Contacts : handle soft logged out state
-27e78ce Prioritize credits over subscriptions.
-a7c8e41 Contacts Card : fixed install nudge
-f55b2d2 Fix FC on devices without AmbientCore
-4a49180 [1/2] MultiSIM: Call using specified SIM
-f8e338e Use BrandIcon instead of BadgeIcon
-5176f88 Add preference to track wifi call events
-df5cb68 (1/2) Contacts: fixed auth state handling
-ee5263f Add comments for the expected drawable attributes
-e32e50e Add back badgeicon after refactor
-8d0e05b Add sign_in_credit_banner_text
-fbada9d (1/2) Contacts: refactor
-86b7461 InCall: check class of creditWarn value
-70b3f14 Decouple getAllCallMethods from refreshing
-503b9dc [1/2] fix spinner/hint issues
-0cd7e34 [2/2] update credit colors
-30dc785 Fix crash with null mimetype
-a1aefab InCall: move CreditBarHelper to src-ambient
-95562ec Move Credits Bar to Helper class
-e920421 Reintroduce dynamic refresh
-846ec78 Helper methods for our t9 searches
-5531533 Fix Subscription button text
-5675262 Remove everchanging items
-02d4b70 Create easy method to just grab enabled plugins
-f0aa770 Fix emergency call crash
-7c94eb8 Use new subscription format
-ec3dbfa Fix call method spinner width and selection area
-96733b9 Add Login intent for credits bar
-57e3b00 setOverflowMenuButton custom button placement
-fc97e72 InCall: Port Authentication and CallCredit Listeners
-7f660d9 Various CallMethodInfo tweaks
-969c8f4 InCall: clean up logs and add ImageUtils
-22fef9c CallMethodHelper/Info: Add icon and mimetype
-3d48977 Incorporate namespace changes for PluginStatus
-a6049e6 Bring CallMethod items here
-c5f5b11 Bringup credits and other minor things
-77d3091 Call Method Spinner Bringup
-
-   * packages/apps/Settings/
-af3ca1e Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
-b12126f Settings: Update RU translations
-af6b42f update zh-rCN translations
-838ed85 Build V6.2
-1e52a1d Fix NPE when rotating "Saved networks" screen
-0618fc0 Add explanation for customizing apps
-fc4ec79 Settings: use ActivityManager method for requesting bug report
-fe13c37 Settings: Disable and hide refresh button on power usage detail.
-6f15f5e Settings: Use cm build properties correctly.
-909c55d Automatic translation import
-d6c1204 Force Heads up in all applications [2/2]
-08bb4f0 Revert "Revert "App sidebar (2/2)""
-
-   * packages/apps/SetupWizard/
-763af12 SetupWizard: Wait for data connection
-
-   * packages/providers/ContactsProvider/
-b3bdb84 Switch to ambientsdk
-
-   * packages/providers/WeatherProvider/
-7b88139 Update provider to accommodate changes in weather contract
-
-   * prebuilts/cmsdk/
-0306f90 prebuilts/cmsdk: Update for latest SNAPSHOT release.
-
-   * system/bt/
-881f723 Merge branch 'LA.BF.1.1.3_rb1.12' of git://codeaurora.org/platform/system/bt into cm-13.0
-
-   * system/core/
-48506ab fs_mgr: Add an optional libfs_mgr shared library
-02ee373 liblog: Add xlog symbols on MTK hardware
-
-   * vendor/cm/
-5c50f84 Update ambientsdk version 1.5.2
-
-   * vendor/cmsdk/
-34bf486 Fix nomenclature for RequestInfo types [1/2]
-baaf4a1 Refactor WeatherInfo class
-06d5c89 Add state member to WeatherLocation class
-81268bd LLS: Fix (possible) NPE
-85ffe06 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-7217a53 Revert "Revert "cmsdk: Add App SideBar Tile [2/2]""
-343245f Add API to cancel an active weather request
-9c26dba Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into opt-cm-13.0
-
-====================
-     04-07-2016
-====================
-
-
-   * build/
-c63be20 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_build into HEAD
-375268c build: add cmts config to global build
-
-   * device/qcom/common/
-eed780b qcom: power: Allow devices to write their own platform specific bits
-
-   * frameworks/base/
-18c9ce8 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
-604e5d7 Merge https://github.com/temasek/android_frameworks_base into HEAD
-d144878 SettingsProvider: fix build for volume adjust sound to be overlayed
-35d9ee9 SettingsProvider: Allow default volume adjust sound to be overlayed.
-113e646 com.android.cts.appsecurity.AdoptableHostTest may trigger below dead lock in system_server in the board with external adoptable storage as below stack:
-b94f55c Automatic translation import
-dadd037 Revert "[2/2] frameworks_base: Add option to show seconds in time"
-501df1a [2/2] frameworks_base: Add option to show seconds in time
-b200d92 SystemUI: Fix Statusbar Clock Color not sticking
-2e59955 Revert "Fix clock color inverted statusbar mod"
-71dec8d Fix typo in RankingHelper.
-5c78436 Merge pull request #109 from entony80/patch-1
-f39d0b0 SettingsProvider: fix build for volume adjust sound to be overlayed
-89c3e36 SettingsProvider: Allow default volume adjust sound to be overlayed.
-
-   * frameworks/opt/telephony/
-c76e19e Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
-35c5326 Convert multi_rat_capable property into an old RIL feature.
-082ca0b telephony: Improve compatibility for older DSDS stacks
-
-   * packages/apps/Bluetooth/
-aaa4347 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
-
-   * packages/apps/Contacts/
-da1af0b Contacts: fixed ConcurrentModificationException
-f17e2d0 Fix: update ambiguous placeCall method
-82bc10e Contacts Card: nudge subtitle adjustment
-f2a6c4d Contacts: show InCall plugin tab FAB in soft logged out state
-b5073fd Contacts: added stats settings check
-53a12b4 Contacts: metrics
-b0b05c8 Contacts : ViewPager RTL fix
-6452c8e [2/2]Contacts: handle soft logged out state
-33306c4 Contacts: fixed contacts filter exception
-a32f6a3 Contacts Card: fixed merged contacts with multiple plugin accounts
-dbdb27d Contacts Card: fix nudges
-64e5ffe Contacts: add plugin status change receiver
-4bfb173 Adapt to the API changes in contact blocking classes
-00120c2 (2/2) Contacts: fixed auth state handling and account handle
-4f95d89 Contacts Card: fixed plugin call log
-e73c017 Contacts: added fix for parcelable
-42fed27 Fix build breakage in QuickContactActivity
-a7f0f11 Contacts: incall plugin implementation
-
-   * packages/apps/ContactsCommon/
-fca7d21 Automatic translation import
-90b9d42 Automatic translation import
-3ac79f5 Contacts : fix RTL ViewPager offset on configuration change
-
-   * packages/apps/DeskClock/
-447bc6e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_DeskClock into cm-13.0
-
-   * packages/apps/Dialer/
-4386914 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-
-   * packages/apps/InCallUI/
-d69ce6c Port call transfer feature from DialerNext to AOSP Dialer
-adcf880 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-
-   * packages/apps/OmniSwitch/
-d0a23eb Merge pull request #9 from entony80/patch-3
-32e66cd Fix italian translation
-f8bf444 Merge pull request #8 from entony80/patch-2
-
-   * packages/apps/Settings/
-467fae0 Add explanation for customizing apps
-8b7fda7 Settings: use ActivityManager method for requesting bug report
-8516e98 Settings: Disable and hide refresh button on power usage detail.
-f323b87 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-bdfbe28 Merge https://github.com/temasek/android_packages_apps_Settings into HEAD
-9c900e0 Fix
-8e55284 Merge pull request #433 from beroid/cm-13.0
-fec592a Settings: Update RU translations
-6510ccb Build V6.1
-aaa3d7e Revert "Revert "Add Weather Content Provider [2/5]""
-81b0d65 Revert "[1/2] Settings: Add option to show seconds in time"
-ef32e67 [1/2] Settings: Add option to show seconds in time
-e0cf59a Revert "Add toggle for captive portal check"
-fce7b2f Merge pull request #432 from entony80/patch-4
-e61e4c4 Settings: Use cm build properties correctly.
-
-   * packages/apps/Trebuchet/
-b607527 Trebuchet: add gello to hotseat
-
-   * packages/providers/ContactsProvider/
-132b7de Contacts: automatic merge count metrics
-e2b52e9 Switch to ambientsdk-internal
-2cb7161 Bump targetSdkVersion to 23
-f29be69 Get mimetype for strequestns
-d77430b AmbientSDK: set new target SDK to 22
-2de130b Fix query if no username exists in path
-d6942db ContactsProvider: Join raw_contacts and data on the proper ID
-22eeaf5 (1/2) Call Lookup: Update call log handler to query usernames
-b25f375 [1/3] Show incall plugin contacts in favorites
-48f6d92 Update addresBookIndexer when removing dupes
-f987131 New uri path for removing duplicate callable contacts
-58956e1 CallLog: change plugin to package
-3e6a328 CallLog: initial adding of new plugin columns
-01c7baf Query skype mime type when getting CALLABLE contacts
-38641dd Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_ContactsProvider into cm-13.0
-
-   * packages/providers/MediaProvider/
-a02caa3 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_MediaProvider into cm-13.0
-
-   * packages/providers/TelephonyProvider/
-42b5fab Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_TelephonyProvider into cm-13.0
-
-   * packages/services/Telephony/
-061b735 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-18c6b8e Merge pull request #15 from entony80/patch-1
-e09c9f6 Update Italian translation
-
-   * vendor/cm/
-200bc8e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-   * vendor/cmsdk/
-cd1dda6 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into HEAD
-698a085 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-2eddb5f Reset timer when a new weather service provider is selected
-d8c2556 cmsdk: Actually return the system property in Build.
 
