@@ -1,4 +1,399 @@
 ====================
+     07-14-2016
+====================
+
+
+   * build/
+eba3a09 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_build into HEAD
+87815d5 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_build into HEAD
+5948549 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_build into HEAD
+
+   * device/samsung/jf-common/
+fcd2c56 Remove duplicates
+5b0db54 jf: Clean up camera wrapper
+b75008f Merge https://github.com/JDCTeam/android_device_samsung_jf-common into HEAD
+69e0074 More and more and more edits on audio
+000485a jf: Remove OpenCL library
+5cc7fdd jf: Switch back to stock Adreno firmware
+1b07843 Just a little push
+7b3a592 jf: Update Widevine proprietary file list
+1b944e6 jf: Update graphics proprietary file list
+a5e34a0 jf: Remove unsupported media profiles
+ff1b133 jf: Snap: Connect to camera hardware with open()
+a9e0743 jf: camera: How about doing our NULL checks before crashing?
+5376f38 jf: Update module path reference
+cdc837c Start mpdecision on boot
+
+   * frameworks/av/
+6b3e1e5 Merge https://github.com/temasek/android_frameworks_av into HEAD
+
+   * frameworks/base/
+d1b2112 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_frameworks_base into HEAD
+3f21de7 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
+1292cdc Merge branch 'cm-13.0' of https://www.github.com/temasek/android_frameworks_base into HEAD
+e960f45 Adjust padding between battery icon and text
+9e6263f Fix NPE on longpressing music notification
+6e115ad Remove calls to set_process_name.
+dde1b25 Changes for upgrade to OkHttp 2.7.5
+73efa8b pm: Fix lock insanity with ActivityManager
+7c84f51 keyguard: Set FLAG_SHOW_WALLPAPER when shwowing media
+466aa99 SystemUI: Themes are translatable
+df41276 pm: Fix lock insanity with ActivityManager
+85c5975 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into opt-cm-13.0
+fc8a6d8 keyguard: Set FLAG_SHOW_WALLPAPER when shwowing media
+
+   * kernel/lg/Alucard-Kernel-LG-G5/
+8e3001d Kernel: Update to LA.HB.1.3.2-19000-8x96.0
+030a0f3 bcmdhd: adapt to "cfg80211: properly send NL80211_ATTR_DISCONNECTED_BY_AP in disconnect"
+29d9ffc Revert "ARM:dts:apq: Configuration of BLSP1 and BLSP12 as SPI Busses"
+ab9b988 USB: dwc3-msm: Do not schedule resume work if id state is not changed
+0a724b6 ARM:dts:apq: Camera sensors support for SBC8096
+1d63514 msm: kgsl: Avoid race condition in ioctl_syncsource_destroy
+47cd961 scsi: ufs-debugfs: add error state
+35b64d2 scsi: ufs-qcom: fix bug with read/modify write of UFS_CFG1
+703775f ARM:dts:apq: Configuration of BLSP1 and BLSP12 as SPI Busses
+cd2bcbe Asoc: msm: qdsp6v2: Track compress stream open properly
+17b0b5c ALSA: timer: Harden slave timer list handling
+8b69e89 msm: mdss: trigger event timer on vsync boundary
+bb321ad msm: mdss: Add HFP_CALC_CLK way to switch frame rate
+41f420d msm: kgsl: Add property to determine GPU bitness
+8e2f1ea Revert "usb: xhci: Set interrupt moderation for host mode to 4000(1ms)"
+909b77c ARM: dts: msm: Specify XHCI interrupt moderation from DT for MDMs
+8c81e92 usb: xhci-plat: Add DT parameter to program xhci imod_interval
+bffc5be ARM: dts: msm: Make HDMI as primary interface for APQ8096
+7196b88 msm: mdss: Initialize pan_name array to 0 and handle error case
+d920e77 usb: dwc3: Request dwc3 irq in driver probe
+f4020db msm: mdss: Handle fb_release_all before cont-splash handoff
+34c079a msm: vidc: ensure venus is in power on before scaling clocks
+a239d5b cfg80211: Define macro to indicate support for new cfg80211 disconnect api
+6ffe268 cfg80211: properly send NL80211_ATTR_DISCONNECTED_BY_AP in disconnect
+0522e8d Kernel: Update to LA.HB.1.3.2-17200-8x96.0. (Camera drivers excluded) Huge Commit! :)
+
+   * kernel/samsung/alucard24-dkati/
+9db5936 Bluetooth: Replace %p with %pK
+b79991f net: ipv4: prevent leakage of uninitialized memory to user in recv syscalls
+a22f1a5 Update Kernel from I9505GUEUDOH2
+cfbe506 video: msm: mdnie: Support SRE in UI mode
+fc47092 video: msm: mdnie: Fix sysfs node snprintfs
+7e22746 HID: hiddev: validate num_values for HIDIOCGUSAGES, HIDIOCSUSAGES commands
+4047a77 Revert "Revert "msm: kgsl: Fix memory entry leak when calling adreno_convertaddr""
+c399173 ASoC:msm:audio-effects:misc fixes in h/w accelerated effects
+18f967a Don't show empty tag stats for unprivileged uids
+
+   * packages/apps/InCallUI/
+ec915bd Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_InCallUI into HEAD
+
+   * packages/apps/Settings/
+bb78670 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_packages_apps_Settings into HEAD
+4983408 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+d2f2db9 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_Settings into HEAD
+3d31907 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into opt-cm-13.0
+
+   * packages/apps/SetupWizard/
+f6f0300 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_packages_apps_SetupWizard into HEAD
+41bd1a6 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
+7c1cf5a MobileData: Don't let wait-for-radio trample wait-for-data
+3ebea2f ChooseDataSim: Use the extra data from the intent to validate the sub
+1288cf9 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
+
+   * packages/services/Telecomm/
+5369f81 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_services_Telecomm into HEAD
+
+   * packages/services/Telephony/
+524fbf4 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_services_Telephony into HEAD
+
+   * system/core/
+1474774 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_system_core into HEAD
+82b06bf Merge branch 'cm-13.0' of https://www.github.com/temasek/android_system_core into HEAD
+07385c7 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_core into HEAD
+
+   * vendor/cm/
+4922a91 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_vendor_cm into HEAD
+d6f8ddb Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
+86fd84f cleanup vodafone germany apns
+7c74823 Adapt to 6.0.1_r52 backup whitelist
+3dd9ef3 init: Add VibratorHW sysfs permissions
+0476559 cm: overlay: enable otg notification
+
+   * vendor/cmsdk/
+3c1f268 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/cm_platform_sdk into HEAD
+6b2dabb Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into opt-cm-13.0
+
+   * vendor/samsung/
+cb09bb6 jf: Update graphics libraries
+7facb89 jf: Update Widevine libraries
+
+====================
+     07-13-2016
+====================
+
+
+   * device/qcom/sepolicy/
+e46016c wcnss: Fix I40eeb6895f1c5550813bf8b4182e33f9a4dc5dfd
+
+   * frameworks/base/
+881e858 SystemUI: Themes are translatable
+2b165af SystemUI: Define method setTextColor(int) back to ClockController
+0eb988c Frameworks: Disable smart cover wake by default
+c59ca90 FWB: Clock color master switch (1/2)
+0b0ea8f SettingsProvider: fix data_enabled default lookup
+1d9d590 SettingsProvider: fix data_enabled default lookup
+
+   * hardware/samsung/
+e480d89 power: Add double tap to wake support
+66c10c2 AdvancedDisplay: Fix build error
+3ecf3c4 power: Fix compilation failure
+2879c69 power: Fix I/O business parameter setting
+3360b09 power: Add support for auto power modes
+
+   * kernel/samsung/jf/
+ae09ea3 netfilter: x_tables: make sure e->next_offset covers remaining blob size
+310e900 msm: perf: validate input argument of ev_constraints functions
+
+   * packages/apps/Contacts/
+6aebf68 [2/4] Add cancel callback for BlockContactDialog
+
+   * packages/apps/ContactsCommon/
+b9ecf21 [1/4] Add cancel callback for BlockContactDialog
+
+   * packages/apps/Dialer/
+549fb46 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+442722e [3/4] Add cancel callback for BlockContactDialog
+
+   * packages/apps/InCallUI/
+5548337 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+5d62f58 [4/4] Add cancel callback for BlockContactDialogCallbacks
+8e57153 Don't search LookupProvider for emergency calls
+
+   * packages/apps/Settings/
+3d71fa6 Build V9.9
+9f0fe8f Settings: Disable smart cover wake by default
+29e612e Settings: Clock color master switch (2/2)
+8e43b7c Settings: Always set ramp-up time value during bindView
+5eb6beb Settings: Always set ramp-up time value during bindView
+
+   * packages/apps/Snap/
+14264df Snap: Tighten openLegacy() try-catch block
+
+====================
+     07-12-2016
+====================
+
+
+   * build/
+a9299e9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
+
+   * dalvik/
+1768a30 Fix stream not being closed on all exception paths.
+438969d Bug fix for segfault on reading bytecode with dexdump.
+f1768c3 dx: remove javac flags
+0dcb77e Shush "unused parameter" warnings in hprof-conv.
+00d7910 Consider declared member descriptors as direct ref
+cb49a3f Fix compiler warning on ptr size vs unsigned.
+269917a Improve dx error handling
+4b231bc Add better error message for unsupported classfile
+66154a8 Consider direct references in interface methods
+4fc4440 Handle ACONST_NULL multidimensional arrays.
+
+   * device/qcom/common/
+b80081c Remove libinit_msm
+
+   * device/samsung/jf-common/
+42e42ed jf: Reorganise proprietary file list
+3a5dad1 jf: Update Widevine proprietary file list
+3481d46 jf: Update graphics proprietary file list
+fa050f8 jf: Remove unsupported media profiles
+501328a jf: Snap: Connect to camera hardware with open()
+e865aea jf: camera: How about doing our NULL checks before crashing?
+597c377 jf: Update module path reference
+f175b90 jf: Start mpdecision on boot
+5f186eb jf: Enable scheduler-aware CPU boosting
+
+   * frameworks/base/
+acad9a8 Automatic translation import
+70f03b5 pm: Avoid filtering out protected components in implicit queries.
+d553490 Automatic translation import
+e263f7f pm: Avoid filtering out protected components in implicit queries.
+
+   * packages/apps/CMFileManager/
+fc89b23 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver/
+ce041cf Automatic translation import
+
+   * packages/apps/Dialer/
+bf248fe Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+c24b68c Bump version code and name
+19afeb9 Dialer: Add option to open dialpad at start
+9a5d69a Remove hard dependency on proprietary smartsearch lib
+
+   * packages/apps/Gello/
+36aff52 Automatic translation import
+
+   * packages/apps/Settings/
+b31c991 Automatic translation import
+de44f43 Automatic translation import
+
+   * packages/apps/SetupWizard/
+07c44c4 Automatic translation import
+
+   * packages/apps/Snap/
+3f9223e Automatic translation import
+
+   * packages/apps/SoundRecorder/
+f780c6f Automatic translation import
+
+   * packages/apps/ThemeChooser/
+ea7e6b9 Automatic translation import
+
+   * packages/apps/Trebuchet/
+5bcc39e Automatic translation import
+
+   * packages/apps/TvSettings/
+375e251 Automatic translation import
+
+   * packages/services/Telecomm/
+335ebc1 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telecomm into cm-13.0
+8624016 Automatic translation import
+
+   * packages/services/Telephony/
+79547c0 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+3700f9b Automatic translation import
+
+   * system/extras/
+cae0f79 verity: Split the signer arguments correctly
+
+====================
+     07-11-2016
+====================
+
+
+   * build/
+d6a079f build: Use the password manager for the verity key if possible
+
+   * frameworks/base/
+8014815 Keyguard: Don't circular reveal a non-visible view
+
+   * kernel/samsung/Ramdisk/
+d57e568 Revert "Revert "Reduce vmpressure_file_min to 68 = MIN RAM 278mb free before LMK boombard.""
+442153a Fix a typo that affects STweaks voltage section
+
+   * kernel/samsung/alucard24/
+b382892 Merge https://github.com/B--B/Alucard-Kernel-jfltexx into HEAD
+
+   * packages/apps/Settings/
+04932ad Settings: Add adaptive display mode desc. strings
+
+   * system/core/
+330b9a8 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
+5b537bb healthd: Check if battery device exists instead of charger drivers before setting fake properties.
+
+   * vendor/cm/
+3c547b2 Update SuperSU to v2.76
+
+====================
+     07-10-2016
+====================
+
+
+   * device/qcom/common/
+fdca960 power: Don't send obsolete DISPLAY_OFF opcode
+97f2320 power: Use ARRAY_SIZE macro where possible
+
+   * hardware/samsung/
+8a13740 cmhw: Add DisplayModeControl support
+
+   * packages/apps/Settings/
+4e9b18b Settings: Add adaptive display mode desc. strings
+
+   * vendor/cm/
+6cce279 cleanup vodafone germany apns
+
+====================
+     07-09-2016
+====================
+
+
+   * build/
+aca2c74 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_build into HEAD
+
+   * frameworks/av/
+2d4ba99 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+940b28b Enforce permission for accessing fm tuner
+
+   * frameworks/base/
+d9f4711 SystemUI: add themes dynamic tiles icon
+12fdd7f Keyguard: Don't circular reveal a non-visible view
+68eda06 SystemUI: add themes dynamic tiles icon
+d145bd5 Avoid NPE in printspooler when changing language
+
+   * frameworks/opt/net/wifi/
+1c099f2 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
+95acd46 wifi: fixup hotspot disconnect on subscriber change
+1fcc0dd wifi: don't disable AP on sub change if it's the same sub
+886ac42 wifi: disable access point on subscription change
+
+   * kernel/samsung/Ramdisk/
+347f78c Updates from 20160708
+
+   * kernel/samsung/Ramdisk-clean/
+5910b6d Updates from 20160708
+
+   * kernel/samsung/alucard24/
+cb45039 net: ipv4: prevent leakage of uninitialized memory to user in recv syscalls
+
+   * kernel/samsung/jf/
+49f23158 fscrypto: Fix Linux 3.4 compatibility
+cff80b5 block: Add submit_bio_wait(), remove from md
+dbca8cd block: Add bio_for_each_segment_all()
+bb41bd5 list: introduce list_first_entry_or_null
+ed9ead2 VFS: Introduce inode-getting helpers for layered/unioned fs environments
+8e41def Merge the f2fs-stable linux-3.4.y branch
+b82de1e net: ipv4: prevent leakage of uninitialized memory to user in recv syscalls
+001c9bc workqueue: fix possible stall on try_to_grab_pending() of a delayed work item
+5572258 workqueue: consider work function when searching for busy work items
+b88e85e Merge the linux-stable linux-3.4.y branch
+577953c jf: Enable scheduler frequency input
+d51cb25 sched: Introduce CONFIG_SCHED_FREQ_INPUT
+9dfdb25 cpufreq: cpu-boost: Consider only task load to decide on sync frequency
+8c59f0c cpufreq: cpu-boost: Handle wakeup hints received for foreground tasks
+064e214 sched: window-based load stats improvements
+8fe2c0c sched: Add min_max_freq and rq->max_possible_freq
+55ad26f sched: move task load based functions
+d530988 sched: fix race between try_to_wake_up() and move_task()
+933b37d sched: Skip load update for idle task
+250c6ce sched: window-stats: Fix overflow bug
+f9e77d3 sched: Window-based load stat improvements
+96cc43f sched: Disable wakeup hints for foreground tasks by default
+af6cbf4 sched: Call the notify_on_migrate notifier chain for wakeups as well
+59e40eb cpufreq: cpu-boost: Introduce scheduler assisted load based syncs
+8970e13 sched: window-based load stats for tasks
+d0d5393 sched: Make scheduler aware of cpu frequency state
+260e409 sched: Introduce temporary FAIR_GROUP_SCHED dependency for load-tracking
+e235ca3 sched: Make __update_entity_runnable_avg() fast
+3d0d085 sched: Update_cfs_shares at period edge
+34b7fbd sched: Refactor update_shares_cpu() -> update_blocked_avgs()
+2ccd1d9 sched: Replace update_shares weight distribution with per-entity computation
+a0129e4 sched: Maintain runnable averages across throttled periods
+4ed2158 sched: Normalize tg load contributions against runnable time
+29ed1a3 sched: Compute load contribution by a group entity
+a302d21 sched: Aggregate total task_group load
+24aba96 sched: Account for blocked load waking back up
+2707e44 sched: Add an rq migration call-back to sched_class
+f2abb58 sched: Maintain the load contribution of blocked entities
+64a1f9f sched: Aggregate load contributed by task entities on parenting cfs_rq
+f98e120 sched: Maintain per-rq runnable averages
+ec0a2b1 sched: Track the runnable average on a per-task entity basis
+8054587 msm: msm_rq_stats: remove is_smp() API
+d594b4d msm: rq_stats: Pass correct cpu id to update_average_load function
+
+   * packages/apps/SetupWizard/
+10a58d2 SetupWizard: Handle ActivityNotFoundException in LoadingFragment
+
+   * packages/apps/WallpaperPicker/
+3cd562d Only ask for storage perms when needed
+
+====================
      07-08-2016
 ====================
 
@@ -10,12 +405,10 @@
 a335d97 Make getpid work before TLS has been initialized.
 
    * build/
-aca2c74 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_build into HEAD
 8c21a75 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
 edb9509 Merge remote-tracking branch 'remotes/android-6.0.1_r52' into HEAD
 
    * dalvik/
-400bfb9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_dalvik into cm-13.0
 c27cc46 Merge remote-tracking branch 'remotes/android-6.0.1_r52' into HEAD
 
    * device/samsung/jf-common/
@@ -38,6 +431,7 @@ a3f9106 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_ext
 3d3b2ea Merge remote-tracking branch 'remotes/android-6.0.1_r52' into HEAD
 
    * frameworks/av/
+a568379 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
 1e7c9d2 Merge remote-tracking branch 'remotes/android-6.0.1_r52' into HEAD
 
    * frameworks/base/
@@ -98,10 +492,20 @@ f7ea48e Merge remote-tracking branch 'remotes/android-6.0.1_r52' into HEAD
 e9fb1c1 InstalledAppDetails: fix refreshing storage summary after force stop
 d36c99e Automatic translation import
 d3a1dfe Break out Bluetooth device icon from dashboard reference.
+0f904dc Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+7536d60 InstalledAppDetails: fix refreshing storage summary after force stop
+
+   * packages/apps/SoundRecorder/
+77399f4 SoundRecorder: onConfigurationChanged dismiss popupmenu
+d0c02a3 Revert "SoundRecorder: onConfigurationChanged dismiss popupmenu"
+
+   * packages/apps/Trebuchet/
+4c2c136 Trebuchet hook to export workspace - hidden behind *#*#INFO#*#* wall
 
    * packages/services/Telephony/
 ee99f7b Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_services_Telephony into HEAD
 35c2648 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+64313c6 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_services_Telephony into HEAD
 
    * system/bt/
 6e5f57c Merge branch 'cm-13.0' of https://www.github.com/temasek/android_system_bt into HEAD
@@ -113,6 +517,7 @@ f1eada5 Fix call to enable(bool) which changed as part of 049eae4ff84fbbdbc4b006
 3a48dcd Merge branch 'cm-13.0' of https://www.github.com/temasek/android_system_core into HEAD
 314c0c2 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
 2de1acf fs_mgr: pass sehandle to ext4 format routine
+b31ef0c Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_core into HEAD
 
    * vendor/cm/
 3cf8912 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_vendor_cm into HEAD
@@ -123,6 +528,7 @@ f1c5ab8 Adapt to 6.0.1_r52 backup whitelist
    * vendor/cmsdk/
 7d54896 Merge branch 'cm-13.0' of https://www.github.com/temasek/cm_platform_sdk into HEAD
 f6e5d87 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+b2e3827 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into HEAD
 
 ====================
      07-07-2016
@@ -191,6 +597,10 @@ be55b81 Enable MSM_POWER!
 
    * kernel/samsung/Ramdisk/
 10fa8c6 Fix commit
+e5c80f5 Updates from 20160706 build
+
+   * kernel/samsung/Ramdisk-clean/
+c22b2e3 Updates from 20160706 build
 
    * kernel/samsung/alucard24/
 9533a6b Update Kernel from I9505GUEUDOH2
@@ -214,27 +624,21 @@ e45eb2f Messaging app crashes after a few MMS
 95cdd6a Automatic translation import
 
    * packages/apps/Settings/
-0f904dc Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-7536d60 InstalledAppDetails: fix refreshing storage summary after force stop
 91c66f1 Automatic translation import
 
    * packages/apps/Snap/
 aca0818 Automatic translation import
 
    * packages/apps/SoundRecorder/
-77399f4 SoundRecorder: onConfigurationChanged dismiss popupmenu
-d0c02a3 Revert "SoundRecorder: onConfigurationChanged dismiss popupmenu"
 a955d4c Automatic translation import
 
    * packages/services/Telephony/
-64313c6 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_services_Telephony into HEAD
 9ceb4c8 Automatic translation import
 
    * system/core/
-b31ef0c Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_core into HEAD
+5d90c85 healthd: Write to blink file to fix LED
 
    * vendor/cmsdk/
-b2e3827 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into HEAD
 1a2589b Automatic translation import
 
 ====================
@@ -268,6 +672,7 @@ f1de3c5 media:Modify the display of system default ringtone when it is none.
 94c32d8 SystemConfig: allow app-link to be set to any possible state
 fcd88f4 am: clear protected apps from recents
 95ae413 Automatic translation import
+0cabc1d media:Modify the display of system default ringtone when it is none.
 
    * kernel/lg/Alucard-Kernel-LG-G5/
 32a7c00 Config Update
@@ -544,12 +949,6 @@ a227d9a ARM: dts: msm: Add support mdm9x55 external modem
 278ee3e clk: msm: mdmfermium : Fixes for gcc clocks for mdmfermium
 058b376 clk: mdss: add back the support for dsi 28lpm pll
 
-   * kernel/samsung/Ramdisk/
-e5c80f5 Updates from 20160706 build
-
-   * kernel/samsung/Ramdisk-clean/
-c22b2e3 Updates from 20160706 build
-
    * kernel/samsung/alucard24/
 c0b168f Merge https://github.com/dkati/Alucard-Kernel-jfltexx into HEAD
 1ef1a39 Merge https://github.com/B--B/Alucard-Kernel-jfltexx into HEAD
@@ -586,12 +985,10 @@ c556094 Settings: Don't set the icon for sim activation / deactivation dialog
 b00ff9b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
 f72be63 Automatic translation import
 
-   * system/core/
-5d90c85 healthd: Write to blink file to fix LED
-
    * vendor/cm/
 a28bb32 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_vendor_cm into HEAD
 9b3cd85 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
+a04941c cm: overlay: enable otg notification
 
 ====================
      07-05-2016
@@ -612,9 +1009,14 @@ aaa9a45 jf: Remove deprecated thermal configs
 4693e6f jf: Improve interactive timer values
 3655233 jf: Enable thread migration notifier
 d3612ed Revert "add qcom_pre_processing handling the echo issue"
+79172e1 Merge https://github.com/CyanogenMod/android_device_samsung_jf-common into HEAD
+521a3cc Merge https://github.com/JDCTeam/android_device_samsung_jf-common into HEAD
 
    * frameworks/base/
-0cabc1d media:Modify the display of system default ringtone when it is none.
+ed9651cc Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_frameworks_base into HEAD
+
+   * frameworks/opt/telephony/
+f0a27c1 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_frameworks_opt_telephony into HEAD
 
    * kernel/lg/Alucard-Kernel-LG-G5/
 a48f4e2 qpnp-fg: removed some spaces!
@@ -637,11 +1039,16 @@ d5aa022 soc: qcom: rpm: Change driver memory allocation to use GFP_NOFS
 ca7df94 AIO: Don't plug the I/O queue in do_io_submit()
 695cd9d mmc/core: Disable software CRC.
 
+   * kernel/samsung/Ramdisk/
+f146eff Busybox 1.26.0 from source.
+
    * kernel/samsung/alucard24/
 2db969a Enable CONFIG_CFG80211_ALLOW_RECONNECT
 8f6c9bc video: msm: mdnie: Support SRE in UI mode
 519656b video: msm: mdnie: Fix sysfs node snprintfs
 5100006 HID: hiddev: validate num_values for HIDIOCGUSAGES, HIDIOCSUSAGES commands
+1c07b6f Merge https://github.com/dkati/Alucard-Kernel-jfltexx into HEAD
+87dec06 Update build script
 
    * kernel/samsung/alucard24-dkati/
 2db969a Enable CONFIG_CFG80211_ALLOW_RECONNECT
@@ -649,8 +1056,12 @@ ca7df94 AIO: Don't plug the I/O queue in do_io_submit()
    * packages/apps/AudioFX/
 af5d8a7 Automatic translation import
 
+   * packages/apps/CarrierConfig/
+c9584c3 Merge https://github.com/JDCTeam/android_packages_apps_CarrierConfig into HEAD
+
    * packages/apps/CellBroadcastReceiver/
 c013f43 Automatic translation import
+561a5be Cleanup for translations
 
    * packages/apps/Contacts/
 1bf2f74 Automatic translation import
@@ -671,6 +1082,10 @@ cbb0458 Automatic translation import
 52e815c Fix mistake from previous commit
 8328683 Remove a buggy PreferenceScreen(Propably was a mismerge)
 b2a048a Automatic translation import
+7d4444e Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_packages_apps_Settings into HEAD
+
+   * packages/apps/SetupWizard/
+b78257d Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_packages_apps_SetupWizard into HEAD
 
    * packages/apps/Snap/
 9c7a687 Automatic translation import
@@ -681,9 +1096,19 @@ c8d0800 Automatic translation import
    * packages/services/Telephony/
 763edfb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
 c64967f Telephony: Handle PIN locked sim slot swapping between boots.
+8b225b2 Cleanup for translations
+
+   * system/core/
+6d16858 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_system_core into HEAD
 
    * vendor/cm/
-a04941c cm: overlay: enable otg notification
+2ac67c5 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_vendor_cm into HEAD
+
+   * vendor/cmsdk/
+0569f7e Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/cm_platform_sdk into HEAD
+
+   * vendor/jdc/
+b0c0f5e Merge https://github.com/JDCTeam/android_vendor_jdc into HEAD
 
 ====================
      07-04-2016
@@ -696,17 +1121,17 @@ a68d79c build: Let the verity signer and metadata builders ask for a password
 a2fe444 verity: Allow overloading the key path from environment
 
    * device/samsung/jf-common/
-79172e1 Merge https://github.com/CyanogenMod/android_device_samsung_jf-common into HEAD
-521a3cc Merge https://github.com/JDCTeam/android_device_samsung_jf-common into HEAD
 6794967 add qcom_pre_processing handling the echo issue
 35ccbbc Rework new HAL sources,from the scratch
 6cef90a jf: Update cpufreq tunable name
+
+   * external/okhttp/
+f04b4af Drop unneeded OkHttp compile-time dependency on conscrypt
 
    * external/wpa_supplicant_8/
 ffd4c0e Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_external_wpa_supplicant_8 into HEAD
 
    * frameworks/base/
-ed9651cc Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_frameworks_base into HEAD
 88321c1 SystemUI: Restrict persistent USB drive notifications to USB disks
 bf2f8d9 BT: Set persiste Bluetooth State during enable timeout case
 475c34b Add absent sim info to locked screen text
@@ -733,7 +1158,6 @@ f129a2c Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_fra
 d6916de SystemUI: Restrict persistent USB drive notifications to USB disks
 
    * frameworks/opt/telephony/
-f0a27c1 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_frameworks_opt_telephony into HEAD
 925085f Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
 0468e09 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_frameworks_opt_telephony into HEAD
 12c341d Merge branch 'cm-13.0' of https://www.github.com/temasek/android_frameworks_opt_telephony into HEAD
@@ -743,13 +1167,6 @@ f0a27c1 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_fra
 
    * kernel/lg/Alucard-Kernel-LG-G5/
 80f3f2c Config Update!
-
-   * kernel/samsung/Ramdisk/
-f146eff Busybox 1.26.0 from source.
-
-   * kernel/samsung/alucard24/
-1c07b6f Merge https://github.com/dkati/Alucard-Kernel-jfltexx into HEAD
-87dec06 Update build script
 
    * kernel/samsung/jf/
 d8c7242 cpufreq: interactive: Rearm governor timer at max freq
@@ -774,24 +1191,18 @@ bd02761 Revert "cpufreq: interactive: Allow 1 ms error in above_hispeed_delay co
 87b6ca6 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_Bluetooth into HEAD
 
    * packages/apps/CarrierConfig/
-c9584c3 Merge https://github.com/JDCTeam/android_packages_apps_CarrierConfig into HEAD
 ae72baf Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_CarrierConfig into HEAD
-
-   * packages/apps/CellBroadcastReceiver/
-561a5be Cleanup for translations
 
    * packages/apps/InCallUI/
 a513f62 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_InCallUI into HEAD
 
    * packages/apps/Settings/
-7d4444e Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_packages_apps_Settings into HEAD
 e63f138 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into opt-cm-13.0
 4d1fd7c Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_packages_apps_Settings into HEAD
 2c6dd6c Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
 400e812 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_Settings into HEAD
 
    * packages/apps/SetupWizard/
-b78257d Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_packages_apps_SetupWizard into HEAD
 fe70592 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
 1ab309c Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_SetupWizard into HEAD
 
@@ -799,11 +1210,9 @@ fe70592 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_pac
 48ff390 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_services_Telecomm into HEAD
 
    * packages/services/Telephony/
-8b225b2 Cleanup for translations
 5f9eafb Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_services_Telephony into HEAD
 
    * system/core/
-6d16858 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_system_core into HEAD
 f7df54d Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_core into HEAD
 b6c9518 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_system_core into HEAD
 
@@ -811,20 +1220,15 @@ b6c9518 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_system_
 5c269b8 verity: Let the tools ask for a password if needed
 
    * vendor/cm/
-2ac67c5 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_vendor_cm into HEAD
 bd778cd Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into opt-cm-13.0
 6df2eac Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_vendor_cm into HEAD
 2a0fd8d Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
 53129b4 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_vendor_cm into HEAD
 
    * vendor/cmsdk/
-0569f7e Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/cm_platform_sdk into HEAD
 e4332ec Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into opt-cm-13.0
 5c5a8c9 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/cm_platform_sdk into HEAD
 56b33be Merge branch 'cm-13.0' of https://www.github.com/temasek/cm_platform_sdk into HEAD
-
-   * vendor/jdc/
-b0c0f5e Merge https://github.com/JDCTeam/android_vendor_jdc into HEAD
 
 ====================
      07-03-2016
@@ -840,6 +1244,8 @@ b0c0f5e Merge https://github.com/JDCTeam/android_vendor_jdc into HEAD
 828c966 jf: Don't make persist directory
 87fd7e0 overlay: Enable sending and receiving Mms when mobile data is disabled
 b754ecc jf-common:remove fluence props
+daede3e jf: Improve interactive timer values
+442e111 jf: Enable thread migration notifier
 
    * frameworks/base/
 ed327bc BT: Set persiste Bluetooth State during enable timeout case
@@ -854,10 +1260,55 @@ e5c2d64 Remove TONE_SUPERVISORY_CH
 eba459b MSIM: Restrict data activity change to listeners with matching subId
 cadcb2f Add config to show HD icon on EVS codec.
 70dd4a2 SystemUI: Restrict persistent USB drive notifications to USB disks
+396b4c2 BT: Set persiste Bluetooth State during enable timeout case
+34040d0 Add absent sim info to locked screen text
+528b0dd Encapsulate the unbindService with try catch block
+f689b2e Bluetooth: Access mediaplayerlist in synchronized way
+169748b WifiDisplayController: Fix p2p disconnect before rtsp teardown completes
+a873111 Wifi: Make maximum selective channel scans and interval configurable
+47ea7c7 combo bug when location reported by providers do not come with extras
+914b672 Ignore IMS type APN when notify data connection
+6fcfa2e Remove TONE_SUPERVISORY_CH
+4d75d9e MSIM: Restrict data activity change to listeners with matching subId
+52f0f91 Add config to show HD icon on EVS codec.
 
    * frameworks/opt/telephony/
 ba0bc5f Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
 9f4f4be Subscription updater: don't post messages on events in BroadcastReceiver
+3b24907 TelephonyProvider: Add CDMA call forwarding/waiting function
+c49c744 dct: Sync with upstream
+8ea51be MSIM: Send FINISH request on flex map START fail
+3e12eb4 Set additional info for LaunchBrowser error case.
+83ffc48 Telephony: Reduce back to back same APN activation delay.
+4cc7ede Fix emergency ims pdn setup issue
+09ca1bb Fix ims pdn issue on non dds sub on iwlan
+4a6e7c5 Fix to resolve data call issue for sim hot swap case
+a9d7209 Notify disconnect on phone dispose
+e93e6b5 Use EVS codec for HD if carrier supports it.
+a8208a5 Fix Dds switch issue for wifi and IWLAN scenarios
+b6d95be Fix to avoid unnecessary PS attach.
+fea40e5 Fix ims pdn request issue
+cbaa8d3 Parse the record number from byte to int
+ce2ca07 Finer grained character boundaries in computing SMS fragment lengths
+b3571da MSIM: Use SIM specific subId for setMccMnc
+8b477da IMS: Fix phone app crash at setOutgoingCallerIdDisplay().
+0f88ef6 Fix DDS switch issues for CDMA and IWLAN scenarios.
+7e64272 Add the slot id when broadcasting card state to STK app.
+0dbab41 Fix default data reset issue on device powerup
+1e4c0b0 Send shutdown command to modem
+8b4ba43 Telephony: CDMA: allow MT SMS when in ECBM
+eec0d61 IMS: Exit ECBM before dialing a pending non-emergency MO call
+28678cf IMS: Fix null pointer exception for call forwarding
+35b357b Setup data on new APNs only when APN changes
+31cadbe MSIM: Fix ECBM dialog issue in G+C
+fe0a2f2 Do not set "gsm.operator.idpstring" per phoneId
+2a2094e Telephony: Config values for other languages
+200c495 Revert "updateSpnDisplay: When PLMN values are same for before & after SIM loading in."
+9a69cad Check subid when querying network selection
+3139447 FR29338: Read SIM Contacts from EF-ADN if EF-PBR read failed.
+07d7e45 Fix ADN records loading removing EFEXT1 dependency.
+f567219 Add channel 60 Cellboradcast support.
+a80e16f gsmsst: Protect against "null" string literals
 
    * kernel/lg/Alucard-Kernel-LG-G5/
 68b7796 clk: msm: alpha-pll: Add support for dynamic programming of PLLs
@@ -941,62 +1392,16 @@ efdbb73 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_servic
 ====================
 
 
-   * device/samsung/jf-common/
-daede3e jf: Improve interactive timer values
-442e111 jf: Enable thread migration notifier
-
    * frameworks/base/
-396b4c2 BT: Set persiste Bluetooth State during enable timeout case
-34040d0 Add absent sim info to locked screen text
-528b0dd Encapsulate the unbindService with try catch block
-f689b2e Bluetooth: Access mediaplayerlist in synchronized way
-169748b WifiDisplayController: Fix p2p disconnect before rtsp teardown completes
-a873111 Wifi: Make maximum selective channel scans and interval configurable
-47ea7c7 combo bug when location reported by providers do not come with extras
-914b672 Ignore IMS type APN when notify data connection
-6fcfa2e Remove TONE_SUPERVISORY_CH
-4d75d9e MSIM: Restrict data activity change to listeners with matching subId
-52f0f91 Add config to show HD icon on EVS codec.
 46c998d Revert "PhoneWindowManager : Check CM_SETUP_WIZARD_COMPLETED for isUserSetupComplete"
 0456759d Remove use of '_' variable name
 
    * frameworks/opt/telephony/
-3b24907 TelephonyProvider: Add CDMA call forwarding/waiting function
-c49c744 dct: Sync with upstream
-8ea51be MSIM: Send FINISH request on flex map START fail
-3e12eb4 Set additional info for LaunchBrowser error case.
-83ffc48 Telephony: Reduce back to back same APN activation delay.
-4cc7ede Fix emergency ims pdn setup issue
-09ca1bb Fix ims pdn issue on non dds sub on iwlan
-4a6e7c5 Fix to resolve data call issue for sim hot swap case
-a9d7209 Notify disconnect on phone dispose
-e93e6b5 Use EVS codec for HD if carrier supports it.
-a8208a5 Fix Dds switch issue for wifi and IWLAN scenarios
-b6d95be Fix to avoid unnecessary PS attach.
-fea40e5 Fix ims pdn request issue
-cbaa8d3 Parse the record number from byte to int
-ce2ca07 Finer grained character boundaries in computing SMS fragment lengths
-b3571da MSIM: Use SIM specific subId for setMccMnc
-8b477da IMS: Fix phone app crash at setOutgoingCallerIdDisplay().
-0f88ef6 Fix DDS switch issues for CDMA and IWLAN scenarios.
-7e64272 Add the slot id when broadcasting card state to STK app.
-0dbab41 Fix default data reset issue on device powerup
-1e4c0b0 Send shutdown command to modem
-8b4ba43 Telephony: CDMA: allow MT SMS when in ECBM
-eec0d61 IMS: Exit ECBM before dialing a pending non-emergency MO call
-28678cf IMS: Fix null pointer exception for call forwarding
-35b357b Setup data on new APNs only when APN changes
-31cadbe MSIM: Fix ECBM dialog issue in G+C
-fe0a2f2 Do not set "gsm.operator.idpstring" per phoneId
-2a2094e Telephony: Config values for other languages
-200c495 Revert "updateSpnDisplay: When PLMN values are same for before & after SIM loading in."
-9a69cad Check subid when querying network selection
-3139447 FR29338: Read SIM Contacts from EF-ADN if EF-PBR read failed.
-07d7e45 Fix ADN records loading removing EFEXT1 dependency.
-f567219 Add channel 60 Cellboradcast support.
-a80e16f gsmsst: Protect against "null" string literals
 5caa9c8 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
 44396d8 Remove identifier that causes warnings under OpenJDK 8 compiler
+
+   * hardware/samsung/
+1da88e6 hardware: Clean up CMHW and AdvancedDisplay
 
    * kernel/lg/Ramdisk-LGG5-MM/
 45c9e6b Disable triton system service if option is disabled on stweaks!
@@ -1029,6 +1434,8 @@ e063271 Remove identifier that causes warnings under OpenJDK 8 compiler
    * vendor/cmsdk/
 5a78aab Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 d4bc9d3 cmsdk: Update README.
+b62a455 cmsdk: Create brokerablecmsystemservice concept.
+551b377 cmsdk: Factor CMSystemServiceHelper to common.
 
 ====================
      07-01-2016
@@ -1074,6 +1481,7 @@ d0f59be Fix mcc-mnc population issue in apn editor
 7975c8e Update OperatorInfo in Simstatus settings for correct subid
 6b63386 Grey out PIN1 enable/disable option when SUB is not ready
 d7d6c6d Bluetooth : Handle SQL memory situation during OPP.
+e40a0c5 fingerpint: Allow devices to configure sensor location
 
    * packages/apps/SoundRecorder/
 c8b4cf4 Add Bluetooth sound recording
@@ -1110,8 +1518,6 @@ d68de66 Copy the ETB dumps and maps file to /data/core
 00c551e Don't use global variable in libnetutils.
 
    * vendor/cmsdk/
-b62a455 cmsdk: Create brokerablecmsystemservice concept.
-551b377 cmsdk: Factor CMSystemServiceHelper to common.
 50571ba Apply active profile if user enables system profiles
 
 ====================
@@ -1119,12 +1525,33 @@ b62a455 cmsdk: Create brokerablecmsystemservice concept.
 ====================
 
 
+   * device/samsung/qcom-common/
+a13222f Automatic translation import
+
+   * external/okhttp/
+8219a39 okhttp: Get tcmiface off the boot classpath
+ad5f866 TCM: adjust support for okhttp upgrade
+8e6bc49 Add TCM (TCP Connection Management) support
+ae0961c Revert "Revert obsolete parts of 'Android modifications to OkHttp'"
+bf2e946 Revert "Add core-oj to the list of dependencies"
+edbd2d1 Revert "Use core-oj alongside core-libart wherever required."
+ef2c3af Revert "Refactor NetworkSecurityPolicy to be pluggable"
+800bc80 Revert "Use hostname aware isCleartextTrafficPermitted"
+47a37a9 Merge changes from topic 'okhttp2-upgrade'
+
+   * external/wpa_supplicant_8/
+94b7293 eap_peer: Make the QMI EAP proxy a standalone lib
+e2a4ce0 Revert "p2p: Add p2p_no_group_iface flag to p2p conf file"
+
    * frameworks/base/
 79eb1b7 Remove orange borders while battery saver mode
 98d6389 Automatic translation import
 a043e2f Revert "Revert "Only show keyguard panel if on lockscreen + no activity on top""
 9124ef6 PhoneWindowManager : Check CM_SETUP_WIZARD_COMPLETED for isUserSetupComplete
 e045a77 Automatic translation import
+ef8760f Revert "Revert "Only show keyguard panel if on lockscreen + no activity on top""
+c767669 WindowAnimator : Check KEYGUARD_PANEL when deciding to show/hide window
+d4c6db9 PhoneWindowManager : Check CM_SETUP_WIZARD_COMPLETED for isUserSetupComplete
 
    * frameworks/opt/hardware/
 43d2a9a cmhw: Allow overrides of device-specific cmhw implementations
@@ -1145,25 +1572,43 @@ a60080e sps: fix if CONFIG_IPC_LOGGING is enabled!
    * kernel/samsung/alucard24/
 ee3b9df msm: kgsl: Fix memory entry leak when calling adreno_convertaddr
 
+   * packages/apps/CMFileManager/
+377e629 Automatic translation import
+
    * packages/apps/CarrierConfig/
 ad2308f feijao: Set voicemail's notification persistent.
+
+   * packages/apps/CellBroadcastReceiver/
+9dd2dfc Automatic translation import
 
    * packages/apps/Contacts/
 6ecb91a Contacts metrics: corrected parsed timestamp values
 04561ba Contacts metrics: flip contacts merge order since they have dependency
 c6eb605 Send count stats with DIRECTORY_SEARCH events
+0ae5fd2 Automatic translation import
 
    * packages/apps/Dialer/
 a7b0e33 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+bb8a083 Automatic translation import
 
    * packages/apps/Gello/
 2c40f6b Gello: nuke unused/broken localized search engines
+00f154b Automatic translation import
 
    * packages/apps/InCallUI/
 f077feb Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+254289a Automatic translation import
+
+   * packages/apps/LockClock/
+23e004d Automatic translation import
+
+   * packages/apps/Messaging/
+ba969ce Automatic translation import
+
+   * packages/apps/PhoneCommon/
+cbd20e8 Automatic translation import
 
    * packages/apps/Settings/
-e40a0c5 fingerpint: Allow devices to configure sensor location
 57e6f28 Automatic translation import
 0c2cd4b settings: wifi: Default to numeric keyboard for static IP items
 5f1663c Settings: Set root access options appropriately
@@ -1171,12 +1616,27 @@ e40a0c5 fingerpint: Allow devices to configure sensor location
 58cdd74 Automatic translation import
 8de7e17 settings: wifi: Default to numeric keyboard for static IP items
 7534d77 Settings: Set root access options appropriately
+57ca3ae Fix untranslatable
+
+   * packages/apps/SetupWizard/
+20037b7 Automatic translation import
 
    * packages/apps/Snap/
 f5c6dd5 Snap: Fix name for OnePlus 3 resolution
+0ef0a63 Automatic translation import
+
+   * packages/apps/SoundRecorder/
+02cf1e2 Automatic translation import
+
+   * packages/apps/WallpaperPicker/
+4909ba2 Automatic translation import
 
    * packages/inputmethods/LatinIME/
 58b2a36 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-13.0
+da10ff6 Automatic translation import
+
+   * packages/providers/DataUsageProvider/
+02bc367 Automatic translation import
 
    * packages/providers/TelephonyProvider/
 0743bb9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_TelephonyProvider into cm-13.0
@@ -1184,9 +1644,11 @@ f5c6dd5 Snap: Fix name for OnePlus 3 resolution
 
    * packages/services/Telephony/
 fe73cc8 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+d2f1215 Automatic translation import
 
    * vendor/cmsdk/
 a9f9fc2 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+052af0a Automatic translation import
 
 ====================
      06-29-2016
@@ -1202,17 +1664,18 @@ a9f9fc2 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm
    * device/samsung/jf-common/
 fa5916b Finalize BT/Audio edits
 
-   * device/samsung/qcom-common/
-a13222f Automatic translation import
-
-   * external/wpa_supplicant_8/
-94b7293 eap_peer: Make the QMI EAP proxy a standalone lib
-e2a4ce0 Revert "p2p: Add p2p_no_group_iface flag to p2p conf file"
+   * external/okhttp/
+231519b Apply upstream commit: Let SocksProxy use the same definition of localhost as MockWebServer.
+846bb9b Apply upstream commit: Reduce memory requirements for MockWebServerTest.disconnectHalfway().
+86a4f0d Reapply: Relax validation of HTTP header values to retain L/M behavior
+637ebbf Reapply an upstream OkHttp change to Android for HttpUrl
+ef5fc4b Apply upstream commit: Add basic URLFilter for HttpURLConnection
+31b5584 Workaround for request header values with trailing '\r' or '\n'
+cf362b8 Android modifications to existing files from OkHttp / okio
+5be1851 Android additions to OkHttp
+6c251e2 Update OkHttp to 2.7.5 and advance okio by one commit.
 
    * frameworks/base/
-ef8760f Revert "Revert "Only show keyguard panel if on lockscreen + no activity on top""
-c767669 WindowAnimator : Check KEYGUARD_PANEL when deciding to show/hide window
-d4c6db9 PhoneWindowManager : Check CM_SETUP_WIZARD_COMPLETED for isUserSetupComplete
 32d3232 KeyguardSecurityViewFlipper : Fix sim unlock height overlap
 f43293a Disable proximity check on power key properly
 abc3b1e fw: GlobalActions: Always dismiss any existing dialog
@@ -1220,6 +1683,7 @@ abc3b1e fw: GlobalActions: Always dismiss any existing dialog
 51d2d19 KeyguardSecurityViewFlipper : Fix sim unlock height overlap
 545dc46 Disable proximity check on power key properly
 f325b96 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into opt-cm-13.0
+33e91d3 fw: GlobalActions: Always dismiss any existing dialog
 
    * frameworks/opt/telephony/
 eee1cfe Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
@@ -1253,39 +1717,18 @@ db5bbbd cpu: send KOBJ_ONLINE event when enabling cpus
    * kernel/samsung/jf/
 0c0df03 HID: hiddev: validate num_values for HIDIOCGUSAGES, HIDIOCSUSAGES commands
 
-   * packages/apps/CMFileManager/
-377e629 Automatic translation import
-
-   * packages/apps/CellBroadcastReceiver/
-9dd2dfc Automatic translation import
-
-   * packages/apps/Contacts/
-0ae5fd2 Automatic translation import
-
-   * packages/apps/Dialer/
-bb8a083 Automatic translation import
-
    * packages/apps/FMRadio/
 480142b Keep main activity when recording is cancelled
+3c0c276 Handle recording without using MediaRecorder
+a7db4dc Fix stuck recording ui when recording is aborted
 
    * packages/apps/Gello/
-00f154b Automatic translation import
-
-   * packages/apps/InCallUI/
-254289a Automatic translation import
-
-   * packages/apps/LockClock/
-23e004d Automatic translation import
+9aaaede Add Encrypted Google search engine
 
    * packages/apps/Messaging/
-ba969ce Automatic translation import
 ea62dca Messaging: Use textutils to match against SIP scheme.
 
-   * packages/apps/PhoneCommon/
-cbd20e8 Automatic translation import
-
    * packages/apps/Settings/
-57ca3ae Fix untranslatable
 63afc33 Build V9.6
 c1fb0d6 Settings : Add country code to blacklist entry dialog
 a5ddb32 Make sure LiveDisplay toggle default values are correct.
@@ -1293,32 +1736,10 @@ b2b232b Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_pac
 f941eb4 Tidying the mess
 89a85fb Revert "Moved Developer options to OptCM Settings"
 
-   * packages/apps/SetupWizard/
-20037b7 Automatic translation import
-
-   * packages/apps/Snap/
-0ef0a63 Automatic translation import
-
-   * packages/apps/SoundRecorder/
-02cf1e2 Automatic translation import
-
-   * packages/apps/WallpaperPicker/
-4909ba2 Automatic translation import
-
-   * packages/inputmethods/LatinIME/
-da10ff6 Automatic translation import
-
-   * packages/providers/DataUsageProvider/
-02bc367 Automatic translation import
-
-   * packages/services/Telephony/
-d2f1215 Automatic translation import
-
    * vendor/cm/
 67c608a Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into opt-cm-13.0
 
    * vendor/cmsdk/
-052af0a Automatic translation import
 78d80d6 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 512fe05 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into opt-cm-13.0
 
@@ -1333,12 +1754,17 @@ d2f1215 Automatic translation import
    * bionic/
 02972e7 Do not depend on host bits to get the right size to write.
 a25423f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_bionic into cm-13.0
+2a016b8 cortex-a9: Fix reference to __memcpy_base_aligned.
 
-   * frameworks/base/
-33e91d3 fw: GlobalActions: Always dismiss any existing dialog
+   * frameworks/av/
+c1396fe Remove throttle logcat for bluetooth
 
    * frameworks/opt/telephony/
 cdac2f0 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+9122c16 Ims: remove use of old nonexistant qti constant
+8e0b6ee IMS-VT: Remove unused QTI_IMS_CALL_RAT_EXTRA_KEY extra.
+9e3df8a IMS: Encrypted Calling Extras Key Definition
+079b0b5 IMS: Interface change for VOPS and SSAC
 
    * kernel/lg/Alucard-Kernel-LG-G5/
 3ba6824 drivers: of: of_reserved_mem: fixup the alignment with CMA setup
@@ -1413,13 +1839,7 @@ a754c30 esoc: mdm-4x: add support mdm9x55
 
    * packages/apps/CMFileManager/
 65db040 FileManager : Update to use toybox ls
-
-   * packages/apps/FMRadio/
-3c0c276 Handle recording without using MediaRecorder
-a7db4dc Fix stuck recording ui when recording is aborted
-
-   * packages/apps/Gello/
-9aaaede Add Encrypted Google search engine
+95c92cb Fix crash when long press directory
 
    * packages/apps/Settings/
 50af72b Settings : Add country code to blacklist entry dialog
@@ -1435,21 +1855,17 @@ a7db4dc Fix stuck recording ui when recording is aborted
 ====================
 
 
-   * bionic/
-2a016b8 cortex-a9: Fix reference to __memcpy_base_aligned.
+   * device/qcom/common/
+229eb1a perf: Wrap v3 opcodes with ifdefs
+
+   * external/okhttp/
+68e1613 Merge "Revert obsolete parts of 'Android modifications to OkHttp'"
 
    * frameworks/base/
 c93e778 SystemServer: Do not start Atlas Service on lowram devices.
 
    * frameworks/opt/telephony/
-9122c16 Ims: remove use of old nonexistant qti constant
-8e0b6ee IMS-VT: Remove unused QTI_IMS_CALL_RAT_EXTRA_KEY extra.
-9e3df8a IMS: Encrypted Calling Extras Key Definition
-079b0b5 IMS: Interface change for VOPS and SSAC
 bee587b IMS: Explicit call transfer feature
-
-   * packages/apps/CMFileManager/
-95c92cb Fix crash when long press directory
 
    * vendor/cm/
 1bc4b31 Remove APN pinternet.interkom.de from MCC 262/MNC 02
@@ -1466,14 +1882,18 @@ e630607 Don't remove today from the forecast
 
 
    * device/qcom/common/
-229eb1a perf: Wrap v3 opcodes with ifdefs
 8fe35cc power: msm8996: Support boost and perf profile hints
+
+   * external/okhttp/
+5774f01 Revert obsolete parts of 'Android modifications to OkHttp'
 
    * frameworks/base/
 7d58b6f SystemUI: Add margin in qs_tile_top between instruction text and add button
 
    * frameworks/opt/telephony/
 4d14d0f Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+b1f2868 Merge https://github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
+90501cb Subscription updater: don't turn data off if we've never set a deafult
 
    * kernel/lg/Alucard-Kernel-LG-G5/
 42267c5 Config: Enabled SIO and FIOPS I/O schedulers
@@ -1516,9 +1936,15 @@ dbbca89 coresight: remove NULL check from drivers
 
    * packages/apps/Bluetooth/
 62d031a Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
+4924f59 Revert "Revert "Ensure synchronized access of JNI callback object""
+
+   * packages/apps/Settings/
+b4643ae Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+5dd3ab3 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_Settings into HEAD
 
    * vendor/cmsdk/
 e1c502d LLS: Allow default enabled events to be overlaid
+5319121 Merge branch 'cm-13.0' of https://www.github.com/temasek/cm_platform_sdk into HEAD
 
 ====================
      06-25-2016
@@ -1550,10 +1976,6 @@ cbe286e wificonfig: store the scan cache for saved wifi configuration
 e97c943 Don't create ScanDetailCache if entry absent in mScanDetailCaches
 22b3c71 Wifi: Update WifiController state if Wifi turn On fails
 6c7911a Wifi: Clear lastConnectAttemptTimestamp variable on a Wifi turn off
-
-   * frameworks/opt/telephony/
-b1f2868 Merge https://github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
-90501cb Subscription updater: don't turn data off if we've never set a deafult
 
    * hardware/qcom/wlan-caf/
 0d2f41b Wifi-HAL: Remove CLANG Warnings and errors
@@ -1738,67 +2160,6 @@ fa441e2 usb: phy: msm: Fix the compilation error with GCC 5.1
 86821ef USB: gadget: u_bam: Fix NULL pointer deference during disconnect
 a505360 USB: ci13xxx_msm_hsic: Allow suspending HSIC after boot-up
 a4d9973 USB: ci13xxx_msm_hsic: Add TLMM initialization support for HSIC
-
-   * packages/apps/Bluetooth/
-4924f59 Revert "Revert "Ensure synchronized access of JNI callback object""
-
-   * packages/apps/FMRadio/
-387bb91 Remove false log warnings
-a1649aa Fix exponential content observer registration
-
-   * packages/apps/Settings/
-b4643ae Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-5dd3ab3 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_Settings into HEAD
-923b2a1 Make sure LiveDisplay toggle default values are correct.
-0ae8b99 UI: Ensure "use for" options displayed when in landscape orientation
-abec2ec Merge pull request #456 from Mai19930513/cm-13.0
-ccb7b0c update zh-rCN translations
-89ec149 Merge pull request #455 from beroid/cm-13.0
-86c8b5e UI: Ensure "use for" options displayed when in landscape orientation
-
-   * vendor/cm/
-f180705 T810: Build by T_I, based on T815 build of RaymanFX, added product name
-
-   * vendor/cmsdk/
-5319121 Merge branch 'cm-13.0' of https://www.github.com/temasek/cm_platform_sdk into HEAD
-c281f72 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-131de78 Themes: Provide 100% test coverage for themes
-
-====================
-     06-24-2016
-====================
-
-
-   * cts/
-057b418 Merge changes from topic 'backport-selinux-test' into marshmallow-cts-dev
-
-   * device/samsung/jf-common/
-489e8e3 Merge https://github.com/JDCTeam/android_device_samsung_jf-common into HEAD
-d33a27d Finalize the BT-audio edits
-
-   * frameworks/base/
-023ad03 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_frameworks_base into HEAD
-6b02bee Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
-6c9a20c Merge branch 'cm-13.0' of https://www.github.com/temasek/android_frameworks_base into HEAD
-aae7dce Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into opt-cm-13.0
-f58a8e8 Update QS panel resources to fix padding issues
-e6ed2ef (1/2) Frameworks: allow to toggle smart cover wake
-5368aef wifi: Enable WiFi IpReachabilityMonitor by default
-d442df6 wifi: Enable WiFi IpReachabilityMonitor by default
-
-   * frameworks/opt/net/wifi/
-f1f933b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
-88db18e wifi: Bring back mIsWiFiIpReachabilityEnabled check
-
-   * frameworks/opt/telephony/
-8faff08 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_frameworks_opt_telephony into HEAD
-28c0a1f Merge branch 'cm-13.0' of https://www.github.com/temasek/android_frameworks_opt_telephony into HEAD
-3ae4555 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-
-   * hardware/qcom/audio-caf/msm8960/
-6b590ce Merge changes from CyanogenMod open    *
-
-   * kernel/lg/Alucard-Kernel-LG-G5/
 9dabe57 USB: phy-msm: Don't use pm_runtime_put_sync while stopping host mode
 7fe02e3 USB: ci13xxx_msm_hsic: Turn off clocks before block reset
 dfc4d3f USB: ci13xxx_msm_hsic: Add voting for io_cal_sleep_clk
@@ -1835,6 +2196,66 @@ f85922b usb: qmp: phy: Read phy reg offsets from device tree file
 6442ad4 usb: qmp: phy: Add support to read phy init sequence from device tree file
 4cb703e usb: qmp: Perform phy init sequence based on phy clk scheme
 9a0e0c2 usb: qusb: Select QUSB2 clk source based on phy clk scheme
+
+   * packages/apps/FMRadio/
+387bb91 Remove false log warnings
+a1649aa Fix exponential content observer registration
+
+   * packages/apps/Settings/
+923b2a1 Make sure LiveDisplay toggle default values are correct.
+0ae8b99 UI: Ensure "use for" options displayed when in landscape orientation
+abec2ec Merge pull request #456 from Mai19930513/cm-13.0
+ccb7b0c update zh-rCN translations
+89ec149 Merge pull request #455 from beroid/cm-13.0
+86c8b5e UI: Ensure "use for" options displayed when in landscape orientation
+
+   * vendor/cm/
+f180705 T810: Build by T_I, based on T815 build of RaymanFX, added product name
+
+   * vendor/cmsdk/
+c281f72 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
+131de78 Themes: Provide 100% test coverage for themes
+
+====================
+     06-24-2016
+====================
+
+
+   * build/
+20dde10 "MOB30R"
+
+   * cts/
+057b418 Merge changes from topic 'backport-selinux-test' into marshmallow-cts-dev
+0624a71 Merge "Detect if file system is already encrypted by other means." into marshmallow-cts-dev
+65540be Merge "Fix TaskswitchingDeviceTest." into marshmallow-cts-dev
+
+   * device/samsung/jf-common/
+489e8e3 Merge https://github.com/JDCTeam/android_device_samsung_jf-common into HEAD
+d33a27d Finalize the BT-audio edits
+
+   * frameworks/base/
+023ad03 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_frameworks_base into HEAD
+6b02bee Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
+6c9a20c Merge branch 'cm-13.0' of https://www.github.com/temasek/android_frameworks_base into HEAD
+aae7dce Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into opt-cm-13.0
+f58a8e8 Update QS panel resources to fix padding issues
+e6ed2ef (1/2) Frameworks: allow to toggle smart cover wake
+5368aef wifi: Enable WiFi IpReachabilityMonitor by default
+d442df6 wifi: Enable WiFi IpReachabilityMonitor by default
+
+   * frameworks/opt/net/wifi/
+f1f933b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_frameworks_opt_net_wifi into cm-13.0
+88db18e wifi: Bring back mIsWiFiIpReachabilityEnabled check
+
+   * frameworks/opt/telephony/
+8faff08 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_frameworks_opt_telephony into HEAD
+28c0a1f Merge branch 'cm-13.0' of https://www.github.com/temasek/android_frameworks_opt_telephony into HEAD
+3ae4555 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
+
+   * hardware/qcom/audio-caf/msm8960/
+6b590ce Merge changes from CyanogenMod open    *
+
+   * kernel/lg/Alucard-Kernel-LG-G5/
 580893c msm: ipa2: notify sps driver to cache the write pointer for IPA BAM pipes
 3386a20 msm: ipa3: fix ipa3_suspend_active_aggr_wa non atomic allocation
 fa4fbf5 platform: qpnp-power-on: add support for cross-configuration of reset types
@@ -1978,6 +2399,7 @@ ad59218 msm: emac: EMAC Gigabit Ethernet Controller driver snapshot
    * packages/apps/CMFileManager/
 70addac Fix no icon for 3GP files
 faa6c46 Assign application/octet-stream to unknown file extensions
+92ac0ff Remove send/send multiple if intent doesn't resolve to any activity
 
    * packages/apps/Settings/
 a0d0126 Settings: Update RU translations
@@ -2009,19 +2431,19 @@ f3881e8 Merge branch 'cm-13.0' of https://www.github.com/temasek/cm_platform_sdk
 ====================
 
 
-   * build/
-20dde10 "MOB30R"
-
    * cts/
-0624a71 Merge "Detect if file system is already encrypted by other means." into marshmallow-cts-dev
-65540be Merge "Fix TaskswitchingDeviceTest." into marshmallow-cts-dev
 a578fc5 Detect if file system is already encrypted by other means.
+7df61f5 Merge "Improve resiliency of message parser in the case that events are missing" into marshmallow-cts-dev
 
    * device/qcom/sepolicy/
 2805e63 file_contexts: Adding context to block devices
+2ada4e4 dpm: Let dpmserviceapp create its subdirs
 
    * external/chromium-webview/
 3f0ac07 webview: Update to 51.0.2704.106
+
+   * external/okhttp/
+8d3d51c Merge "Revert "Temporary workaround for whatsapp issues.""
 
    * frameworks/opt/net/wifi/
 6d15b6e hotspot: Add a fallback to model-name for SSID
@@ -2034,7 +2456,6 @@ add637a clk: msm: clock-local2: Enable sources before force turning on RCG
 ea623ca clock-local2: revert suppress warning for non_local_control_timeout
 
    * packages/apps/CMFileManager/
-92ac0ff Remove send/send multiple if intent doesn't resolve to any activity
 994dd34 Navigate to path when launched from folder shortcut
 
    * packages/apps/Gello/
@@ -2054,7 +2475,6 @@ a8984b3 Add SM-T810 and SM-T815
 8cdade1 Update
 
    * cts/
-7df61f5 Merge "Improve resiliency of message parser in the case that events are missing" into marshmallow-cts-dev
 0ba763a Merge "Remove non-CTS packets assertion code" into marshmallow-cts-dev
 6b8ef6b Merge "Merge \"Merge \\"Remove BrowserBenchTest\\" into lollipop-cts-dev am: 5fcf887ff1\" into lollipop-mr1-cts-dev am: 2da4fa1649" into marshmallow-cts-dev
 58d372e Merge \"Merge \\"Remove BrowserBenchTest\\" into lollipop-cts-dev am: 5fcf887ff1\" into lollipop-mr1-cts-dev am: 2da4fa1649
@@ -2062,12 +2482,13 @@ a8984b3 Add SM-T810 and SM-T815
 6be7a80 Merge \"Remove BrowserBenchTest\" into lollipop-cts-dev am: 5fcf887ff1
 5fcf887 Merge "Remove BrowserBenchTest" into lollipop-cts-dev
 
-   * device/qcom/sepolicy/
-2ada4e4 dpm: Let dpmserviceapp create its subdirs
+   * device/qcom/common/
+e1dbc22 power: msm8952: Fix previous_boost_time getting reset
 
    * device/samsung/jf-common/
 1cc4426 Merge https://github.com/JDCTeam/android_device_samsung_jf-common into HEAD
 188776a Fix mic volume while VoIP call.
+b11320c Merge pull request #1 from JDCTeam/opt-cm-13.0-haltests
 
    * frameworks/base/
 16b7b2b Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into opt-cm-13.0
@@ -2151,102 +2572,6 @@ e26b5ac Allow only to free reclaimable slab objects (includes dentries and inode
 
    * kernel/samsung/alucard24/
 bf5f48b Merge branch 'aosp-6.0' of https://github.com/B--B/Alucard-Kernel-jfltexx into HEAD
-
-   * packages/apps/BluetoothExt/
-de446fc Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_BluetoothExt into HEAD
-
-   * packages/apps/InCallUI/
-0f5849d Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_InCallUI into HEAD
-
-   * packages/apps/Settings/
-bb1e891 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-6a87f64 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-2509904 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_Settings into HEAD
-232e667 Settings: Fix possible NPE
-
-   * packages/apps/SetupWizard/
-871d53f Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_packages_apps_SetupWizard into HEAD
-
-   * packages/services/Telephony/
-89b4722 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_services_Telephony into HEAD
-
-   * system/bt/
-6d1dcc2 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_bt into HEAD
-
-   * vendor/cm/
-46b2f16 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into opt-cm-13.0
-fc48c16 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
-cc50ed0 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_vendor_cm into HEAD
-2b8c4b2 sepolicy: put bash in shell context
-
-   * vendor/cmsdk/
-6bab873 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into opt-cm-13.0
-73b4ca2 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into HEAD
-
-====================
-     06-21-2016
-====================
-
-
-   * android/
-9714255 android: Switch to our chromium-webview
-
-   * bootable/recovery/
-8e507d8 recovery: Initialize menu_show_start_ to avoid crash
-
-   * cts/
-e1568c9 security: fix change in SELinux for kernel threads test
-ac0620b security: adjust test on SELinux for kernel threads
-f92fb0b Remove BrowserBenchTest
-26069ff merge in marshmallow-cts-release history after reset to marshmallow-cts-dev
-b9ff918 Merge "EncryptionTest: Run only for API level >= 23" into marshmallow-cts-dev
-b25dfbc Merge "CameraITS: Increase error margin for test_tonemap_sequence" into marshmallow-cts-dev
-401a260 Merge "CameraIts: Fix test_param_shading_mode with no display" into marshmallow-cts-dev
-978b467 Merge "Merge \"DO NOT MERGE: Bump CTS to 5.1 R9\" into lollipop-mr1-cts-dev am: cacbd6c8aa  -s ours" into marshmallow-cts-dev
-a6c0d53 Merge \"DO NOT MERGE: Bump CTS to 5.1 R9\" into lollipop-mr1-cts-dev am: cacbd6c8aa  -s ours
-3dd1905 CameraIts: Fix test_param_shading_mode with no display
-cacbd6c Merge "DO NOT MERGE: Bump CTS to 5.1 R9" into lollipop-mr1-cts-dev
-ce4bfc1 DO NOT MERGE: Bump CTS to 5.1 R9
-a286bc9 Merge "DO NOT MERGE: Bump CTS to 6.0R8" into marshmallow-cts-dev
-47de61a DO NOT MERGE: Bump CTS to 6.0R8
-0963264 Merge "Merge \"Merge \\"DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8\\" into lollipop-cts-dev am: 68e28793a6  -s ours\" into lollipop-mr1-cts-dev am: bc927019d8  -s ours" into marshmallow-cts-dev
-88c962c Merge \"Merge \\"DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8\\" into lollipop-cts-dev am: 68e28793a6  -s ours\" into lollipop-mr1-cts-dev am: bc927019d8  -s ours
-bc92701 Merge "Merge \"DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8\" into lollipop-cts-dev am: 68e28793a6  -s ours" into lollipop-mr1-cts-dev
-5216f5e Merge \"DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8\" into lollipop-cts-dev am: 68e28793a6  -s ours
-68e2879 Merge "DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8" into lollipop-cts-dev
-2624477 DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8
-e864c88 Merge "DO NOT MERGE Updated the test to use Build.VERSION.SECURITY_PATCH Updated the test for June 2016" into marshmallow-cts-dev
-ad6f25d CameraITS: Increase error margin for test_tonemap_sequence
-c43822b DO NOT MERGE Updated the test to use Build.VERSION.SECURITY_PATCH Updated the test for June 2016
-9fcf2d1 Merge "CameraIts: Use wait and notify for callback counter" into marshmallow-cts-dev
-
-   * device/qcom/common/
-e1dbc22 power: msm8952: Fix previous_boost_time getting reset
-
-   * device/qcom/sepolicy/
-22008e8 msm8937: Fix labeling of the cache and FRP partitions
-
-   * device/samsung/jf-common/
-b11320c Merge pull request #1 from JDCTeam/opt-cm-13.0-haltests
-160ef2e Add Gello to build
-
-   * device/samsung/qcom-common/
-663c7de Automatic translation import
-
-   * frameworks/base/
-d83f6ae Automatic translation import
-4282864 Automatic translation import
-
-   * frameworks/native/
-52ea7b6 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
-
-   * frameworks/opt/telephony/
-3718ef2 Telephony: handle 3rd party sms apps + 'always ask'
-
-   * hardware/broadcom/libbt/
-1415972 libbt-vendor (BRCM): Add ssr_cleanup
-
-   * kernel/samsung/alucard24/
 b68e74d Config. add unused f2fs config.
 c5525e3 F2FS: super: drop the GFP flags, need more FS changes from 3.18.y
 2c4a109 percpu_counter: make percpu_counters_lock irq-safe
@@ -2405,82 +2730,79 @@ cd681f1 f2fs: adjust other changes
 5899c51 net: sch_generic: Allow devices to opt-out net watchdog
 
    * packages/apps/BluetoothExt/
-a92c7d6 wipower: Only build a4wp if BSP is available
-
-   * packages/apps/CellBroadcastReceiver/
-7223f70 Automatic translation import
-
-   * packages/apps/Contacts/
-00ae48a Automatic translation import
-
-   * packages/apps/Dialer/
-ca39eea Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-a907708 Automatic translation import
-
-   * packages/apps/Gello/
-9fc0dae Automatic translation import
+de446fc Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_BluetoothExt into HEAD
 
    * packages/apps/InCallUI/
-c644fc0 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-9af9096 Automatic translation import
-
-   * packages/apps/LockClock/
-932b0cc Actually verifies if CM weather feature is available
-
-   * packages/apps/ManagedProvisioning/
-be01e94 Automatic translation import
-
-   * packages/apps/Messaging/
-9986c0d Automatic translation import
-
-   * packages/apps/Screencast/
-7bc0763 Automatic translation import
+0f5849d Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_InCallUI into HEAD
 
    * packages/apps/Settings/
-b720488 Settings: handle 'always ask' for SMS subscription on 3rd party apps
-04c47ac Build V9.4
-11d968d Automatic translation import
-98d8e95 Settings : Move trust agent search index to LockscreenSettings
-d40bcaf Automatic translation import
+bb1e891 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+6a87f64 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
+2509904 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_Settings into HEAD
+232e667 Settings: Fix possible NPE
+
+   * packages/apps/SetupWizard/
+871d53f Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_packages_apps_SetupWizard into HEAD
 
    * packages/apps/SoundRecorder/
 d22f0a1 SoundRecorder: Fix notifcation out of sync when audio focus loss
 
-   * packages/apps/TvSettings/
-55e73b5 Automatic translation import
-
-   * packages/apps/WallpaperPicker/
-6cfca71 Automatic translation import
-
-   * packages/inputmethods/LatinIME/
-574ec2c Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-13.0
-884ca0d Automatic translation import
-
-   * packages/providers/DataUsageProvider/
-260c7dc Automatic translation import
-
-   * packages/services/Mms/
-56584b7 Revert "MmsRequest: Reimplement automatic data sub switch"
-
    * packages/services/Telephony/
-834332e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-c4fd682 Automatic translation import
+89b4722 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_services_Telephony into HEAD
 
    * system/bt/
+6d1dcc2 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_bt into HEAD
 0af4949 bt-vendor: Check for vendor SSR function before attempting to call it
-28d35ee Fix merge issue
-e464214 Revert "DONT MERGE AGAIN FROM CM UPSTREAM"
+
+   * vendor/cm/
+46b2f16 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into opt-cm-13.0
+fc48c16 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
+cc50ed0 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_vendor_cm into HEAD
+2b8c4b2 sepolicy: put bash in shell context
+
+   * vendor/cmsdk/
+6bab873 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into opt-cm-13.0
+73b4ca2 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into HEAD
 
    * vendor/jdc/
 90fb906 Merge pull request #3 from JDCTeam/opt-cm-13.0
-3f62513 Add some summer flavor
 
 ====================
-     06-20-2016
+     06-21-2016
 ====================
 
+
+   * android/
+9714255 android: Switch to our chromium-webview
+
+   * bootable/recovery/
+8e507d8 recovery: Initialize menu_show_start_ to avoid crash
 
    * cts/
+e1568c9 security: fix change in SELinux for kernel threads test
+ac0620b security: adjust test on SELinux for kernel threads
+f92fb0b Remove BrowserBenchTest
+26069ff merge in marshmallow-cts-release history after reset to marshmallow-cts-dev
+b9ff918 Merge "EncryptionTest: Run only for API level >= 23" into marshmallow-cts-dev
+b25dfbc Merge "CameraITS: Increase error margin for test_tonemap_sequence" into marshmallow-cts-dev
+401a260 Merge "CameraIts: Fix test_param_shading_mode with no display" into marshmallow-cts-dev
+978b467 Merge "Merge \"DO NOT MERGE: Bump CTS to 5.1 R9\" into lollipop-mr1-cts-dev am: cacbd6c8aa  -s ours" into marshmallow-cts-dev
+a6c0d53 Merge \"DO NOT MERGE: Bump CTS to 5.1 R9\" into lollipop-mr1-cts-dev am: cacbd6c8aa  -s ours
+3dd1905 CameraIts: Fix test_param_shading_mode with no display
+cacbd6c Merge "DO NOT MERGE: Bump CTS to 5.1 R9" into lollipop-mr1-cts-dev
+ce4bfc1 DO NOT MERGE: Bump CTS to 5.1 R9
+a286bc9 Merge "DO NOT MERGE: Bump CTS to 6.0R8" into marshmallow-cts-dev
+47de61a DO NOT MERGE: Bump CTS to 6.0R8
+0963264 Merge "Merge \"Merge \\"DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8\\" into lollipop-cts-dev am: 68e28793a6  -s ours\" into lollipop-mr1-cts-dev am: bc927019d8  -s ours" into marshmallow-cts-dev
+88c962c Merge \"Merge \\"DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8\\" into lollipop-cts-dev am: 68e28793a6  -s ours\" into lollipop-mr1-cts-dev am: bc927019d8  -s ours
+bc92701 Merge "Merge \"DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8\" into lollipop-cts-dev am: 68e28793a6  -s ours" into lollipop-mr1-cts-dev
+5216f5e Merge \"DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8\" into lollipop-cts-dev am: 68e28793a6  -s ours
+68e2879 Merge "DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8" into lollipop-cts-dev
+2624477 DO NOT MERGE ANYWHERE: Bump CTS to 5.0R8
+e864c88 Merge "DO NOT MERGE Updated the test to use Build.VERSION.SECURITY_PATCH Updated the test for June 2016" into marshmallow-cts-dev
+ad6f25d CameraITS: Increase error margin for test_tonemap_sequence
+c43822b DO NOT MERGE Updated the test to use Build.VERSION.SECURITY_PATCH Updated the test for June 2016
+9fcf2d1 Merge "CameraIts: Use wait and notify for callback counter" into marshmallow-cts-dev
 a613cc4 Merge "Merge \"Revert \"Fix for ByodFlowTestActivity\"\" into lollipop-mr1-cts-dev am: 8f0c2f57cf" into marshmallow-cts-dev
 9205f90 Merge \"Revert \"Fix for ByodFlowTestActivity\"\" into lollipop-mr1-cts-dev am: 8f0c2f57cf
 8f0c2f5 Merge "Revert "Fix for ByodFlowTestActivity"" into lollipop-mr1-cts-dev
@@ -2527,18 +2849,125 @@ e50ec09 Merge "DO NOT MERGE: CTS test case for verifying overflow in libskia JPG
 1e6909c DO NOT MERGE CTS test case for verifying overflow in libskia JPG processing
 1d1d716 Merge "DO NOT MERGE Add CTS tests for Bug - 23034759 and Bug - 21132860" into marshmallow-cts-dev
 018a164 DO NOT MERGE Add CTS tests for Bug - 23034759 and Bug - 21132860
-863638f Remove non-CTS packets assertion code
-c4d4802 Merge "DO NOT MERGE: Revert "Verifier: Enable and disable non-market apps" [DO NOT MERGE]" into lollipop-cts-dev
-451712a DO NOT MERGE: Revert "Verifier: Enable and disable non-market apps" [DO NOT MERGE]
+
+   * device/qcom/sepolicy/
+22008e8 msm8937: Fix labeling of the cache and FRP partitions
+
+   * device/samsung/jf-common/
+160ef2e Add Gello to build
+
+   * device/samsung/qcom-common/
+663c7de Automatic translation import
 
    * external/stagefright-plugins/
 4c4ad3f stagefright-plugins: call packet_queue_init earier
+
+   * frameworks/av/
+078f724 Using requested video scaling mode in NuPlayer
+f86d2e3 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_av into cm-13.0
+
+   * frameworks/base/
+d83f6ae Automatic translation import
+4282864 Automatic translation import
+
+   * frameworks/native/
+52ea7b6 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
+
+   * frameworks/opt/telephony/
+3718ef2 Telephony: handle 3rd party sms apps + 'always ask'
+
+   * hardware/broadcom/libbt/
+1415972 libbt-vendor (BRCM): Add ssr_cleanup
 
    * kernel/samsung/alucard24/
 8040a16 Update defconfig
 
    * kernel/samsung/alucard24-dkati/
 8040a16 Update defconfig
+
+   * packages/apps/BluetoothExt/
+a92c7d6 wipower: Only build a4wp if BSP is available
+
+   * packages/apps/CellBroadcastReceiver/
+7223f70 Automatic translation import
+
+   * packages/apps/Contacts/
+00ae48a Automatic translation import
+
+   * packages/apps/Dialer/
+ca39eea Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
+a907708 Automatic translation import
+
+   * packages/apps/Gello/
+9fc0dae Automatic translation import
+
+   * packages/apps/InCallUI/
+c644fc0 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
+9af9096 Automatic translation import
+
+   * packages/apps/LockClock/
+932b0cc Actually verifies if CM weather feature is available
+
+   * packages/apps/ManagedProvisioning/
+be01e94 Automatic translation import
+
+   * packages/apps/Messaging/
+9986c0d Automatic translation import
+
+   * packages/apps/Screencast/
+7bc0763 Automatic translation import
+
+   * packages/apps/Settings/
+b720488 Settings: handle 'always ask' for SMS subscription on 3rd party apps
+04c47ac Build V9.4
+11d968d Automatic translation import
+98d8e95 Settings : Move trust agent search index to LockscreenSettings
+d40bcaf Automatic translation import
+5524936 Settings : Move trust agent search index to LockscreenSettings
+
+   * packages/apps/TvSettings/
+55e73b5 Automatic translation import
+
+   * packages/apps/WallpaperPicker/
+6cfca71 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+574ec2c Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_inputmethods_LatinIME into cm-13.0
+884ca0d Automatic translation import
+
+   * packages/providers/DataUsageProvider/
+260c7dc Automatic translation import
+
+   * packages/services/Mms/
+56584b7 Revert "MmsRequest: Reimplement automatic data sub switch"
+
+   * packages/services/Telephony/
+834332e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
+c4fd682 Automatic translation import
+
+   * system/bt/
+28d35ee Fix merge issue
+e464214 Revert "DONT MERGE AGAIN FROM CM UPSTREAM"
+
+   * vendor/cmsdk/
+f4dd414 Themes: Fix ThemeManagerTest
+afcfb67 Themes: Fix applying default theme
+
+   * vendor/jdc/
+3f62513 Add some summer flavor
+
+====================
+     06-20-2016
+====================
+
+
+   * cts/
+863638f Remove non-CTS packets assertion code
+c4d4802 Merge "DO NOT MERGE: Revert "Verifier: Enable and disable non-market apps" [DO NOT MERGE]" into lollipop-cts-dev
+451712a DO NOT MERGE: Revert "Verifier: Enable and disable non-market apps" [DO NOT MERGE]
+
+   * external/okhttp/
+f239c0f Revert "Temporary workaround for whatsapp issues."
 
    * packages/apps/CMFileManager/
 e337edc Fix Rename on VFat
@@ -2548,16 +2977,9 @@ e337edc Fix Rename on VFat
    * packages/apps/Messaging/
 20ee26e String improvements
 
-   * packages/apps/Settings/
-5524936 Settings : Move trust agent search index to LockscreenSettings
-
    * vendor/cm/
 2ad7ddc Revert "Bring back the custom wallpaper picker [5/5]"
 2bdd89e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-   * vendor/cmsdk/
-f4dd414 Themes: Fix ThemeManagerTest
-afcfb67 Themes: Fix applying default theme
 
 ====================
      06-19-2016
@@ -2605,6 +3027,9 @@ f08e675 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/cm_platform
 ====================
 
 
+   * android/
+560ea63 Bring back the custom wallpaper picker [4/5]
+
    * build/
 f0bcce8 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_build into HEAD
 b032e38 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_build into HEAD
@@ -2624,6 +3049,7 @@ d476799 Automatic translation import
 4fdfed4 Fix NPE in DocumentsUI when rotate UI before format as internal
 4439da8 Revert "Only show keyguard panel if on lockscreen + no activity on top"
 80b060d Automatic translation import
+26079d3 SystemUI: detect rotation and resize mKeyguardBlur accordingly
 
    * kernel/samsung/Ramdisk/
 a9600c1 Update from 20160618 build
@@ -2771,10 +3197,15 @@ bb2d9cd Merge branch 'cm-13.0' of https://www.github.com/temasek/android_package
 06a5871 Merge branch 'cm-13.0' of https://github.com/CyanogenMod/android_packages_services_Telephony into cm-13.0
 e978c46 Automatic translation import
 
+   * system/bt/
+5b060db bt: Use the clock functions from libutils instead of clock_gettime
+f399297 bt: Unify usage of clock_gettime
+
    * vendor/cm/
 a72af48 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_vendor_cm into HEAD
 37e69b5 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_vendor_cm into HEAD
 f29869a Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into opt-cm-13.0
+7454cd9 Bring back the custom wallpaper picker [5/5]
 
    * vendor/cmsdk/
 051341b Merge branch 'cm-13.0' of https://www.github.com/temasek/cm_platform_sdk into HEAD
@@ -2788,15 +3219,18 @@ ee2dc2d Automatic translation import
 ====================
 
 
-   * android/
-560ea63 Bring back the custom wallpaper picker [4/5]
-
    * cts/
 0461b57 DO NOT MERGE Update TextViewTest to use KeyEventUtil for KeyEvents
 a7c21fa CameraIts: Use wait and notify for callback counter
+dc1785f Merge "Merge \"Fix for ByodFlowTestActivity\" into lollipop-mr1-cts-dev am: c3c02243b0" into marshmallow-cts-dev
+487cf29 Merge \"Fix for ByodFlowTestActivity\" into lollipop-mr1-cts-dev am: c3c02243b0
+c3c0224 Merge "Fix for ByodFlowTestActivity" into lollipop-mr1-cts-dev
+
+   * device/samsung/jf-common/
+61d8097 cmhw: use common DisplayColorCalibration
+05d0121 cmhw: Use cmsdk FileUtils
 
    * frameworks/base/
-26079d3 SystemUI: detect rotation and resize mKeyguardBlur accordingly
 e843aaf Fix NPE in DocumentsUI when rotate UI before format as internal
 226797c Revert "Only show keyguard panel if on lockscreen + no activity on top"
 
@@ -2841,18 +3275,15 @@ a700fff Settings: Apply decor padding in landscape storage wizard
    * packages/services/Telecomm/
 9f030e6 Handle IllegalArgumentException while setting default calling sub
 
-   * system/bt/
-5b060db bt: Use the clock functions from libutils instead of clock_gettime
-f399297 bt: Unify usage of clock_gettime
-
-   * vendor/cm/
-7454cd9 Bring back the custom wallpaper picker [5/5]
-
    * vendor/cmsdk/
 b25a324 Weather API test: Wait for a bit before Mockito verifies if method was called
 3251a45 cmsdk: Increase flaky test tolerance on zenmode tests.
 9c42d41 ExtViews: Catch SecurityException due to bad interface
 0b76a46 cmsdk: Provide test coverage for remainder PartnerInterface's.
+afa47a7 cmsdk: Provide remainder test coverage for CMStatusbarManager.
+5d5e556 cmsdk: Provide remaining ProfileManager test coverage.
+9b50627 cmsdk: Provide remaining Profile test coverage.
+522b0c3 utils: Introduce FileUtils class
 
 ====================
      06-16-2016
@@ -2864,14 +3295,12 @@ b25a324 Weather API test: Wait for a bit before Mockito verifies if method was c
 8019126 Conditionally skip dex-preopting specific prebuilts.
 
    * cts/
-dc1785f Merge "Merge \"Fix for ByodFlowTestActivity\" into lollipop-mr1-cts-dev am: c3c02243b0" into marshmallow-cts-dev
-487cf29 Merge \"Fix for ByodFlowTestActivity\" into lollipop-mr1-cts-dev am: c3c02243b0
-c3c0224 Merge "Fix for ByodFlowTestActivity" into lollipop-mr1-cts-dev
 b52d1cf Merge "Allows ENOSYS errno code for doVrootTest." into marshmallow-cts-dev
 
+   * development/
+87654bc gdbclient: fix gdbclient <processname> invocation
+
    * device/samsung/jf-common/
-61d8097 cmhw: use common DisplayColorCalibration
-05d0121 cmhw: Use cmsdk FileUtils
 ad5ce37 Some sound volume fixes
 
    * frameworks/opt/hardware/
@@ -2894,11 +3323,35 @@ a2f986a soc: qcom: glink: Fix race condition in dummy xprt cleanup
 3812b97 Prepare to Alucard24's kernel 2.0
 9bf9e61 Update
 c4ac9f2 Remove duplicates
+889f9c5 Merge https://github.com/B--B/Ramdisk into HEAD
+0ab9e5f Remove some old/not working options
+c045f6c Reduce vmpressure_file_min to 68 = MIN RAM 278mb free before LMK boombard.
+e78fe75 Busybox update from source!
+a5b1e18 Prepare to Alucard24's kernel
+e40b666 Update form 20160615
+0a2b09d Updates from 20160615 build
 
    * kernel/samsung/Ramdisk-clean/
 3812b97 Prepare to Alucard24's kernel 2.0
 9bf9e61 Update
 c4ac9f2 Remove duplicates
+889f9c5 Merge https://github.com/B--B/Ramdisk into HEAD
+0ab9e5f Remove some old/not working options
+c045f6c Reduce vmpressure_file_min to 68 = MIN RAM 278mb free before LMK boombard.
+e78fe75 Busybox update from source!
+a5b1e18 Prepare to Alucard24's kernel
+e40b666 Update form 20160615
+0a2b09d Updates from 20160615 build
+
+   * kernel/samsung/alucard24/
+e52ebfe net: validate the range we feed to iov_iter_init() in sys_sendto/sys_recvfrom
+14f7bf6 KEYS: potential uninitialized variable
+d8081b7 update "mm/zsmalloc: don't fail if can't create debugfs info"
+
+   * kernel/samsung/alucard24-dkati/
+e52ebfe net: validate the range we feed to iov_iter_init() in sys_sendto/sys_recvfrom
+14f7bf6 KEYS: potential uninitialized variable
+d8081b7 update "mm/zsmalloc: don't fail if can't create debugfs info"
 
    * kernel/samsung/jf/
 2876fca net: validate the range we feed to iov_iter_init() in sys_sendto/sys_recvfrom
@@ -2922,10 +3375,6 @@ b863501 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_servic
 2284bf3 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
 
    * vendor/cmsdk/
-afa47a7 cmsdk: Provide remainder test coverage for CMStatusbarManager.
-5d5e556 cmsdk: Provide remaining ProfileManager test coverage.
-9b50627 cmsdk: Provide remaining Profile test coverage.
-522b0c3 utils: Introduce FileUtils class
 9d2f37b Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 3f8b3b3 Provide remaining Weather API test coverage
 c701b8e CMSDK : Add tests for ColorUtils
@@ -2943,9 +3392,7 @@ f665835 MOB30Q
    * cts/
 dbf6823 Merge "CameraITS: don't disable pass button for configuration change" into marshmallow-cts-dev
 696dedc EncryptionTest: Run only for API level >= 23
-
-   * development/
-87654bc gdbclient: fix gdbclient <processname> invocation
+1d35766 Merge "EncodeVirtualDisplayWithCompositionTest: Add codec name API." into marshmallow-cts-dev
 
    * device/samsung/jf-common/
 e673d2c Merge https://github.com/JDCTeam/android_device_samsung_jf-common into HEAD
@@ -2966,6 +3413,9 @@ f870dd5 DocumentsUI : Hide advanced menu option when in forced mode
 5f8d3f8 Themes: Expose Power Dialogs
 9164274 DocumentsUI : Hide advanced menu option when in forced mode
 
+   * hardware/cyanogen/
+c70d78a cmhw: Use cmsdk FileUtils
+
    * hardware/qcom/bt-caf/
 e024328 Merge branch 'bt.lnx.1.0.c1-rel' of git://codeaurora.org/platform/hardware/qcom/bt into HEAD
 
@@ -2977,34 +3427,6 @@ e81bc90 Merge branch 'wlan-aosp.lnx.1.0.c1-rel' of git://codeaurora.org/platform
 cc838cf Revert "lpm-stats: Optimize stats path"
 587f2e2 Config Update!
 e2bcbe8 triton: protect from enabling by triton app when it is disabled!
-
-   * kernel/samsung/Ramdisk/
-889f9c5 Merge https://github.com/B--B/Ramdisk into HEAD
-0ab9e5f Remove some old/not working options
-c045f6c Reduce vmpressure_file_min to 68 = MIN RAM 278mb free before LMK boombard.
-e78fe75 Busybox update from source!
-a5b1e18 Prepare to Alucard24's kernel
-e40b666 Update form 20160615
-0a2b09d Updates from 20160615 build
-
-   * kernel/samsung/Ramdisk-clean/
-889f9c5 Merge https://github.com/B--B/Ramdisk into HEAD
-0ab9e5f Remove some old/not working options
-c045f6c Reduce vmpressure_file_min to 68 = MIN RAM 278mb free before LMK boombard.
-e78fe75 Busybox update from source!
-a5b1e18 Prepare to Alucard24's kernel
-e40b666 Update form 20160615
-0a2b09d Updates from 20160615 build
-
-   * kernel/samsung/alucard24/
-e52ebfe net: validate the range we feed to iov_iter_init() in sys_sendto/sys_recvfrom
-14f7bf6 KEYS: potential uninitialized variable
-d8081b7 update "mm/zsmalloc: don't fail if can't create debugfs info"
-
-   * kernel/samsung/alucard24-dkati/
-e52ebfe net: validate the range we feed to iov_iter_init() in sys_sendto/sys_recvfrom
-14f7bf6 KEYS: potential uninitialized variable
-d8081b7 update "mm/zsmalloc: don't fail if can't create debugfs info"
 
    * kernel/samsung/jf/
 d7939f7 KEYS: potential uninitialized variable
@@ -3045,6 +3467,7 @@ ecd9c72 Merge branch 'LA.BF.1.1.3_rb1.11' of git://codeaurora.org/platform/syste
 795130f Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
 b6e71bc External view test
 aa11b33 cmsdk: fixup javadoc in CMHardwareManager
+7fff40e cmsdk: Clean up posted tile in CustomTileListenerService test.
 
 ====================
      06-14-2016
@@ -3057,7 +3480,10 @@ aa11b33 cmsdk: fixup javadoc in CMHardwareManager
 aa8604b default: Add cmsdk-api-coverage tool to manifest.
 
    * cts/
-1d35766 Merge "EncodeVirtualDisplayWithCompositionTest: Add codec name API." into marshmallow-cts-dev
+4ebdc23 Improve resiliency of message parser in the case that events are missing
+
+   * device/qcom/common/
+96e5ea4 power-8994: Port features from msm8992
 
    * device/samsung/jf-common/
 07cc320 Merge https://github.com/JDCTeam/android_device_samsung_jf-common into HEAD
@@ -3075,6 +3501,7 @@ aa17342 Merge https://github.com/CyanogenMod/android_device_samsung_jf-common in
 
    * external/cmsdk-api-coverage/
 c281622 cmsdk-api-coverage: Actually use the cmsdk-api-coverage jar.
+8ebfd3c cmsdk-api-coverage: initial fork of cts-api-coverage.
 
    * frameworks/base/
 12356ca Revert "Keyguard: Get your weather on... the lock screen [1/3]"
@@ -3085,9 +3512,6 @@ a573f1d SystemUI: fix NFC tile sometimes hiding
 2feaaf4 UsbDeviceManager: Remove charging from persisted function composition
 0134ecc Framework: allow ResolverActivity to be specialized from other package
 11a2c3e Keyguard: Get your weather on... the lock screen [1/3]
-
-   * hardware/cyanogen/
-c70d78a cmhw: Use cmsdk FileUtils
 
    * hardware/qcom/audio-caf/msm8960/
 e3f9bf7 Merge with arcos latest commits(remove es325)
@@ -3154,10 +3578,41 @@ d1fa309 wil6210: fix no_fw_recovery mode with change_virtual_intf
 f8cb079 wil6210: P2P_DEVICE virtual interface support
 6efb7ff wil6210: p2p initial support
 fb2c79c wil6210: basic PBSS/PCP support
+f882657 wil6210: switch to generated wmi.h
+46b4014 wil6210: add support for discovery mode during scan
+35d5702 wil6210: replay attack detection
+ea4aa94 wil6210: Set permanent MAC address to wiphy
+b945d7f wil6210: AP: prevent connecting to already connected station
+e4c42ad wil6210: remove BACK RX and TX workers
+7fe571f wil6210: TX vring optimization
+ac981e0 wil6210: protect synchronous wmi commands handling
+3dc6436 wil6210: wait for disconnect completion
+44ba061 wil6210: prevent access to vring_tx_data lock during its init
+6f2604b wil6210: handle multiple connect/disconnect events
+65f7b13 wil6210: find TX vring only if vring_tx_data is enabled
+7eba9a2 wil6210: handle tx completions only if vring tx data is enabled
+84e77f0 wil6210: use extra IEs from probe response
+c6cc8bc wil6210: fix privacy flag calculation in change_beacon
+c4c413a msm_11ad: add rfclk3 clock handling
+9ef71ab msm_11ad: add VDD and VDDIO regulators voting
+9c9006a wil6210: add support for platform specific notification events
+0e40d40 msm_11ad: add support for subsystem_restart framework
+f859406 msm_11ad: change wigig_en to be an optional property
+87d9bda wil6210: support for platform specific crash recovery
+36e001d wil6210: fix kernel OOPS when stopping interface during Rx traffic
+3b7d9da wil6210: fix a warning message condition
+817e327 cfg80211: Add option to report the bss entry in connect result
+4da1a54 cfg80211: basic support for PBSS network type
+e237a05 cfg80211: add bss_type and privacy arguments in cfg80211_get_bss()
+a77a6b6 msm: wlan: Update tx power limits of country UA
+
+   * packages/apps/CMFileManager/
+83abccb Filter out vnd.android.cursor mimetype for Picker
 
    * packages/apps/CarrierConfig/
 57bb2be Merge pull request #3 from JDCTeam/opt-cm-13.0
 36c595b Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_CarrierConfig into HEAD
+1477e70 Resolve NZ roaming entry
 
    * packages/apps/Dialer/
 d7cc36f Makes private the ambient connection check, to stop log spam.
@@ -3194,7 +3649,6 @@ c385e36 cm: Use cmsdk-api-coverage executable for coverage.
 93ef605 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_vendor_cm into HEAD
 
    * vendor/cmsdk/
-7fff40e cmsdk: Clean up posted tile in CustomTileListenerService test.
 a576af6 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/cm_platform_sdk into HEAD
 31d1352 Merge branch 'cm-13.0' of https://www.github.com/temasek/cm_platform_sdk into HEAD
 71aaad8 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into opt-cm-13.0
@@ -3202,6 +3656,7 @@ a576af6 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/cm_platform
 5b30222 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/cm_platform_sdk into HEAD
 8387d3c cmsdk: Add CustomTileListenerService tests.
 0e0cb73 cmsdk: Provide test coverage to Profile's *Settings classes.
+2add3de cmsdk: Provide tests for Profile.ProfileTrigger interfaces.
 
    * vendor/jdc/
 bc81fed Merge pull request #2 from JDCTeam/opt-cm-13.0
@@ -3210,684 +3665,4 @@ bc81fed Merge pull request #2 from JDCTeam/opt-cm-13.0
    * vendor/samsung/
 e442f62 Merge pull request #2 from JDCTeam/jf-6.0-newril
 448d2da Newly reversed-engineered .so(fix rotation & logcat spam)
-
-====================
-     06-13-2016
-====================
-
-
-   * cts/
-4ebdc23 Improve resiliency of message parser in the case that events are missing
-
-   * device/qcom/common/
-96e5ea4 power-8994: Port features from msm8992
-
-   * external/cmsdk-api-coverage/
-8ebfd3c cmsdk-api-coverage: initial fork of cts-api-coverage.
-
-   * frameworks/base/
-9b11bca Merge branch 'cm-13.0' of https://www.github.com/temasek/android_frameworks_base into HEAD
-3bcaa55 When the device boots up, netd works more than required
-b026896 Fix a glitch causing shadow not to be reset when header disabled
-
-   * kernel/lg/Alucard-Kernel-LG-G5/
-f882657 wil6210: switch to generated wmi.h
-46b4014 wil6210: add support for discovery mode during scan
-35d5702 wil6210: replay attack detection
-ea4aa94 wil6210: Set permanent MAC address to wiphy
-b945d7f wil6210: AP: prevent connecting to already connected station
-e4c42ad wil6210: remove BACK RX and TX workers
-7fe571f wil6210: TX vring optimization
-ac981e0 wil6210: protect synchronous wmi commands handling
-3dc6436 wil6210: wait for disconnect completion
-44ba061 wil6210: prevent access to vring_tx_data lock during its init
-6f2604b wil6210: handle multiple connect/disconnect events
-65f7b13 wil6210: find TX vring only if vring_tx_data is enabled
-7eba9a2 wil6210: handle tx completions only if vring tx data is enabled
-84e77f0 wil6210: use extra IEs from probe response
-c6cc8bc wil6210: fix privacy flag calculation in change_beacon
-c4c413a msm_11ad: add rfclk3 clock handling
-9ef71ab msm_11ad: add VDD and VDDIO regulators voting
-9c9006a wil6210: add support for platform specific notification events
-0e40d40 msm_11ad: add support for subsystem_restart framework
-f859406 msm_11ad: change wigig_en to be an optional property
-87d9bda wil6210: support for platform specific crash recovery
-36e001d wil6210: fix kernel OOPS when stopping interface during Rx traffic
-3b7d9da wil6210: fix a warning message condition
-817e327 cfg80211: Add option to report the bss entry in connect result
-4da1a54 cfg80211: basic support for PBSS network type
-e237a05 cfg80211: add bss_type and privacy arguments in cfg80211_get_bss()
-a77a6b6 msm: wlan: Update tx power limits of country UA
-
-   * packages/apps/CMFileManager/
-83abccb Filter out vnd.android.cursor mimetype for Picker
-
-   * packages/apps/CarrierConfig/
-1477e70 Resolve NZ roaming entry
-
-   * packages/apps/Dialer/
-5ce5795 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-
-   * packages/apps/Settings/
-9b1d7a9 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_Settings into HEAD
-44ed263 Fix wrong label for Desktop backup password
-ed01dd6 Show more accurate internal storage capacity
-460b9ad Settings: replace 3 dots with horizontal ellipsis
-0d1add5 Merge pull request #454 from Mai19930513/cm-13.0
-
-   * system/bt/
-6f1e1dc Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
-
-   * vendor/cmsdk/
-2add3de cmsdk: Provide tests for Profile.ProfileTrigger interfaces.
-
-====================
-     06-12-2016
-====================
-
-
-   * device/samsung/jf-common/
-e97f43b jf-common: Set minimum value for auto-brightness
-
-   * kernel/lg/Alucard-Kernel-LG-G5/
-bc35a5e arm64: PCI/MSI: Use asm-generic/msi.h
-5f1c5c0 irq: cleaning!
-d07028d PCI/MSI: Introduce helpers to hide struct msi_desc implementation details
-bf5b2fd asm-generic: Add msi.h
-9932409 Config Update!
-71e808c irqchip: gicv3: Add GICv3 access control Kconfig option
-ed7ad72 irqchip: GICv3: Check if GIC register access is controlled
-29c0bf8 irqchip: gic-v3-its: Fix use of max with decimal constant
-cc7bd45 irqchip: gicv3-its: Fix ITT allocation
-42f17e0 irqchip: gicv3-its: Move some alloc/free code to activate/deactivate
-3938dd2 irqchip: gicv3-its: Fix domain free in multi-MSI case
-1e6cdaa irqchip: GICv3: ITS: enable compilation of the ITS driver
-e7a786b irqchip: GICv3: ITS: plug ITS init into main GICv3 code
-742dd8e irqchip: GICv3: ITS: DT probing and initialization
-a9c805e irqchip: GICv3: ITS: MSI support
-28285cb irqchip: GICv3: ITS: device allocation and configuration
-0f8211b irqchip: GICv3: ITS: tables allocators
-99172e0 irqchip: GICv3: ITS: LPI allocator
-b883c05 irqchip: GICv3: ITS: irqchip implementation
-9833b85 irqchip: GICv3: ITS command queue
-924093f irqchip: GICv3: rework redistributor structure
-0351d7f irqchip: GICv3: Convert to domain hierarchy
-3756040 irqchip: msm: Add dummy init pinctrl irqchip
-9ce5510 fs:fuse: Disable shortcircuit when mmap is called on a file
-d335451 net: ipv4: fix compilation warning for uninitialized variable
-a39790f net: ipv4: tcp: Get tcpi_count via file_count() not direct access
-60cd997 net: ipv4: hashtables: avoid division by zero compilation error
-0f26505 Revert "net: ipc_router: Add support for IPC Router version negotiation"
-b48c0da Revert "net: ipc_router: Bind only a client port as control port"
-8f00b71 Bluetooth: Replace %p with %pK
-a1077e8 bluetooth: Vote clock off on protocol close
-4e6d1e6 bluetooth: wait for write_work from protocol layer to finish
-2bd794f msm: net: Support for Removing SFE module
-ea652dc netfilter: nf_conntrack_sip: Dynamically enable/disable SIP ALG
-ad52c55 netfilter: Fix to MT call issue
-8958afb netfilter: Fix to MO call issue
-cf2ec57 net: rmnet_data: Change the print format for addresses
-23323b8 net: rmnet_data: Fix QMAP ACK's to work with DL checksum offload
-aa4e859 net: rmnet_data: Set the protocol when sending MAP ACK's
-6fc2ef8 net: rmnet_data: Remove the NAPI context for rmnet_data devices
-355e68c rmnet_data : Changes to support Scatter Gather and GSO.
-6704942 net: unix: Fix uninitialized warnings when building for ARCH=um
-ff89885 net: ipc_router: Bind only a client port as control port
-474e5f1 net: ipc_router: Add support for IPC Router version negotiation
-6bb608b net: core: neighbour: Change the print format for addresses
-2713a34 Revert "ipv4/GRO: Make GRO conform to RFC 6864"
-cf441ff ipv4/GRO: Make GRO conform to RFC 6864
-cdfea33 net: core: To send ARP probe when neighbor state is NUD_STALE
-fd5e425 net: core: Send only BIND and LISTEN events.
-9092187 net: Reset NAPI bit if IPI failed
-25f6a33 net: Add the get current NAPI context API
-76d572a net: core: fix compilation warning for uninitialized variable
-ab6b02d msm: net: API to send list of SKB's to network driver
-cef633a net/embms-kernel : EMBMS Tunneling Module
-
-   * kernel/lg/Ramdisk-LGG5-MM/
-18f5595 small fix
-
-   * kernel/samsung/jf/
-fe8ce1d jf: increase kernel log buffer
-
-   * packages/apps/Settings/
-b339210 update zh-rCN translations
-9164276 Merge pull request #453 from beroid/cm-13.0
-
-   * vendor/cm/
-9fd4fe3 Merge pull request #30 from tioguda/cm-13.0
-
-====================
-     06-11-2016
-====================
-
-
-   * art/
-c560387 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_art into cm-13.0
-
-   * device/qcom/common/
-9e9693e power: msm8952: process_video_encode_hint returns void
-
-   * frameworks/base/
-4d098be Revert "Keyguard: Get your weather on... the lock screen [1/3]"
-b0e3b77 Merge https://github.com/CyanogenMod/android_frameworks_base into HEAD
-6dedeb5 Merge https://github.com/temasek/android_frameworks_base into HEAD
-b4480fb Revert "base: start nfc service prior to systemui"
-27b436a SystemUI: fix NFC tile sometimes hiding
-7cc1ad1 UsbDeviceManager: Remove charging from persisted function composition
-e39d1d7 Revert "base: start nfc service prior to systemui"
-2c755a6 SystemUI: fix NFC tile sometimes hiding
-d0c49f4 UsbDeviceManager: Remove charging from persisted function composition
-
-   * kernel/lg/Alucard-Kernel-LG-G5/
-cbd496b power: qcom: Move power table notification outside of critical section
-e1f5905 checkpatch: Add exceptions for "dsb" keyword usage
-b5b7416 lib: make memzero_explicit more robust against dead store elimination
-fbf4ebd lib/Kconfig.debug: disable -Wframe-larger-than warnings with KASAN=y
-df7360b x86/kasan: Move KASAN_SHADOW_OFFSET to the arch Kconfig
-8538740 Config Update!
-c2fe101 Revert "ARM64: Insert barriers before Store-Release operations"
-490d705 msm_serial_hs_lge: different header for msm_serial_hs_lge!
-989af91 msm_serial_hs: Fix race condition blocking suspend and remove wakeup source
-3e7fba6 msm_serial_hs: update IRQ related error messages
-715553d msm_serial_hs: handle UART IRQ during PM operations for OBS
-50c8bfc msm_serial_hs_lite: Define console features when console is enabled
-8766063 msm_serial_hs: fix suspend state handle
-33078bb Config Update!
-068edec msm-core: Unregister uio device on failed probe
-039550b msm-core: add CPU power stats ready notification
-d429f47 dma-mapping: Exclude remap functions when arch does not use DMA
-7b5d615 arm64: fix sparse errors from msm-rtb
-1b69b50 arm64: expose number of page table levels on Kconfig level
-3da6e6a arm64: move PGD_SIZE definition to pgalloc.h
-647a791 arm64: pgalloc: consistently use PGALLOC_GFP
-4d8f395 arm64: introduce VA_START macro - the first kernel virtual address.
-9c1bbd0 dma-mapping: fix build when !CONFIG_ARM_DMA_USE_IOMMU
-c3ecb5d x86/kasan: Define KASAN_SHADOW_OFFSET per architecture
-9884a6c genirq: Introduce callback irq_chip.irq_write_msi_msg
-456280c arm64: add KASAN support
-b531e14 arm64: Log the machine name string during boot up
-3fd602d ARM/ARM64: Introduce arch_read_hardware_id
-02d08eb arm64: smp: Update the topology masks before calling CPU_STARTING notifiers
-28ec2e5 perf: replace cpu_up/down with device_online/offline
-940a133 perf: Change PMCR write to read-modify-write
-69dcab4 Updated MSM_APP_SETTINGS!
-3d660f5 slim: msm: ngd: Add priority to DSP SSR notifier
-b347081 slim: msm: Set Device state to sleep in case of a suspend-timeout
-876b3d5 slim: msm: Return success for ch-remove type of messages during SSR
-daa75cc slimbus: Reset data channels for a controller when framer reboots
-4adf5e8 slim: msm: Fix the instance number being sent to ADSP
-3c231ef diag: Update msg masks and log and event codes.
-adc2973 diag: Change IPC logging debug bit mask through debugfs
-9bfe73e diag: Increase the MHI buffer size to 4k
-f41622e diag: Use correct index while accessing DCI channel
-1244f7c diag: Increase number of buffers for MHI and USB
-01b4974 diag: Initialize spin lock once per memory device channel
-7266f2a diag: Fix for possible memory corruption
-1d2cdf1 Revert "Revert "diag: Fix possible mask pointer corruption""
-91acbf6 Revert "diag: Fix possible mask pointer corruption"
-dcf82a6 diag: Fix possible mask pointer corruption
-a1deb29 diag: Close MD session when switching to USB Mode
-8a7d041 diag: Change to update the range correctly on a range mismatch
-4505009 diag: Release wake source properly
-ec7200a diag: Fix possible buffer overflow
-aee748e diag: Change dci packet header validation for data from user space
-737e16b diag: Set the diag stm status correctly
-54fd7d9 diag: dci: Protect the client list and command entries
-a53a04f diag: Rectify possible double free in memory device mode
-76ce23e diag: dci: Rectify updation of peripheral status
-efe8f39 diag: Enable Diag over MHI
-ca0fe14 diag: Switch to usb mode if md session mode is not peripheral mode
-6f2822d diag: Expand msg mask buffer dynamically
-d10bede msm: sps: update SPS logging
-7cd6341 msm: sps: support using cached write pointer for BAM-to-Sys mode
-e5d9071 msm: sps: add the checking of ZLT in case of an empty pipe
-1146080 "msm: sps: output BAM register dump to IPC log only". Only if IPC_LOGGING is enabled!
-d65b8d5 msm: sps: fix a bug for pipe disable
-cf2e30e msm: sps: output BAM register dump to IPC log only
-70d9792 msm: sps: avoid register read for ignored debugging messages
-088131c msm: sps: remove the dependency on IPC logging flag
-37ee9d8 Config Update!
-e9fef23 avtimer: update ioctl call to query avtimer
-d8b280a Deleted unwanted config!
-c8d4367 msm: msm_bus: remove the buspm module from kernel
-52180de platform: msm: msm_bus: Fix the NULL pointer dereference
-0b53716 msm_bus: arb: Update pointer before initializing memory
-ad045a2 platform: msm: msm_bus: Remove unwanted messages at bootup
-b5ad214 msm: msm_bus: Introduce bus rule update API
-16c58db  of/platform: Re-add of_dma_configure()
-25a2298 of: Fix comparison of reserved memory regions
-bfdb6ca Config Update!
-
-   * kernel/samsung/Ramdisk/
-f30b713 Prepare to Alucard24's kernel
-3721f0c Update from 20160611
-
-   * kernel/samsung/Ramdisk-clean/
-f30b713 Prepare to Alucard24's kernel
-3721f0c Update from 20160611
-
-   * packages/apps/Bluetooth/
-3e82d09 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_Bluetooth into HEAD
-9a5be1e Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
-acfd7c3 Bluetooth-OPP: Check URI of sending files before entry cleanup
-cf5fdf7 Set sJniAdapterServiceObj to NULL after deleting it
-02d9c10 Bluetooth: Using the eventHandler to start listener
-5080b9b Bluetooth OPP: Fix mismerge
-072643f Bluetooth: fix opp NPE
-
-   * packages/apps/Dialer/
-c56c579 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-6f8f504 Ensure we have permissions before rebuilding database
-5287347 Increment nudge only after shown intent returns
-
-   * packages/apps/InCallUI/
-ef2cf55 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_InCallUI into HEAD
-2ccd424 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-
-   * packages/apps/Messaging/
-c042a5e Fixed storage permission issue for attachments Moved some audio library tab related string to cm_strings.xml
-
-   * packages/apps/Nfc/
-01ba29d Revert "Nfc: Clear transfer manager service on Destroy"
-
-   * packages/apps/Settings/
-8e3b27b Settings: Update RU translations
-67ccca8 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-7a970cc Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_Settings into HEAD
-b1eea73 Build V9.2
-bba2cca String improvements
-
-   * system/bt/
-5365992 bt: Use the clock functions from libutils instead of clock_gettime
-c718527 bt: Unify usage of clock_gettime
-
-   * vendor/cm/
-9d733a7 Add bootanimation 540.zip in 16by9
-7e06897 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_vendor_cm into HEAD
-d523a49 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-
-====================
-     06-10-2016
-====================
-
-
-   * android/
-58a7613 android: add ahbottomnavigation library
-
-   * art/
-ebb3a5e art: Fix QCPERF workaround for ARM after Clang fixes
-fd80703 Enable clang for ARM builds.
-9805570 art: Re-enable host clang
-
-   * build/
-103d019 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_build into HEAD
-931561f "MOB30P"
-
-   * cts/
-8c35a25 Merge "Make testFindByText work with NonClientDecorViews" into marshmallow-cts-dev
-358e8a6 CameraITS: don't disable pass button for configuration change
-5b4ec0e Relax checks in usb accessory test and add logs
-
-   * frameworks/base/
-40b5545 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_frameworks_base into HEAD
-a00c9d4 Framework: allow ResolverActivity to be specialized from other package
-ff040be Revert "keyguard: SIM Display Name is now a config"
-8b42af4 keyguard: SIM Display Name is now a config
-eb7ff1a Framework: allow ResolverActivity to be specialized from other package
-e704fc0 Keyguard: Get your weather on... the lock screen [1/3]
-6c769a7 keyguard: SIM Display Name is now a config
-
-   * kernel/lg/Alucard-Kernel-LG-G5/
-7984033d Config Update!
-d897bcc msm_rq_stats: add hotplug_enable parameter!
-2a2a7f5 msm: kgsl: Fix the snapshot mempool size calculation
-57e6eea staging: Add logger driver support in android Makefile
-383ce2e Revert "staging: Remove the Android logger driver"
-
-   * kernel/samsung/Ramdisk/
-c66b8d5 Remove some old/not working options
-
-   * kernel/samsung/Ramdisk-clean/
-c66b8d5 Remove some old/not working options
-
-   * kernel/samsung/alucard24/
-f962012 Switch tc to my version and adapt scripts
-
-   * kernel/samsung/alucard24-dkati/
-f962012 Switch tc to my version and adapt scripts
-
-   * packages/apps/Bluetooth/
-9792f96 Revert "Ensure synchronized access of JNI callback object"
-
-   * packages/apps/CMFileManager/
-bb9e0c5 Invalidate preferences headers when resuming
-
-   * packages/apps/CellBroadcastReceiver/
-0b8b02b Automatic translation import
-
-   * packages/apps/Contacts/
-5307288 Automatic translation import
-
-   * packages/apps/Dialer/
-1db73a8 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-49ee037 Automatic translation import
-
-   * packages/apps/Gello/
-e6b6219 Automatic translation import
-
-   * packages/apps/InCallUI/
-ad14337 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_InCallUI into HEAD
-2c9893f Automatic translation import
-
-   * packages/apps/Messaging/
-5203455 Automatic translation import
-
-   * packages/apps/Nfc/
-606f7ef Revert "nfc: create a bootstrap service"
-
-   * packages/apps/Screencast/
-3de1b3f Automatic translation import
-
-   * packages/apps/Settings/
-99ef9dc String improvements
-eb89a61 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-f42ebd3 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_Settings into HEAD
-910f596 Automatic translation import
-7e96664 Automatic translation import
-dc7a181 Settings: Allow sorting Applications by size
-e679076 Keyguard: Get your weather on... the lock screen [3/3]
-
-   * packages/apps/SoundRecorder/
-f2323e7 SoundRecorder: onConfigurationChanged dismiss popupmenu
-
-   * packages/providers/DataUsageProvider/
-ad02907 Automatic translation import
-
-   * vendor/cm/
-dd3a17f config: Make product size available for use by    * mkfiles
-1b4eeb3 cm: Give BootReceiver permissions to read fsck log
-
-   * vendor/cmsdk/
-d1479cd Merge branch 'cm-13.0' of https://www.github.com/temasek/cm_platform_sdk into HEAD
-67784b7 Revert "Keyguard: Get your weather on... the lock screen [2/3]"
-82d88e1 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-fda1fc6 cmsdk: Provide coverage for serial number and unique device id.
-b6a21ca Keyguard: Get your weather on... the lock screen [2/3]
-5b66380 CMSettingsProvider: load provisioned flag when creating DB
-
-====================
-     06-09-2016
-====================
-
-
-   * android/
-4a4bee1 default.xml: Move external/libpng to android-6.0.1_r43
-
-   * build/
-a4d4034 Merge pull request #90 from JDCTeam/opt-cm-13.0-caf
-2a9b283 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_build into HEAD
-b406ac2 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_build into HEAD
-6beef2d Merge branch 'cm-13.0' of https://www.github.com/temasek/android_build into HEAD
-
-   * cts/
-d9d7c17 Merge "Explicitly mark dirs for testNo64 search." into marshmallow-cts-dev
-
-   * device/qcom/common/
-97aa119 power-8992: Remove extraneous boosting
-
-   * device/samsung/jf-common/
-7725f0a whoops
-e8176e6 Add one usecase
-
-   * external/android-clat/
-bee83f8 Process packets in bursts.
-4f99df5 Run the receive path in its own thread.
-
-   * external/skia/
-b632abe skia: qc-perf: link against libqc-opt for msm8937/17/53
-
-   * frameworks/av/
-fbef511 OMXCodec: Remove kClientNeedsFrameBuffer for S3D
-
-   * frameworks/base/
-75cf0a3 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_frameworks_base into HEAD
-c0c707d Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
-1314775 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_frameworks_base into HEAD
-af10b66 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
-
-   * frameworks/opt/telephony/
-cfe134b Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_frameworks_opt_telephony into HEAD
-577086c Merge branch 'cm-13.0' of https://www.github.com/temasek/android_frameworks_opt_telephony into HEAD
-49fcd7f Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_opt_telephony into HEAD
-bb90cc3 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_opt_telephony into cm-13.0
-
-   * hardware/qcom/media/default/
-487da6e mm-video-v4l2: vdec: Avoid processing ETBs/FTBs in invalid states
-f0fb3c9 mm-video-v4l2: venc: Avoid processing ETBs/FTBs in invalid states
-
-   * kernel/lg/Alucard-Kernel-LG-G5/
-2593a9d staging: zram: Rate limit memory allocation errors
-
-   * kernel/samsung/Ramdisk/
-1fabab8 Update from 2016060
-
-   * kernel/samsung/Ramdisk-clean/
-1fabab8 Update from 2016060
-
-   * packages/apps/Bluetooth/
-af36efd Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_Bluetooth into HEAD
-
-   * packages/apps/BluetoothExt/
-3e74aec Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_BluetoothExt into HEAD
-
-   * packages/apps/Contacts/
-aa24ca6 Contacts : Remove silent option from ringtone
-
-   * packages/apps/ContactsCommon/
-939ed41 Add valid number checks for block menu item
-
-   * packages/apps/Dialer/
-209c67b Performance tweaks for DeepLinkCache and icon retrieval.
-860a9a9 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-52cab04 Nudges: Move roaming nudge logic to wifi listener
-6a2124a Initialize ContactsTile loader in SpeedDialFragment onStart
-
-   * packages/apps/InCallUI/
-aaf3fc6 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_InCallUI into HEAD
-
-   * packages/apps/LockClock/
-325513b Unregister from WeatherManager ONLY if service was actually registered
-d9c5b0a Report correct status if failed to process weather update request
-
-   * packages/apps/Settings/
-3a05554 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_packages_apps_Settings into HEAD
-a7c7d16 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-11c722c Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_apps_Settings into HEAD
-ae48fba Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-eea5800 Use child fragment manager for nested dialog fragment
-d5c496c Use child fragment manager for nested dialog fragment
-dd9276d Settings: use subid & imsi for MSIM apn lookups
-a9fbd69 Revert "Fix cannot build prefer or restore APN for Secondary SIM/Sub."
-
-   * packages/apps/Snap/
-0213471 Snap: Check photo orientation when creating thumbnail
-
-   * packages/apps/WallpaperPicker/
-0872526 Bring back the custom wallpaper picker [1/5]
-
-   * packages/providers/TelephonyProvider/
-c3b4d6b Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_providers_TelephonyProvider into cm-13.0
-
-   * packages/services/Telephony/
-47dd5dd Merge branch 'cm-13.0' of https://www.github.com/temasek/android_packages_services_Telephony into HEAD
-7646832 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-
-   * system/bt/
-92245f5 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_system_bt into HEAD
-63d77ee Merge branch 'cm-13.0' of https://www.github.com/temasek/android_system_bt into HEAD
-b9dd9ea Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_bt into HEAD
-
-   * system/core/
-2d5d48d Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_system_core into HEAD
-e1b84b7 Merge branch 'cm-13.0' of https://www.github.com/temasek/android_system_core into HEAD
-69b0ff8 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_system_core into HEAD
-
-   * vendor/cm/
-01d72a4 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/android_vendor_cm into HEAD
-2d4593a Merge branch 'cm-13.0' of https://www.github.com/temasek/android_vendor_cm into HEAD
-3b63e1e Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
-88a9d74 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-0c86291 Gello: Update to v20 artifact
-
-   * vendor/cmsdk/
-3ff4c42 Merge branch 'opt-cm-13.0' of https://www.github.com/JDCTeam/cm_platform_sdk into HEAD
-f4cb716 Merge branch 'cm-13.0' of https://www.github.com/temasek/cm_platform_sdk into HEAD
-73ef723 Ensures ProfileTrustAgent properly grants/revokes trust [2/2]
-6edcf4c Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-aa1f592 Ensures ProfileTrustAgent properly grants/revokes trust [2/2]
-
-   * vendor/jdc/
-f356257 Merge https://github.com/JDCTeam/android_vendor_jdc into HEAD
-
-   * vendor/samsung/
-f2564b4 Merge pull request #1 from JDCTeam/jf-6.0-newril
-28a1f83 Revert "Clean 'TempHumiditySensor mCompEngine is null'"
-70b695e Revert "Clean thermal-engine logcat spam"
-
-====================
-     06-08-2016
-====================
-
-
-   * build/
-1488c40 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_build into cm-13.0
-a40aedf Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_build into HEAD
-
-   * cts/
-d1b07fa Merge "Merge \"Fix missing patches in LoudnessEnhancerTest\" into lollipop-mr1-cts-dev am: 4a4da2937c  -s ours" into marshmallow-cts-dev
-48baa4a Merge \"Fix missing patches in LoudnessEnhancerTest\" into lollipop-mr1-cts-dev am: 4a4da2937c  -s ours
-4a4da29 Merge "Fix missing patches in LoudnessEnhancerTest" into lollipop-mr1-cts-dev
-c872b17 Merge "Add a workaround for testSelectAllJustAfterTap" into marshmallow-cts-dev
-83a70cb Add a workaround for testSelectAllJustAfterTap
-514de72 Merge "Resolve CTS apk can't get PackageInstaller's widget." into marshmallow-cts-dev
-10a27e9 DO NOT MERGE: CTS test case for verifying overflow in libskia JPG processing
-
-   * device/qcom/common/
-ad90ded power: Use declared enums where possible
-
-   * device/samsung/jf-common/
-5eb4313 Fix some flags
-4c4ddec remove unnecessary build-audio flags
-
-   * frameworks/av/
-fdc7d1f Fixing ALOGE message in commit ad40e57890f81a3cf436c5f06da66396010bd9e5
-b3fbce1 MtpServer: Fix concurrent access to mStorages
-9bdc0f6 MTP: Fix crash when no storages are available
-
-   * frameworks/base/
-627453d Add interpolators to qs tiles animation [1/2]
-9283356 Merge tag 'android-6.0.1_r46' into HEAD
-369147b systemui: Fix compilation failure
-b13f247 isRoaming: fix possible NPE
-ff66d59 SystemUI: Add support for persistent usb drive notification.
-3fb4388 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_frameworks_base into HEAD
-
-   * frameworks/native/
-0f53fc6 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_frameworks_native into cm-13.0
-
-   * hardware/qcom/audio-caf/msm8960/
-125133b hal:Samsung CSD client
-
-   * hardware/qcom/media/default/
-e824046 Merge tag 'android-6.0.1_r46' into HEAD
-
-   * kernel/samsung/alucard24/
-d479a09 Update GCC 5.3 from source. tuned for arm32 LG G2
-5fc3138 Few file perms fix.
-dc672c4 persistent_ram: check PERSISTENT_RAM_SIG before writing
-
-   * kernel/samsung/alucard24-dkati/
-d479a09 Update GCC 5.3 from source. tuned for arm32 LG G2
-5fc3138 Few file perms fix.
-dc672c4 persistent_ram: check PERSISTENT_RAM_SIG before writing
-
-   * kernel/samsung/jf/
-abb81bc msm: fix in-tree compilation for perf_trace_counters
-72ba7e4 msm2: kgsl: Add missing checks for alloc size and sglen
-
-   * packages/apps/Bluetooth/
-f403fdd Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Bluetooth into cm-13.0
-ef133b1 Merge tag 'android-6.0.1_r46' into HEAD
-
-   * packages/apps/BluetoothExt/
-8b8eb2f Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_BluetoothExt into cm-13.0
-
-   * packages/apps/CMFileManager/
-f86cee7 Check if view is inited when screen rotated
-
-   * packages/apps/CellBroadcastReceiver/
-f54de60 fix Dutch translation - On vs Off
-
-   * packages/apps/Dialer/
-4f006e8 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_Dialer into cm-13.0
-
-   * packages/apps/InCallUI/
-5817b88 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_apps_InCallUI into cm-13.0
-
-   * packages/apps/Messaging/
-b3585c8 PhoneUtils: Doublecheck that the system default is actually usable
-ca8ed52 Messaging: fix multi participant "always-ask" MSIM flow
-
-   * packages/apps/PackageInstaller/
-55d4c1e Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_packages_apps_PackageInstaller into cm-13.0
-
-   * packages/apps/Profiles/
-ea4e0f4 Ensures ProfileTrustAgent properly grants/revokes trust [1/2]
-
-   * packages/apps/Settings/
-6716780 Settings: use subid & imsi for MSIM apn lookups
-2144ff6 Build V9.1 - Android 6.0.1_r46
-b751dac Settings: fix crash when reset App preference
-692cab1 Add interpolators to qs tiles animation [2/2]
-b89a70b Automatic translation import
-1707520 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_packages_apps_Settings into HEAD
-
-   * packages/apps/SoundRecorder/
-700fcdb Stop audio playback/recording in LOSS_TRANSIENT mode
-ee23f8e Set notification to auto clean.
-
-   * packages/apps/WallpaperPicker/
-92d115a New wallpaper picker
-
-   * packages/providers/TelephonyProvider/
-32c8322 TelephonyProvider: add apn lookup for imsi
-
-   * packages/services/Telephony/
-e8439a8 Telephony: pass subscriber id to apn settings
-e03b991 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_packages_services_Telephony into cm-13.0
-d24e2c9 Merge "Merge tag 'android-6.0.1_r46' into HEAD" into cm-13.0
-2dc2985 Merge tag 'android-6.0.1_r46' into HEAD
-
-   * system/bt/
-4a65305 Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_bt into cm-13.0
-
-   * system/core/
-7c8cafd Merge branch 'cm-13.0' of github.com:CyanogenMod/android_system_core into cm-13.0
-
-   * vendor/cm/
-31a41f5 Merge branch 'cm-13.0' of git://github.com/CyanogenMod/android_vendor_cm into cm-13.0
-a1c8e30 Merge branch 'cm-13.0' of https://www.github.com/CyanogenMod/android_vendor_cm into HEAD
-
-   * vendor/cmsdk/
-09c1978 Merge branch 'cm-13.0' of github.com:CyanogenMod/cm_platform_sdk into cm-13.0
-a622379 cmsdk: LiveDisplay: Enforce dump permission
-42f9d37 CMSettingsProvider: Add coverage for CMSettings' interfaces.
-14de909 CMSettingsProvider: Fix defaults test for DEV_FORCE_SHOW_NAVBAR.
-5adb4e9 CMSettingsProvider: Register as CMTS package.
-2a3b93a cmsdk: Add test package to CMTS targets.
-cc0fc03 cmsdk: Fix redundant case in themes contract's componentToImageColName.
-9d73e11 cmsdk: Provide themescontract tests.
-5fd56f4 Automatic translation import
 
